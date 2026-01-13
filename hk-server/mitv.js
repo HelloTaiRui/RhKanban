@@ -81,31 +81,38 @@ const mitv_startapp_url = (ip) =>
 const checkTv = async (ip) => {
   const lastState = stateMap.get(ip) || 0;
   try {
-    const response = await axios.get(mitv_info_url(ip));
-    if (response.status == 200 && response.data.msg == "success") {
-      if (lastState == 0) {
-        try {
-          info(ip, response.data);
-          repeatStart(ip, 0);
-        } catch (err) {
-          stateMap.set(ip, 0);
-          error(ip, `启动app超时！${err}`);
-        }
-      } else {
-        info(ip, "运行中");
+    if (lastState == 0) {
+      try {
+        await startOnce(ip);
+      } catch (err) {
+        error(ip, `启动app超时！${err}`);
       }
     } else {
+      info(ip, "运行中");
+    }
+  } catch (err) {
+    error(ip, err);
+  }
+  stateMap.set(ip, 0); //检查一次后就自动置0，等待期间由客户端置1
+  setTimeout(() => {
+    checkTv(ip);
+  }, config.interval);
+};
+
+const startOnce = async (ip) => {
+  try {
+    const startResponse = await axios.get(mitv_startapp_url(ip));
+    if (startResponse.status == 200 && startResponse.data.msg == "success") {
+      stateMap.set(ip, 1);
+      info(ip, `app启动成功！`);
+    } else {
       stateMap.set(ip, 0);
-      error(ip, response.data.msg);
+      info(ip, `app启动失败！错误信息：${startResponse.data.msg}`);
     }
   } catch (err) {
     stateMap.set(ip, 0);
     error(ip, err);
   }
-
-  setTimeout(() => {
-    checkTv(ip);
-  }, config.interval);
 };
 
 const repeatStart = async (ip, num = 0) => {
@@ -156,7 +163,30 @@ app.get("/", function (req, res) {
   });
 });
 
+app.get("/config", function (req, res) {
+  res.json(config);
+});
+
+app.get("/tick", function (req, res) {
+  //console.log(req.params);
+  const ip = getClientIp(req).replace("::ffff:", "");
+  info(ip, `Tick调用`);
+  stateMap.set(ip, 1);
+  res.json({
+    ip: ip,
+  });
+});
+
 const server = app.listen(config.curServerPort, function () {
   info("Server", `server is running on ${config.curServerPort}`);
   //debug("Express server listening on port " + server.address().port);
 });
+
+function getClientIp(req) {
+  return (
+    req.headers["x-forwarded-for"] ||
+    req.connection.remoteAddress ||
+    req.socket.remoteAddress ||
+    req.connection.socket.remoteAddress
+  );
+}

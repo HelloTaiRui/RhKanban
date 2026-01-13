@@ -9,5 +9,5 @@
   ],
   "packageName": "rhv.client.starter",
   "curServerPort": 5002,
-  "maxRepeatStartNum": 5
+  "maxRepeatStartNum": 2
 }
