@@ -1,181 +1,55 @@
 {
-  "item": "呆滞物料Top5",
+  "item": "呆滞物料分析",
   "children": [
     {
-      "item": "AF-99A微动开关连杆",
+      "item": "半成品",
       "value1": null,
       "children": [
         {
-          "item": "数量(件)",
-          "value1": 1882709,
+          "item": "数量",
+          "value1": 198492539.003,
           "value2": null,
           "value3": null
         },
         {
-          "item": "最大账龄(天)",
-          "value1": 1127,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "呆滞评分",
-          "value1": 2121813043,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最早入库",
-          "value1": 44829.38071261574,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最近入库",
-          "value1": 45955.660271064815,
+          "item": "占比(%)",
+          "value1": 64.67,
           "value2": null,
           "value3": null
         }
       ]
     },
     {
-      "item": "AF-99A内锅（小尺寸）",
+      "item": "原材料",
       "value1": null,
       "children": [
         {
-          "item": "数量(件)",
-          "value1": 1719205,
+          "item": "数量",
+          "value1": 108296069.183958,
           "value2": null,
           "value3": null
         },
         {
-          "item": "最大账龄(天)",
-          "value1": 1154,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "呆滞评分",
-          "value1": 1983962570,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最早入库",
-          "value1": 44802.481340162034,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最近入库",
-          "value1": 45847.573955405096,
+          "item": "占比(%)",
+          "value1": 35.28,
           "value2": null,
           "value3": null
         }
       ]
     },
     {
-      "item": "AF-99A外锅",
+      "item": "产成品",
       "value1": null,
       "children": [
         {
-          "item": "数量(件)",
-          "value1": 1631040,
+          "item": "数量",
+          "value1": 137762,
           "value2": null,
           "value3": null
         },
         {
-          "item": "最大账龄(天)",
-          "value1": 1145,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "呆滞评分",
-          "value1": 1867540800,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最早入库",
-          "value1": 44811.61425038194,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最近入库",
-          "value1": 45896.33630277778,
-          "value2": null,
-          "value3": null
-        }
-      ]
-    },
-    {
-      "item": "AF-66限位柱压板",
-      "value1": null,
-      "children": [
-        {
-          "item": "数量(件)",
-          "value1": 1695957,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最大账龄(天)",
-          "value1": 1080,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "呆滞评分",
-          "value1": 1831633560,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最早入库",
-          "value1": 44876.36375173611,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最近入库",
-          "value1": 45935.82901489583,
-          "value2": null,
-          "value3": null
-        }
-      ]
-    },
-    {
-      "item": "FM15感温板焊片",
-      "value1": null,
-      "children": [
-        {
-          "item": "数量(件)",
-          "value1": 1302200,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最大账龄(天)",
-          "value1": 1135,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "呆滞评分",
-          "value1": 1477997000,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最早入库",
-          "value1": 44821.37557037037,
-          "value2": null,
-          "value3": null
-        },
-        {
-          "item": "最近入库",
-          "value1": 45902.44837086806,
+          "item": "占比(%)",
+          "value1": 0.04,
           "value2": null,
           "value3": null
         }

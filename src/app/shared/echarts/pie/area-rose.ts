@@ -63,6 +63,8 @@ export class RhAreaRosePieChart<Dataset> extends RhEchartsChart<
           },
           labelLine: {
             show: true,
+            length: 10 * rate,
+            length2: 10 * rate,
           },
           /*           emphasis: {
             label: {

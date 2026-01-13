@@ -270,12 +270,19 @@ export class SmartLogisticsComponent extends RhvBoardBase {
       },
     }
   );
-  /** 呆滞物料Top5 */
-  stagnantTop5Materials = new RhHorizontalBarChart(
-    { yAxisName: undefined, labelFormatter: '{@[1]}%' },
+  /** 呆滞物料分析 */
+  stagnantTop5Materials = new RhAreaRosePieChart(
+    {
+      /* yAxisName: undefined, labelFormatter: '{@[1]}%' */
+      mediaQueryBaseValue: {
+        minWidth: 420,
+        minHeight: 320,
+      },
+      scale: 2,
+    },
     {
       host: this,
-      config: useStandardDisplayConfig(5, 1, 0, 0),
+      config: useStandardDisplayConfig(0, 1, 0, 0),
       dataSubscribeConfig: {
         interval: 60000,
         data$: this.apiSer.getOuter(
