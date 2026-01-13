@@ -1,0 +1,4325 @@
+{
+  "item": "车间设备运行情况",
+  "children": [
+    {
+      "item": "A01",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 2.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A02",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A03",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A04",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 2.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A05",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A06",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A07",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A08",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A09",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 8.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A10",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A100",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A101",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A102",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 1.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A103",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 7.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A104",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A105",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A106",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A107",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A108",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 8,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A109",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A11",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A110",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A111",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A112",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A113",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A114",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A115",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 8.3,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A116",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A117",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A12",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A13",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A14",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A15",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A16",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A17",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.8,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A18",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A19",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A20",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 2.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A21",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A22",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A23",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A24",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A25",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A26",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 8.8,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A27",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A28",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A29",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 1.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A30",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A31",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 2.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A32",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A33",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A34",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 2.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A35",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A36",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A37",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A38",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A39",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A40",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A41",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A42",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 4.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A43",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A44",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A45",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A46",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 6.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A47",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A48",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 5.8,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A49",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 3.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A50",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A51",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A52",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A53",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A54",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A55",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A56",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A59",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.3,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A60",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A61",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 4.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A62",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A63",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A64",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A65",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A66",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A67",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A68",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A69",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A70",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 2.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A71",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A72",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A73",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A74",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A75",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A76",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A77",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A78",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A79",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A80",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A81",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A82",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 1.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A83",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A84",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 2.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A85",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A86",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A87",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A88",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A89",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A90",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A91",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A92",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 5.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A93",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A94",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 5.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A95",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A96",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 6.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A97",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A98",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A99",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 7.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B01",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B02",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B03",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B04",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B05",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B06",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 1.8,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B07",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B08",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B09",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B10",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 1.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B100",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B101",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B102",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B103",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B104",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B105",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B106",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 4.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B107",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B108",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B109",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B11",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B110",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B111",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B112",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B113",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 4.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B114",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B115",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B116",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B117",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B118",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B119",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B12",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B120",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B121",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 7.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B122",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B123",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B124",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B125",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B13",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B14",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 0.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B15",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B16",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B17",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B18",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B19",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 7.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B20",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B21",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B22",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B23",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B24",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B25",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 5.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B26",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B27",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B28",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B29",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B30",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 5.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B31",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B32",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 7.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B33",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B34",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B35",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B36",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B37",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 7.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B38",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B39",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B40",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B41",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B42",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B43",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 3.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B44",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B45",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 5.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B46",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 3.3,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B47",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B48",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B49",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B50",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B51",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B52",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 1.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B53",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B54",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B55",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B56",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B57",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B58",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B59",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B60",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B61",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B62",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B63",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B64",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B65",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B66",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B67",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B68",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B69",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B70",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B71",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B72",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B73",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B74",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B75",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B76",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B77",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B78",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B79",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B80",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B81",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B82",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B83",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B84",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B85",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B86",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B87",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B88",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B89",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B90",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B91",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B92",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B93",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 8.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B94",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B95",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B96",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B97",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B98",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 9.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B99",
+      "value1": null,
+      "children": [
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "状态持续时长(h)",
+          "value1": 4.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "item": "当日设备压力分析",
+  "children": [
+    {
+      "item": "21:08",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:09",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:10",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:10",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:12",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:12",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:13",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:15",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:15",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:16",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:17",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:18",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:19",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 152,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:20",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:21",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:24",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:26",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:29",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:30",
+      "value1": null,
+      "children": [
+        {
+          "item": "压力值",
+          "value1": 150,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

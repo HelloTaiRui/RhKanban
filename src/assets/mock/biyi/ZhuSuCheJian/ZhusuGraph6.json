@@ -1,0 +1,95 @@
+{
+  "item": "本月机台开机率最高Top5",
+  "children": [
+    {
+      "item": "A36",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机次数",
+          "value1": 61,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机时长",
+          "value1": 126.4736,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A31",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机次数",
+          "value1": 48,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机时长",
+          "value1": 121.0996,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A38",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机次数",
+          "value1": 46,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机时长",
+          "value1": 113.1401,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A23",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机次数",
+          "value1": 46,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机时长",
+          "value1": 111.4072,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A26",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机次数",
+          "value1": 51,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机时长",
+          "value1": 110.3734,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

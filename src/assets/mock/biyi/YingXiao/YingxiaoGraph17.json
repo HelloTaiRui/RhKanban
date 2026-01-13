@@ -1,0 +1,497 @@
+{
+  "item": "客户地区分组（按洲划分）",
+  "children": [
+    {
+      "item": "亚洲",
+      "value1": 687,
+      "children": [
+        {
+          "item": "中国",
+          "value1": 605,
+          "value2": 88.06,
+          "value3": null
+        },
+        {
+          "item": "韩国",
+          "value1": 32,
+          "value2": 4.66,
+          "value3": null
+        },
+        {
+          "item": "土耳其",
+          "value1": 16,
+          "value2": 2.33,
+          "value3": null
+        },
+        {
+          "item": "越南",
+          "value1": 8,
+          "value2": 1.16,
+          "value3": null
+        },
+        {
+          "item": "印度",
+          "value1": 5,
+          "value2": 0.73,
+          "value3": null
+        },
+        {
+          "item": "阿联酋",
+          "value1": 4,
+          "value2": 0.58,
+          "value3": null
+        },
+        {
+          "item": "马来西亚",
+          "value1": 4,
+          "value2": 0.58,
+          "value3": null
+        },
+        {
+          "item": "泰国",
+          "value1": 4,
+          "value2": 0.58,
+          "value3": null
+        },
+        {
+          "item": "新加坡",
+          "value1": 4,
+          "value2": 0.58,
+          "value3": null
+        },
+        {
+          "item": "沙特阿拉伯",
+          "value1": 3,
+          "value2": 0.44,
+          "value3": null
+        },
+        {
+          "item": "日本",
+          "value1": 2,
+          "value2": 0.29,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "欧洲",
+      "value1": 186,
+      "children": [
+        {
+          "item": "德国",
+          "value1": 29,
+          "value2": 15.59,
+          "value3": null
+        },
+        {
+          "item": "英国",
+          "value1": 29,
+          "value2": 15.59,
+          "value3": null
+        },
+        {
+          "item": "荷兰",
+          "value1": 22,
+          "value2": 11.83,
+          "value3": null
+        },
+        {
+          "item": "法国",
+          "value1": 19,
+          "value2": 10.22,
+          "value3": null
+        },
+        {
+          "item": "意大利",
+          "value1": 19,
+          "value2": 10.22,
+          "value3": null
+        },
+        {
+          "item": "西班牙",
+          "value1": 17,
+          "value2": 9.14,
+          "value3": null
+        },
+        {
+          "item": "波兰",
+          "value1": 12,
+          "value2": 6.45,
+          "value3": null
+        },
+        {
+          "item": "捷克",
+          "value1": 8,
+          "value2": 4.3,
+          "value3": null
+        },
+        {
+          "item": "葡萄牙",
+          "value1": 8,
+          "value2": 4.3,
+          "value3": null
+        },
+        {
+          "item": "希腊",
+          "value1": 5,
+          "value2": 2.69,
+          "value3": null
+        },
+        {
+          "item": "丹麦",
+          "value1": 4,
+          "value2": 2.15,
+          "value3": null
+        },
+        {
+          "item": "瑞典",
+          "value1": 4,
+          "value2": 2.15,
+          "value3": null
+        },
+        {
+          "item": "比利时",
+          "value1": 3,
+          "value2": 1.61,
+          "value3": null
+        },
+        {
+          "item": "芬兰",
+          "value1": 3,
+          "value2": 1.61,
+          "value3": null
+        },
+        {
+          "item": "匈牙利",
+          "value1": 3,
+          "value2": 1.61,
+          "value3": null
+        },
+        {
+          "item": "奥地利",
+          "value1": 1,
+          "value2": 0.54,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "其他",
+      "value1": 152,
+      "children": [
+        {
+          "item": "中国香港",
+          "value1": 48,
+          "value2": 31.58,
+          "value3": null
+        },
+        {
+          "item": "俄罗斯",
+          "value1": 17,
+          "value2": 11.18,
+          "value3": null
+        },
+        {
+          "item": "迪拜",
+          "value1": 13,
+          "value2": 8.55,
+          "value3": null
+        },
+        {
+          "item": "以色列",
+          "value1": 9,
+          "value2": 5.92,
+          "value3": null
+        },
+        {
+          "item": "瑞士",
+          "value1": 7,
+          "value2": 4.61,
+          "value3": null
+        },
+        {
+          "item": "伊朗",
+          "value1": 6,
+          "value2": 3.95,
+          "value3": null
+        },
+        {
+          "item": "厄瓜多尔",
+          "value1": 4,
+          "value2": 2.63,
+          "value3": null
+        },
+        {
+          "item": "利比亚国",
+          "value1": 3,
+          "value2": 1.97,
+          "value3": null
+        },
+        {
+          "item": "挪威",
+          "value1": 3,
+          "value2": 1.97,
+          "value3": null
+        },
+        {
+          "item": "前南马其顿",
+          "value1": 3,
+          "value2": 1.97,
+          "value3": null
+        },
+        {
+          "item": "乌拉圭",
+          "value1": 3,
+          "value2": 1.97,
+          "value3": null
+        },
+        {
+          "item": "印度尼西亚共和国",
+          "value1": 3,
+          "value2": 1.97,
+          "value3": null
+        },
+        {
+          "item": "约旦",
+          "value1": 3,
+          "value2": 1.97,
+          "value3": null
+        },
+        {
+          "item": "中国台湾",
+          "value1": 3,
+          "value2": 1.97,
+          "value3": null
+        },
+        {
+          "item": "阿尔及利亚",
+          "value1": 2,
+          "value2": 1.32,
+          "value3": null
+        },
+        {
+          "item": "巴拿马",
+          "value1": 2,
+          "value2": 1.32,
+          "value3": null
+        },
+        {
+          "item": "罗马尼亚",
+          "value1": 2,
+          "value2": 1.32,
+          "value3": null
+        },
+        {
+          "item": "马绍尔群岛",
+          "value1": 2,
+          "value2": 1.32,
+          "value3": null
+        },
+        {
+          "item": "乌克兰",
+          "value1": 2,
+          "value2": 1.32,
+          "value3": null
+        },
+        {
+          "item": "阿塞拜疆",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "巴拉圭",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "保加利亚",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "玻利维亚",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "多米尼加",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "格鲁吉亚",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "喀麦隆",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "卡塔尔",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "科威特",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "克罗地亚",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "欧洲",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "萨摩亚",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "塞浦路斯",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "斯里兰卡",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "委内瑞拉",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "叙利亚",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        },
+        {
+          "item": "中国澳门",
+          "value1": 1,
+          "value2": 0.66,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "北美洲",
+      "value1": 55,
+      "children": [
+        {
+          "item": "美国",
+          "value1": 48,
+          "value2": 87.27,
+          "value3": null
+        },
+        {
+          "item": "加拿大",
+          "value1": 7,
+          "value2": 12.73,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "南美洲",
+      "value1": 19,
+      "children": [
+        {
+          "item": "巴西",
+          "value1": 7,
+          "value2": 36.84,
+          "value3": null
+        },
+        {
+          "item": "智利",
+          "value1": 6,
+          "value2": 31.58,
+          "value3": null
+        },
+        {
+          "item": "阿根廷",
+          "value1": 3,
+          "value2": 15.79,
+          "value3": null
+        },
+        {
+          "item": "哥伦比亚",
+          "value1": 3,
+          "value2": 15.79,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "非洲",
+      "value1": 10,
+      "children": [
+        {
+          "item": "南非",
+          "value1": 6,
+          "value2": 60,
+          "value3": null
+        },
+        {
+          "item": "摩洛哥",
+          "value1": 2,
+          "value2": 20,
+          "value3": null
+        },
+        {
+          "item": "埃及",
+          "value1": 1,
+          "value2": 10,
+          "value3": null
+        },
+        {
+          "item": "尼日利亚",
+          "value1": 1,
+          "value2": 10,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "大洋洲",
+      "value1": 8,
+      "children": [
+        {
+          "item": "澳大利亚",
+          "value1": 5,
+          "value2": 62.5,
+          "value3": null
+        },
+        {
+          "item": "新西兰",
+          "value1": 3,
+          "value2": 37.5,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

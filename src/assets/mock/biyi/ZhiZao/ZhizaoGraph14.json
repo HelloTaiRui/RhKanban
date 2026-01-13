@@ -1,0 +1,29 @@
+{
+  "item": "本月新厂区设备运行整体情况",
+  "children": [
+    {
+      "item": "2025/10",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行设备",
+          "value1": 53,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机设备",
+          "value1": 180,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机设备",
+          "value1": 7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "rhv-2.0",
+  "name": "可视化设计平台",
+  "productId": "",
+  "productCode": "RHV-CLIENT",
+  "codeVersion": "2.0.0",
+  "multiAppConfigSource": [
+    {
+      "Value": "http://192.168.0.135:8088/WebAppConfiguration/MobileAppConfig.json",
+      "Text": "测试机内网"
+    },
+    {
+      "Value": "http://192.168.0.143:8088/WebAppConfiguration/MobileAppConfig.json",
+      "Text": "正式机内网"
+    }
+  ],
+  "adminPassword": "Rh888888",
+  "overviewStaticItems": [
+    {
+      "route": "${root}business/biyi/SmartOperationBoard",
+      "title": "智慧运营看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/智慧运营.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": [],
+      "hidden": true
+    },
+    {
+      "route": "${root}business/biyi/SmartMarketingBoard",
+      "title": "智慧营销看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/智慧营销.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": [],
+      "hidden": true
+    },
+    {
+      "route": "${root}business/biyi/SmartManufacturingBoard",
+      "title": "智慧制造看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/智慧制造.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": [],
+      "hidden": true
+    },
+    {
+      "route": "${root}business/biyi/SmartLogisticsBoard",
+      "title": "智慧物流看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/智慧物流.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": [],
+      "hidden": true
+    },
+    {
+      "route": "${root}business/biyi/InjectionMoldingWorkshop/WorkshopStatusBoard",
+      "title": "注塑车间状态看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/注塑车间状态看板.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": []
+    },
+    {
+      "route": "${root}business/biyi/InjectionMoldingWorkshop/EquipmentOverviewBoard",
+      "title": "注塑车间设备总览看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/注塑车间设备总览看板.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": []
+    },
+    {
+      "route": "${root}business/biyi/InjectionMoldingWorkshop/MachineOverviewBoard",
+      "title": "注塑车间机台看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/注塑车间机台看板.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": []
+    },
+    {
+      "route": "${root}business/biyi/InjectionMoldingWorkshop/WorkshopOperatingBoard",
+      "title": "注塑车间运营看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/注塑车间运营看板.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": []
+    },
+    {
+      "route": "${root}business/biyi/AssemblyWorkshop/ProductLineBoard",
+      "title": "成品产线看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/成品产线看板.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": []
+    }
+  ],
+  "displayInterval": 5000,
+  "isShowOverview": [
+    {
+      "route": "${root}business/DataDashboard",
+      "title": "数据驾驶舱",
+      "showTitle": true,
+      "src": "assets/overviews/DataDashboard.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": []
+    }
+  ]
+}

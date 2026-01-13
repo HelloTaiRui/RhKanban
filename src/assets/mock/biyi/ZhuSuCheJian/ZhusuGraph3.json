@@ -1,0 +1,125 @@
+{
+  "item": "生产产量汇总统计",
+  "children": [
+    {
+      "item": "10/17",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 597781,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/18",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 496541,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/19",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 427871,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 322290,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 318220,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 182487,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 15567,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

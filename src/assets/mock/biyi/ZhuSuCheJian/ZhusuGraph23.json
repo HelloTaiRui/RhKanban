@@ -1,0 +1,119 @@
+{
+  "item": "设备信息",
+  "children": [
+    {
+      "item": "A02",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度指数",
+          "value1": 16,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "湿度指数",
+          "value1": 83,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "气压指数",
+          "value1": 1020,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "PM2.5指数",
+          "value1": 35,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "HAITIAN注塑机",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "A02",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "MA 2000Ⅲ 750 3",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "设备状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "时间段状态",
+      "value1": null,
+      "children": [
+        {
+          "item": "Run",
+          "value1": 1,
+          "value2": 1761494400000,
+          "value3": 1761494402806
+        },
+        {
+          "item": "Run",
+          "value1": 1,
+          "value2": 1761494402808,
+          "value3": 1761552605874
+        },
+        {
+          "item": "PowerOff",
+          "value1": 3,
+          "value2": 1761552605874,
+          "value3": 1761552726723
+        },
+        {
+          "item": "StandBy",
+          "value1": 2,
+          "value2": 1761552726723,
+          "value3": 1761552845832
+        },
+        {
+          "item": "Run",
+          "value1": 1,
+          "value2": 1761552845832,
+          "value3": 1761554765764
+        },
+        {
+          "item": "StandBy",
+          "value1": 2,
+          "value2": 1761554765764,
+          "value3": 1761554885756
+        },
+        {
+          "item": "Run",
+          "value1": 1,
+          "value2": 1761554885756,
+          "value3": 1761562926553
+        },
+        {
+          "item": "StandBy",
+          "value1": 2,
+          "value2": 1761562926553,
+          "value3": 1761563046471
+        },
+        {
+          "item": "Run",
+          "value1": 1,
+          "value2": 1761563046471,
+          "value3": 1761572877615
+        }
+      ]
+    }
+  ]
+}

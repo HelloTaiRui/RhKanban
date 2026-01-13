@@ -1,0 +1,15 @@
+{
+  "item": "年度运营指标达成情况",
+  "children": [
+    {
+      "item": "产品销售总量（件）",
+      "value1": 8266551,
+      "children": null
+    },
+    {
+      "item": "指标达成率",
+      "value1": 75.8,
+      "children": null
+    }
+  ]
+}

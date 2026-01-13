@@ -1,0 +1,167 @@
+{
+  "item": "月度库存区域对比",
+  "children": [
+    {
+      "item": "25/04",
+      "value1": null,
+      "children": [
+        {
+          "item": "本厂",
+          "value1": 904934.09,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国",
+          "value1": 3218,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/05",
+      "value1": null,
+      "children": [
+        {
+          "item": "本厂",
+          "value1": 855062.99,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国",
+          "value1": 7517,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意",
+          "value1": 8192,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/06",
+      "value1": null,
+      "children": [
+        {
+          "item": "本厂",
+          "value1": 735763.59,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国",
+          "value1": 59890,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意",
+          "value1": 2960,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/07",
+      "value1": null,
+      "children": [
+        {
+          "item": "本厂",
+          "value1": 779760.54,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国",
+          "value1": 58449,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意",
+          "value1": 15820,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/08",
+      "value1": null,
+      "children": [
+        {
+          "item": "本厂",
+          "value1": 750601.14,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国",
+          "value1": 16785,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意",
+          "value1": 44603,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/09",
+      "value1": null,
+      "children": [
+        {
+          "item": "本厂",
+          "value1": 586975.1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国",
+          "value1": 52011,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意",
+          "value1": 34769,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/10",
+      "value1": null,
+      "children": [
+        {
+          "item": "本厂",
+          "value1": 740801.3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国",
+          "value1": 83414,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意",
+          "value1": 37519,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

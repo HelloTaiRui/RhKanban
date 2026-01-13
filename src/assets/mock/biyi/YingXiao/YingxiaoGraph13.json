@@ -1,0 +1,95 @@
+{
+  "item": "销售数量统计",
+  "children": [
+    {
+      "item": "2021",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 6547.61,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "增长率",
+          "value1": 16,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2022",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 7537.35,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "增长率",
+          "value1": 18,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2023",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 8854.14,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "增长率",
+          "value1": 20.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2024",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 10535.19,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "增长率",
+          "value1": 25.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 14619.89,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "增长率",
+          "value1": 50.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

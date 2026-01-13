@@ -1,0 +1,35 @@
+{
+  "item": "当前生产达成情况",
+  "children": [
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 297908,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "完成数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "合格数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率(%)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

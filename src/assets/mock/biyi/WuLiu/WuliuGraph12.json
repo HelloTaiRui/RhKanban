@@ -1,0 +1,29 @@
+{
+  "item": "当日AGV运行状态总览",
+  "children": [
+    {
+      "item": "任务统计",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行中",
+          "value1": 10,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已取消",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已完成",
+          "value1": 45,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

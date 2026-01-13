@@ -1,0 +1,59 @@
+{
+  "item": "当月安灯异常类型占比",
+  "children": [
+    {
+      "item": "品质异常",
+      "value1": null,
+      "children": [
+        {
+          "item": "次数",
+          "value1": 20,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 57.14,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "物料异常",
+      "value1": null,
+      "children": [
+        {
+          "item": "次数",
+          "value1": 13,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 37.14,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "设备异常",
+      "value1": null,
+      "children": [
+        {
+          "item": "次数",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 5.71,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

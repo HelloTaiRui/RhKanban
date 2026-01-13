@@ -1,0 +1,245 @@
+{
+  "item": "月度产品直通率统计",
+  "children": [
+    {
+      "item": "AF-315空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 333,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "HS-M2(奶泡机)",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "咖啡机成品",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 97,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "烤盘",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 10,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 90,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "烤箱",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 135,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 5360,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 45,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "奶泡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 20,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 95,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "暖风机",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 68,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 370,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 10,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 97,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "质量大类",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产批次数",
+          "value1": 5,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良批次数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "直通率",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

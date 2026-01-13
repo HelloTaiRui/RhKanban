@@ -1,0 +1,29 @@
+{
+  "item": "今日装配计划达成情况",
+  "children": [
+    {
+      "item": "2025-10-27",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划",
+          "value1": 30102,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "实际",
+          "value1": 25933,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 86.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

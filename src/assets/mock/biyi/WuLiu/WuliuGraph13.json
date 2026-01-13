@@ -1,0 +1,215 @@
+{
+  "item": "AGV工作情况",
+  "children": [
+    {
+      "item": "14902",
+      "value1": null,
+      "children": [
+        {
+          "item": "任务数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "电量(%)",
+          "value1": 71,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "速度",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "方向",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标X",
+          "value1": 538135,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标Y",
+          "value1": 508109,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "14903",
+      "value1": null,
+      "children": [
+        {
+          "item": "任务数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "电量(%)",
+          "value1": 70,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "速度",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "方向",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标X",
+          "value1": 610619,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标Y",
+          "value1": 510692,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "14906",
+      "value1": null,
+      "children": [
+        {
+          "item": "任务数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "电量(%)",
+          "value1": 72,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "速度",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "方向",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标X",
+          "value1": 610621,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标Y",
+          "value1": 509304,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "14907",
+      "value1": null,
+      "children": [
+        {
+          "item": "任务数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "电量(%)",
+          "value1": 68,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "速度",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "方向",
+          "value1": 180,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标X",
+          "value1": 611902,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标Y",
+          "value1": 509302,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "14908",
+      "value1": null,
+      "children": [
+        {
+          "item": "任务数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "电量(%)",
+          "value1": 64,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "速度",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "方向",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标X",
+          "value1": 624893,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "坐标Y",
+          "value1": 435273,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+<rh-page-frame
+  rhTitle="成品产线看板"
+  rhBgImg="assets/img/biyi/车间看板_BG.png"
+  rhHeaderImg="assets/img/biyi/车间看板_BG_顶部.png"
+>
+  <div class="flex flex-col w-full h-full overflow-hidden rhv-padding-h">
+    <div class="flex w-full justify-start">
+      <!-- <div class="rhv-margin-8-right">设备总数：{{ sumQty }}</div> -->
+      <div class="flex items-center rhv-margin-8-right gap-1">
+        <div class="status status-running"></div>
+        运行<!-- ：{{ summaryData[1] }} -->
+      </div>
+      <div class="flex items-center rhv-margin-8-right gap-1">
+        <div class="status status-error"></div>
+        异常<!-- ：{{ summaryData[2] }} -->
+      </div>
+      <div class="flex items-center rhv-margin-8-right gap-1">
+        <div class="status status-down"></div>
+        停线<!-- ：{{ summaryData[3] }} -->
+      </div>
+      <div class="flex items-center rhv-margin-8-right gap-1">
+        <div class="status status-rest"></div>
+        休息<!-- ：{{ summaryData[1] }} -->
+      </div>
+      <div class="flex items-center rhv-margin-8-right gap-1">
+        <div class="status status-standby"></div>
+        空闲<!-- ：{{ summaryData[0] }} -->
+      </div>
+    </div>
+    <div class="flex-1 w-full h-full overflow-hidden rhv-padding-bottom">
+      <nz-table
+        nzTemplateMode
+        [nzWidthConfig]="widthConfig"
+        class="full-height-table"
+        [style.opacity]="tableData.dataset.dataLoading ? 0.7 : 1"
+      >
+        <thead>
+          <tr>
+            <th colspan="10">当日产线信息统计</th>
+            <th colspan="9">当月产线信息统计</th>
+          </tr>
+          <tr class="bg-tr">
+            <th>产线</th>
+            <th>产品</th>
+            <th>计划</th>
+            <th>实际</th>
+            <th>不良</th>
+            <th>码垛数</th>
+            <th>达成率</th>
+            <th>UPPH值</th>
+            <th>一次<br />合格率</th>
+            <th>产线状态</th>
+            <th>计划<br />达成率</th>
+            <th>一次<br />合格率</th>
+            <th>安灯<br />停线</th>
+            <th>异常费用</th>
+            <th>验货<br />合格率</th>
+            <th>月度<br />离职率</th>
+            <th>月度<br />UPPH值</th>
+            <th>产线退料金额（工费）</th>
+            <th>用电<br />统计</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container
+            *ngFor="
+              let line of tableData.data.linesData;
+              index as lineIndex;
+              trackBy: trackByIndex
+            "
+          >
+            <tr
+              [class.bg-tr]="lineIndex % 2 == 1"
+              *ngFor="
+                let row of line.todayData;
+                index as i;
+                count as num;
+                trackBy: trackByIndex
+              "
+            >
+              <td *ngIf="i === 0" [attr.rowspan]="num">{{ line.name }}</td>
+              <td>{{ row[0] }}</td>
+              <td>{{ row[1] }}</td>
+              <td>{{ row[2] }}</td>
+              <td>{{ row[3] }}</td>
+              <td>{{ row[4] }}</td>
+              <td>{{ row[5] }}%</td>
+              <td>{{ row[6] }}</td>
+              <td>{{ row[7] }}%</td>
+              <ng-container *ngIf="i === 0">
+                <td [attr.rowspan]="num">
+                  <rh-status-timeline
+                    class="block"
+                    style="height: var(--rhv-size-4)"
+                    [rhCurTime]="tableData.dataset.curTime"
+                    [rhData]="line.stateData"
+                    [rhStartTime]="tableData.dataset.createStartTime"
+                    [rhEndTime]="tableData.dataset.createEndTime"
+                    [rhBgColorMap]="stateColorMap"
+                    [rhStateNameMap]="stateNameMap"
+                  ></rh-status-timeline>
+                  <div
+                    class="w-full flex relative ruler-border"
+                    style="height: var(--rhv-size-5-half)"
+                  >
+                    <div
+                      *ngFor="let item of tableData.dataset.timelineTicks"
+                      class="flex-1 h-full tick-border tick-name"
+                    >
+                      {{ item }}
+                    </div>
+                    <div class="tick-name">
+                      {{ tableData.dataset.lastTick }}
+                    </div>
+                  </div>
+                </td>
+                <ng-container *ngIf="line.monthlyData as monthlyData">
+                  <td [attr.rowspan]="num">{{ monthlyData[0] }}%</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[1] }}%</td>
+                  <td [attr.rowspan]="num">
+                    {{ monthlyData[2][0] }}/{{ monthlyData[2][1] }}
+                  </td>
+                  <td [attr.rowspan]="num">{{ monthlyData[3] }}</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[4] }}%</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[5] }}%</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[6] }}</td>
+                  <td [attr.rowspan]="num">
+                    <span class="link" (click)="handleShowDetail(line.name)">{{
+                      monthlyData[7]
+                    }}</span>
+                  </td>
+                  <td [attr.rowspan]="num">{{ monthlyData[8] }}</td>
+                </ng-container>
+              </ng-container>
+            </tr>
+          </ng-container>
+          <tr
+            *ngIf="tableData.data.summaryData as summary"
+            [class.bg-tr]="tableData.data.linesData.length % 2 == 1"
+          >
+            <td>{{ summary[0] }}</td>
+            <td>{{ summary[1] }}</td>
+            <td>{{ summary[2] }}</td>
+            <td>{{ summary[3] }}</td>
+            <td>{{ summary[4] }}</td>
+            <td>{{ summary[5] }}</td>
+            <td>{{ summary[6] }}%</td>
+            <td>{{ summary[7] }}</td>
+            <td>{{ summary[8] }}%</td>
+            <td></td>
+            <td>{{ summary[10] }}%</td>
+            <td>{{ summary[11] }}%</td>
+            <td>{{ summary[12][0] }}/{{ summary[12][1] }}</td>
+            <td>{{ summary[13] }}</td>
+            <td>{{ summary[14] }}%</td>
+            <td>{{ summary[15] }}%</td>
+            <td>{{ summary[16] }}</td>
+            <td>{{ summary[17] }}</td>
+            <td>{{ summary[18] }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+      <nz-spin
+        *ngIf="tableData.dataset.dataLoading"
+        nzTip="数据获取中，请稍等..."
+        class="w-full h-full absolute"
+        style="top: 0; left: 0"
+        nzSize="large"
+      >
+      </nz-spin>
+    </div>
+  </div>
+</rh-page-frame>
+
+<nz-modal
+  [(nzVisible)]="detailModalVisible"
+  [nzTitle]="null"
+  [nzBodyStyle]="{ padding: 0 }"
+  [nzClosable]="false"
+  nzTitle="详情"
+  [nzFooter]="null"
+  nzWidth="80vw"
+  (nzOnCancel)="detailModalVisible = false"
+>
+  <rh-item-container
+    rhTitle="{{ curLineCode }}线退料明细"
+    style="width: 100%; height: 80vh"
+  >
+    <div class="w-full h-full overflow-hidden rhv-padding">
+      <nz-table
+        nzTemplateMode
+        [nzScroll]="{ y: '76vh' }"
+        [style.opacity]="detailDataLoading ? 0.7 : 1"
+      >
+        <thead>
+          <tr>
+            <th nzWidth="4rem">序号</th>
+            <th nzWidth="9rem">退料单号</th>
+            <th nzWidth="7rem">销售单号</th>
+            <th nzWidth="8rem">工单号</th>
+            <th nzWidth="8rem">物料编码</th>
+            <th nzWidth="12rem">物料名称</th>
+            <th>物料规格</th>
+            <th nzWidth="6rem">退料数量</th>
+            <th nzWidth="6rem">单价</th>
+            <th nzWidth="6rem">总金额</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="
+              let row of detailsData;
+              index as i;
+              count as num;
+              trackBy: trackByIndex
+            "
+          >
+            <td>{{ i + 1 }}</td>
+            <td>{{ row.materialReturnNo }}</td>
+            <td>{{ row.salesNo }}</td>
+            <td>{{ row.moNo }}</td>
+            <td>{{ row.itemCode }}</td>
+            <td>{{ row.itemName }}</td>
+            <td>{{ row.itemSpec }}</td>
+            <td>{{ row.returnQty }}</td>
+            <td>{{ row.price }}</td>
+            <td>{{ row.amount }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </div>
+
+    <nz-spin
+      *ngIf="detailDataLoading"
+      nzTip="数据获取中，请稍等..."
+      class="w-full h-full absolute"
+      style="top: 0; left: 0"
+      nzSize="large"
+    >
+    </nz-spin>
+  </rh-item-container>
+</nz-modal>

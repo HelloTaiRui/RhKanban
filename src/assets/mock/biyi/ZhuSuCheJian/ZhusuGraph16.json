@@ -1,0 +1,65 @@
+{
+  "item": "当前人员到岗情况",
+  "children": [
+    {
+      "item": "班长",
+      "value1": null,
+      "children": [
+        {
+          "item": "出勤人数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "班组长",
+      "value1": null,
+      "children": [
+        {
+          "item": "出勤人数",
+          "value1": 5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "车间工人",
+      "value1": null,
+      "children": [
+        {
+          "item": "出勤人数",
+          "value1": 179,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "管理人员",
+      "value1": null,
+      "children": [
+        {
+          "item": "出勤人数",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "行政人员",
+      "value1": null,
+      "children": [
+        {
+          "item": "出勤人数",
+          "value1": 12,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

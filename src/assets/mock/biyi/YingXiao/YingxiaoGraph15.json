@@ -1,0 +1,89 @@
+{
+  "item": "成品检验合格率统计（近6个月）",
+  "children": [
+    {
+      "item": "2025-10",
+      "value1": null,
+      "children": [
+        {
+          "item": "合格率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-09",
+      "value1": null,
+      "children": [
+        {
+          "item": "合格率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-08",
+      "value1": null,
+      "children": [
+        {
+          "item": "合格率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-07",
+      "value1": null,
+      "children": [
+        {
+          "item": "合格率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-06",
+      "value1": null,
+      "children": [
+        {
+          "item": "合格率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-05",
+      "value1": null,
+      "children": [
+        {
+          "item": "合格率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-04",
+      "value1": null,
+      "children": [
+        {
+          "item": "合格率",
+          "value1": 99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

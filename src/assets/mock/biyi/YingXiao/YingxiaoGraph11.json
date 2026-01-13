@@ -1,0 +1,65 @@
+{
+  "item": "产品销量Top5（产品类别-产品名称-销量-占比）",
+  "children": [
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "AF-99A",
+          "value1": 5501141,
+          "value2": 30.97,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "AF-98",
+          "value1": 4258782,
+          "value2": 23.97,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "AF-98A",
+          "value1": 3547062,
+          "value2": 19.97,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "DF-165",
+          "value1": 2625887,
+          "value2": 14.78,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "201639",
+          "value1": 1830898,
+          "value2": 10.31,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

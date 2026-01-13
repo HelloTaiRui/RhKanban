@@ -1,0 +1,95 @@
+{
+  "item": "月度总装车间设备停机Top5",
+  "children": [
+    {
+      "item": "Z02",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机次数",
+          "value1": 66,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机时长",
+          "value1": 4.3634,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "Z05",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机次数",
+          "value1": 57,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机时长",
+          "value1": 4.0963,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "Z04",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机次数",
+          "value1": 61,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机时长",
+          "value1": 4.0631,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "Z03",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机次数",
+          "value1": 38,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机时长",
+          "value1": 3.163,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "Z01",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机次数",
+          "value1": 29,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机时长",
+          "value1": 2.5637,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

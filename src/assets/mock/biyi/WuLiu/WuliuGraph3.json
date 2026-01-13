@@ -1,0 +1,46 @@
+{
+  "item": "库存结构分析",
+  "children": [
+    {
+      "item": "库存总量(件)",
+      "value1": 434540784.082966,
+      "children": null
+    },
+    {
+      "item": "原材料",
+      "value1": null,
+      "children": [
+        {
+          "item": "原材料",
+          "value1": 177046611.601676,
+          "value2": 40.74,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "半成品",
+      "value1": null,
+      "children": [
+        {
+          "item": "半成品",
+          "value1": 86901463.1328,
+          "value2": 20,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "成品",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品",
+          "value1": 170592709.34849,
+          "value2": 39.26,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

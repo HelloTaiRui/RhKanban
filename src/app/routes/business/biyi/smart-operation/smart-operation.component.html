@@ -1,0 +1,507 @@
+<rh-page-frame rhTitle="比依智慧运营看板" class="h-full w-full">
+  <div class="main-body">
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="年度生产量汇总统计图"
+        class="rhv-padding-8-lb"
+        style="height: 24.12%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="yearProductionSummary.option"
+          (chartInit)="yearProductionSummary.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日计划达成率统计"
+        class="rhv-padding-8-lb"
+        style="height: 22.9%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="planCompleteRate.option"
+          (chartInit)="planCompleteRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="月度产品直通率统计"
+        class="rhv-padding-8-lb"
+        style="height: 26.67%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="productGoodRate.option"
+          (chartInit)="productGoodRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日车间能耗情况"
+        class="rhv-padding-8-lb"
+        style="height: 26.31%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="last7daysWorkshopEnergyConsumption.option"
+          (chartInit)="last7daysWorkshopEnergyConsumption.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="年度运营指标达成情况"
+        class="rhv-padding-8-lb"
+        style="height: 24.12%"
+      >
+        <div class="w-full h-full flex flex-col overflow-hidden gap-4 pt-4">
+          <div class="flex items-center">
+            <div class="mark-primary rhv-margin-3-right"></div>
+            <div class="label">
+              产品销售总量({{ yearlyRateData.data.sumData.unit }})
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div
+              class="number-item"
+              *ngFor="
+                let unitValue of yearlyRateData.data.sumData.result;
+                trackBy: trackByIndex
+              "
+            >
+              {{ unitValue }}
+            </div>
+          </div>
+          <div class="flex items-baseline">
+            <div class="flex items-center">
+              <div class="mark-secondary rhv-margin-3-right"></div>
+              <div class="label">指标达成率：</div>
+            </div>
+            <span class="value">{{ yearlyRateData.data.rate }}%</span>
+          </div>
+          <div
+            class="content-item h-9"
+            echarts
+            [options]="yearlyRate.option"
+            (chartInit)="yearlyRate.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="今日装配计划达成情况"
+        class="rhv-padding-8-lb w-full"
+        style="height: 22.9%"
+      >
+        <div class="w-full h-full flex flex-col overflow-hidden gap-4 pt-4">
+          <div class="flex items-center">
+            <div class="mark-primary rhv-margin-3-right"></div>
+            <div class="label">今日计划数量(件)：</div>
+            <div class="medium-value">
+              {{ todayCompleteRateData.data[0] }}/{{
+                todayCompleteRateData.data[1]
+              }}
+            </div>
+          </div>
+          <div
+            class="w-full h-full"
+            echarts
+            [options]="todayPlanCompleteRate.option"
+            (chartInit)="todayPlanCompleteRate.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="产品不良分布图"
+        class="rhv-padding-8-lb"
+        style="height: 26.67%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="badDistribution.option"
+          (chartInit)="badDistribution.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="园区使用能耗汇总"
+        class="rhv-padding-8-lb"
+        style="height: 26.31%"
+      >
+        <div class="flex flex-col gap-4 h-full w-full pt-4">
+          <div
+            class="info-container info-container-border flex flex-col px-4 py-4 gap-4 h-1/2"
+          >
+            <div class="title">{{ energySummaryData.data[0][0] }}</div>
+            <div class="flex justify-between items-center flex-1">
+              <div class="label flex items-center">
+                <object
+                  data="assets/img/biyi/icon_耗电量.svg"
+                  type="image/svg+xml"
+                  width="var(--rhv-size-6)"
+                  class="rhv-margin-2-right"
+                ></object>
+                耗电总量
+              </div>
+              <div class="label">
+                <span class="value">{{
+                  unifyNumber(energySummaryData.data[0][1], 2).toLocaleString()
+                }}</span>
+                度电
+              </div>
+            </div>
+          </div>
+          <div
+            class="info-container info-container-border flex flex-col px-4 py-4 gap-4 h-1/2"
+          >
+            <div class="title">{{ energySummaryData.data[1][0] }}</div>
+            <div class="flex justify-between items-center flex-1">
+              <div class="label flex items-center">
+                <object
+                  data="assets/img/biyi/icon_耗电量.svg"
+                  type="image/svg+xml"
+                  width="var(--rhv-size-6)"
+                  class="rhv-margin-2-right"
+                ></object>
+                耗电总量
+              </div>
+              <div class="label">
+                <span class="value">{{
+                  unifyNumber(energySummaryData.data[1][1], 2).toLocaleString()
+                }}</span>
+                度电
+              </div>
+            </div>
+          </div>
+        </div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group flex-1 overflow-hidden">
+      <div class="w-full flex gap-4 px-8" style="height: 9%">
+        <div class="item-block w-1/4 h-3/5">
+          <div class="label">
+            {{ workshopPlanData.data[0][0] }}({{
+              workshopPlanData.data[0][2]
+            }}件)
+          </div>
+          <div class="value">
+            {{ workshopPlanData.data[0][1] }}
+          </div>
+        </div>
+        <div class="item-block w-1/4 h-3/5 mt-8">
+          <div class="label">
+            {{ workshopPlanData.data[1][0] }}({{
+              workshopPlanData.data[1][2]
+            }}件)
+          </div>
+          <div class="value">
+            {{ workshopPlanData.data[1][1] }}
+          </div>
+        </div>
+        <div class="item-block w-1/4 h-3/5 mt-8">
+          <div class="label">
+            {{ workshopPlanData.data[2][0] }}({{
+              workshopPlanData.data[2][2]
+            }}件)
+          </div>
+          <div class="value">
+            {{ workshopPlanData.data[2][1] }}
+          </div>
+        </div>
+        <div class="item-block w-1/4 h-3/5">
+          <div class="label">
+            {{ workshopPlanData.data[3][0] }}({{
+              workshopPlanData.data[3][2]
+            }}件)
+          </div>
+          <div class="value">
+            {{ workshopPlanData.data[3][1] }}
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 overflow-hidden flex items-start justify-center rhv-padding-3-top"
+      >
+        <rh-meixiang-digital-twin
+          [rhUseImg]="enableMock"
+          rhPlaceholderImg="assets/img/biyi/主图_运营.png"
+          rhUrl="http://179.173.168.2:8181/webclient/?appliId=1428380410387103744&playerMode=2&userType=1&authCode=2yrPSdgF&nickname=0"
+          class="w-full h-full"
+        ></rh-meixiang-digital-twin>
+      </div>
+      <!--       <rh-item-container
+        rhTitle="各车间视频监控总览"
+        class="rhv-padding-8-lb rhv-padding-8-right"
+        style="height: 26.31%"
+      >
+        <div
+          class="flex w-full h-full overflow-hidden rhv-padding-6-top"
+          style="gap: var(--rhv-size-6)"
+        >
+          <rh-monitor
+            class="flex-1 overflow-hidden h-full"
+            rhTitle="总装车间"
+            rhStorageKey="biyi_monitor_1"
+            [rhNameList]="['预设1']"
+            [rhList]="monitorData[0]"
+          ></rh-monitor>
+          <rh-monitor
+            class="flex-1 overflow-hidden h-full"
+            rhTitle="注塑车间"
+            rhStorageKey="biyi_monitor_2"
+            [rhNameList]="['预设1']"
+            [rhList]="monitorData[1]"
+          ></rh-monitor>
+          <rh-monitor
+            class="flex-1 overflow-hidden h-full"
+            rhTitle="冲压车间"
+            rhStorageKey="biyi_monitor_3"
+            [rhNameList]="['预设1']"
+            [rhList]="monitorData[2]"
+          ></rh-monitor>
+          <rh-monitor
+            class="flex-1 overflow-hidden h-full"
+            rhTitle="喷涂车间"
+            rhStorageKey="biyi_monitor_4"
+            [rhNameList]="['预设1']"
+            [rhList]="monitorData[3]"
+          ></rh-monitor>
+        </div>
+      </rh-item-container> -->
+      <rh-item-container
+        rhTitle="当日产线异常分布图"
+        class="rhv-padding-8-lb rhv-padding-8-right relative timeline-area"
+        style="height: 26.31%"
+      >
+        <div class="flex flex-col w-full h-full rhv-padding-6-top">
+          <rh-ruler
+            style="background: rgba(7, 131, 250, 0.2)"
+            [rhTicks]="errorDistributionData.dataset.timelineTicks"
+          ></rh-ruler>
+
+          <rh-rank-table
+            class="flex-1 w-full h-full overflow-hidden timeline-table"
+            [rhColumns]="errorDistributionRankTable.columns"
+            [rhData]="visibleList"
+            [rhShowHeader]="errorDistributionRankTable.showHeader"
+            [rhShowRank]="errorDistributionRankTable.showRank"
+            [rhPageSize]="errorDistributionRankTable.pageSize"
+            [rhVisibleRate]="errorDistributionRankTable.visibleRate"
+            [rhMoveTime]="errorDistributionRankTable.moveSpeed"
+            [rhTemplates]="{ timeline: timelineTpl }"
+          ></rh-rank-table>
+        </div>
+        <div
+          class="flex absolute w-full justify-center"
+          style="top: var(--rhv-size); left: 0; padding-top: var(--rhv-size-2)"
+        >
+          <!-- <div class="rhv-margin-8-right">设备总数：{{ sumQty }}</div> -->
+          <div class="flex items-center rhv-margin-8-right gap-1">
+            <div class="status status-running"></div>
+            运行<!-- ：{{ summaryData[1] }} -->
+          </div>
+          <div class="flex items-center rhv-margin-8-right gap-1">
+            <div class="status status-rest"></div>
+            休息<!-- ：{{ summaryData[1] }} -->
+          </div>
+          <div class="flex items-center rhv-margin-8-right gap-1">
+            <div class="status status-down"></div>
+            停线<!-- ：{{ summaryData[3] }} -->
+          </div>
+          <div class="flex items-center rhv-margin-8-right gap-1">
+            <div class="status status-standby"></div>
+            空闲<!-- ：{{ summaryData[0] }} -->
+          </div>
+          <div class="flex items-center rhv-margin-8-right gap-1">
+            <div class="status status-error"></div>
+            异常<!-- ：{{ summaryData[2] }} -->
+          </div>
+        </div>
+        <div
+          class="flex rhv-padding-8-right absolute"
+          style="
+            top: var(--rhv-size);
+            right: var(--rhv-size-10);
+            padding-top: var(--rhv-size-2);
+          "
+        >
+          <div
+            class="rank-symbol cursor-pointer rhv-margin-5-left"
+            [class.not-active]="item !== curPageIndex"
+            *ngFor="let item of pageList; trackBy: trackByIndex"
+            (click)="jumpTo(item)"
+          >
+            {{ item + 1 }}
+          </div>
+        </div>
+      </rh-item-container>
+      <ng-template #timelineTpl let-row="row" let-col="col">
+        <div class="w-full flex flex-col">
+          <div
+            class="w-full flex relative ruler-border"
+            style="height: var(--rhv-size-5-half)"
+          >
+            <div
+              *ngFor="let item of errorDistributionData.dataset.timelineTicks"
+              class="flex-1 h-full tick-border"
+            ></div>
+            <div class="absolute h-full flex items-center ruler-name">
+              {{ row.rawData.name }}
+            </div>
+          </div>
+          <rh-status-timeline
+            style="height: var(--rhv-size-4)"
+            [rhCurTime]="errorDistributionData.dataset.curTime"
+            [rhData]="row.rawData.timeline"
+            [rhStartTime]="errorDistributionData.dataset.createStartTime"
+            [rhEndTime]="errorDistributionData.dataset.createEndTime"
+            [rhBgColorMap]="stateColorMap"
+            [rhStateNameMap]="stateNameMap"
+          ></rh-status-timeline>
+        </div>
+      </ng-template>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="月度来料合格率统计"
+        class="rhv-padding-8-rb"
+        style="height: 24.12%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="materialGoodRate.option"
+          (chartInit)="materialGoodRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="成品库存占比统计"
+        class="rhv-padding-8-rb"
+        style="height: 22.9%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="productCategory.option"
+          (chartInit)="productCategory.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="月度安灯情况"
+        class="rhv-padding-8-rb"
+        style="height: 26.67%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="equipmentDownSummary.option"
+          (chartInit)="equipmentDownSummary.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <!--       <rh-item-container
+        rhTitle="本月装配车间设备开机率"
+        class="rhv-padding-8-rb"
+        style="height: 26.31%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="equipmentStartRate.option"
+          (chartInit)="equipmentStartRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container> -->
+      <rh-item-container
+        rhTitle="产线员工地区分布"
+        class="rhv-padding-8-rb"
+        style="height: 26.31%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="employeeDistribution.option"
+          (chartInit)="employeeDistribution.ec = $event"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="本月供应商供料不良Top5"
+        class="rhv-padding-8-rb"
+        style="height: 24.12%"
+      >
+        <div
+          class="content-item mt-3"
+          echarts
+          [options]="top5suppliers.option"
+          (chartInit)="top5suppliers.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日成品库存数量趋势"
+        class="rhv-padding-8-rb"
+        style="height: 22.9%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="productInventoryTendency.option"
+          (chartInit)="productInventoryTendency.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="当月安灯异常类型占比"
+        class="rhv-padding-8-rb"
+        style="height: 26.67%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="equipmentDownReason.option"
+          (chartInit)="equipmentDownReason.ec = $event"
+          theme="biyi"
+        ></div
+      ></rh-item-container>
+      <rh-item-container
+        rhTitle="本月总装检验合格率"
+        class="rhv-padding-8-rb"
+        style="height: 26.31%"
+      >
+        <div class="flex flex-col w-full h-full overflow-hidden">
+          <div
+            class="content-item"
+            style="height: 55%"
+            echarts
+            [options]="inspectGoodRate.option"
+            (chartInit)="inspectGoodRate.ec = $event"
+            theme="biyi"
+          ></div>
+          <div style="height: 45%" class="rhv-padding-top">
+            <rh-rank-table
+              class="w-full h-full overflow-hidden"
+              [rhColumns]="inspectGoodRankTable.columns"
+              [rhData]="inspectGoodRankTable.data"
+              [rhShowHeader]="inspectGoodRankTable.showHeader"
+              [rhShowRank]="inspectGoodRankTable.showRank"
+              [rhPageSize]="inspectGoodRankTable.pageSize"
+              [rhVisibleRate]="inspectGoodRankTable.visibleRate"
+            ></rh-rank-table>
+          </div>
+        </div>
+      </rh-item-container>
+    </div>
+  </div>
+</rh-page-frame>

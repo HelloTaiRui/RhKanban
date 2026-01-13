@@ -1,0 +1,221 @@
+{
+  "item": "月度库存类别分布(金额)",
+  "children": [
+    {
+      "item": "25/05",
+      "value1": null,
+      "children": [
+        {
+          "item": "半成品",
+          "value1": 6085.88,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "采购件",
+          "value1": 5868.66,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "产成品",
+          "value1": 18112.85,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "其他",
+          "value1": 4.4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "原材料",
+          "value1": 6929.66,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/06",
+      "value1": null,
+      "children": [
+        {
+          "item": "半成品",
+          "value1": 7359.32,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "采购件",
+          "value1": 7719.31,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "产成品",
+          "value1": 18198.87,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "其他",
+          "value1": 4.53,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "原材料",
+          "value1": 7641.88,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/07",
+      "value1": null,
+      "children": [
+        {
+          "item": "半成品",
+          "value1": 7775.75,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "采购件",
+          "value1": 5431,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "产成品",
+          "value1": 20279.49,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "其他",
+          "value1": 4.53,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "原材料",
+          "value1": 8770.01,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/08",
+      "value1": null,
+      "children": [
+        {
+          "item": "半成品",
+          "value1": 9006.2,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "采购件",
+          "value1": 13865.98,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "产成品",
+          "value1": 18686.19,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "其他",
+          "value1": 4.79,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "原材料",
+          "value1": 9186.59,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/09",
+      "value1": null,
+      "children": [
+        {
+          "item": "半成品",
+          "value1": 9195.92,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "采购件",
+          "value1": 6980.84,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "产成品",
+          "value1": 18003.46,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "其他",
+          "value1": 1724.21,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "原材料",
+          "value1": 8706.77,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/10",
+      "value1": null,
+      "children": [
+        {
+          "item": "半成品",
+          "value1": 10692.55,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "采购件",
+          "value1": 9166.6,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "产成品",
+          "value1": 22897.59,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "其他",
+          "value1": 4.46,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "原材料",
+          "value1": 10320.87,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

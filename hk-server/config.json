@@ -1,0 +1,13 @@
+{
+  "timeout": 3000,
+  "interval": 10000,
+  "ipList": [
+    { "Value": "179.173.173.83", "Text": "左上" },
+    { "Value": "179.173.173.200", "Text": "右上" },
+    { "Value": "179.173.173.93", "Text": "左下" },
+    { "Value": "179.173.173.25", "Text": "右下" }
+  ],
+  "packageName": "rhv.client.starter",
+  "curServerPort": 5002,
+  "maxRepeatStartNum": 5
+}

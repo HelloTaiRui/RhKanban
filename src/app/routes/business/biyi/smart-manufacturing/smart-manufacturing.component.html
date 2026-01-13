@@ -1,0 +1,365 @@
+<rh-page-frame rhTitle="比依智慧制造看板" class="h-full w-full">
+  <div class="main-body">
+    <div class="horizontal-group" style="width: 30%">
+      <rh-item-container
+        rhTitle="近7日计划达成率统计"
+        class="rhv-padding-8-lb w-1/2"
+        style="height: 24.12%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="planCompleteRate.option"
+          (chartInit)="planCompleteRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="今日装配计划达成情况"
+        class="rhv-padding-8-lb w-1/2"
+        style="height: 24.12%"
+      >
+        <div class="w-full h-full flex flex-col overflow-hidden gap-4 pt-4">
+          <div class="flex items-center">
+            <div class="mark-primary rhv-margin-3-right"></div>
+            <div class="label">今日计划数量(件)：</div>
+            <div class="medium-value">
+              {{ todayCompleteRateData.data[0] }}/{{
+                todayCompleteRateData.data[1]
+              }}
+            </div>
+          </div>
+          <div
+            class="w-full h-full"
+            echarts
+            [options]="todayPlanCompleteRate.option"
+            (chartInit)="todayPlanCompleteRate.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月品质直通率统计"
+        class="rhv-padding-8-lb w-1/2"
+        style="height: 22.9%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="productGoodRate.option"
+          (chartInit)="productGoodRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月生产成品不良项Top5"
+        class="rhv-padding-8-lb w-1/2"
+        style="height: 22.9%"
+      >
+        <div
+          class="w-full h-full mt-3"
+          echarts
+          [options]="productTop5Reason.option"
+          (chartInit)="productTop5Reason.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="月度生产产量汇总"
+        class="rhv-padding-8-lb w-1/2"
+        style="height: 26.67%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="monthlyProduction.option"
+          (chartInit)="monthlyProduction.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日生产产量汇总"
+        class="rhv-padding-8-lb w-1/2"
+        style="height: 26.67%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="weeklyProduction.option"
+          (chartInit)="weeklyProduction.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="车间生产退料情况"
+        class="rhv-padding-8-lb w-full"
+        style="height: 26.31%"
+      >
+        <div
+          class="flex w-full h-full overflow-hidden rhv-padding-6-top rhv-padding-2-bottom gap-16"
+        >
+          <div class="flex-1 h-full flex flex-col">
+            <div class="flex items-center">
+              <object
+                data="assets/img/biyi/icon_二级标题.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right sub-title-svg-icon"
+              ></object>
+              <span class="label">月度退料数量统计</span>
+            </div>
+            <div class="flex flex-col w-full h-full">
+              <rh-segment
+                class="rhv-padding-top"
+                [rhMaxVisibleNumber]="4"
+                [rhAutoPlayInterval]="10000"
+                [rhOptions]="monthlyReturnList"
+                [(ngModel)]="curReturnMonth"
+                (ngModelChange)="updateMonthlyReturnData($event)"
+              ></rh-segment>
+              <div
+                class="w-full h-full"
+                echarts
+                [options]="monthlyReturn.option"
+                (chartInit)="monthlyReturn.ec = $event"
+                theme="biyi"
+              ></div>
+            </div>
+          </div>
+          <div class="flex-1 h-full flex flex-col">
+            <div class="flex items-center">
+              <object
+                data="assets/img/biyi/icon_二级标题.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right sub-title-svg-icon"
+              ></object>
+              <span class="label">本月退料原因统计</span>
+            </div>
+            <div
+              class="w-full h-full"
+              echarts
+              [options]="returnReasonSummary.option"
+              (chartInit)="returnReasonSummary.ec = $event"
+              theme="biyi"
+            ></div>
+          </div>
+        </div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group flex-1 overflow-hidden">
+      <div class="w-full flex gap-4 px-8 justify-around" style="height: 9%">
+        <div class="item-block w-1/4 h-3/5">
+          <div class="label">{{ attendanceData.value[0]?.Text }}</div>
+          <div class="value">
+            {{
+              unifyNumber(attendanceData.value[0]?.Value, 0).toLocaleString()
+            }}
+          </div>
+        </div>
+        <div class="item-block w-1/4 h-3/5 mt-8">
+          <div class="label">{{ attendanceData.value[1]?.Text }}</div>
+          <div class="value">
+            {{
+              unifyNumber(attendanceData.value[1]?.Value, 0).toLocaleString()
+            }}
+          </div>
+        </div>
+        <div class="item-block w-1/4 h-3/5">
+          <div class="label">{{ attendanceData.value[2].Text }}</div>
+          <div class="value">
+            {{ unifyNumber(attendanceData.value[2].Value, 0).toLocaleString() }}
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 overflow-hidden">
+        <img
+          src="assets/img/biyi/主图_制造.png"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <rh-item-container
+        rhTitle="当日产线异常分布图"
+        class="rhv-padding-8-lb rhv-padding-8-right"
+        style="height: 26.31%"
+      >
+        <div class="flex flex-col w-full h-full rhv-padding-6-top">
+          <rh-ruler
+            style="background: rgba(7, 131, 250, 0.2)"
+            [rhTicks]="errorDistributionData.dataset.timelineTicks"
+          ></rh-ruler>
+          <rh-rank-table
+            class="flex-1 w-full h-full overflow-hidden timeline-table"
+            [rhColumns]="errorDistributionRankTable.columns"
+            [rhData]="errorDistributionRankTable.data"
+            [rhShowHeader]="errorDistributionRankTable.showHeader"
+            [rhShowRank]="errorDistributionRankTable.showRank"
+            [rhPageSize]="errorDistributionRankTable.pageSize"
+            [rhVisibleRate]="errorDistributionRankTable.visibleRate"
+            [rhMoveTime]="errorDistributionRankTable.moveSpeed"
+            [rhTemplates]="{ timeline: timelineTpl }"
+          ></rh-rank-table>
+        </div>
+      </rh-item-container>
+      <ng-template #timelineTpl let-row="row" let-col="col">
+        <div class="w-full flex flex-col">
+          <div
+            class="w-full flex relative ruler-border"
+            style="height: var(--rhv-size-6)"
+          >
+            <div
+              *ngFor="let item of errorDistributionData.dataset.timelineTicks"
+              class="flex-1 h-full tick-border"
+            ></div>
+            <div class="absolute h-full flex items-center ruler-name">
+              {{ row.rawData.name }}
+            </div>
+          </div>
+          <rh-status-timeline
+            style="height: var(--rhv-size)"
+            [rhCurTime]="errorDistributionData.dataset.curTime"
+            [rhStartTime]="errorDistributionData.dataset.createStartTime"
+            [rhEndTime]="errorDistributionData.dataset.createEndTime"
+            [rhData]="row.rawData.timeline"
+            [rhBgColorMap]="stateColorMap"
+            [rhStateNameMap]="stateNameMap"
+          ></rh-status-timeline>
+        </div>
+      </ng-template>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="产线员工地区分布"
+        class="rhv-padding-8-rb"
+        style="height: 24.12%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="employeeDistribution.option"
+          (chartInit)="employeeDistribution.ec = $event"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月设备点检及时率"
+        class="rhv-padding-8-rb"
+        style="height: 22.9%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="equipmentSpotInspect.option"
+          (chartInit)="equipmentSpotInspect.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月新厂区设备运行整体情况"
+        class="rhv-padding-8-rb"
+        style="height: 26.67%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="equipmentStatus.option"
+          (chartInit)="equipmentStatus.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="月度装配车间设备运行分析"
+        class="rhv-padding-8-rb"
+        style="height: 26.31%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="equipmentRunAnalysis.option"
+          (chartInit)="equipmentRunAnalysis.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="研发人员月度数量"
+        class="rhv-padding-8-rb"
+        style="height: 24.12%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="employeeInfo.option"
+          (chartInit)="employeeInfo.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="设备点检进度统计"
+        class="rhv-padding-8-rb"
+        style="height: 22.9%"
+      >
+        <rh-rank-table
+          class="w-full h-full overflow-hidden"
+          [rhColumns]="equipmentSpotCheckRankTable.columns"
+          [rhData]="equipmentSpotCheckRankTable.data"
+          [rhShowHeader]="equipmentSpotCheckRankTable.showHeader"
+          [rhShowRank]="equipmentSpotCheckRankTable.showRank"
+          [rhPageSize]="equipmentSpotCheckRankTable.pageSize"
+          [rhVisibleRate]="equipmentSpotCheckRankTable.visibleRate"
+          [rhMoveTime]="equipmentSpotCheckRankTable.moveSpeed"
+          [rhTemplates]="{ result: resultTpl }"
+        ></rh-rank-table>
+
+        <ng-template #resultTpl let-row="row" let-col="col">
+          <div class="flex items-center w-full overflow-hidden">
+            <div
+              class="status status-{{ resultMap[row.rawData.Result] }}"
+            ></div>
+            <span>{{ row.rawData.Result }}</span>
+          </div>
+        </ng-template>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="月度总装车间设备停机Top5"
+        class="rhv-padding-8-rb"
+        style="height: 26.67%"
+      >
+        <div
+          class="w-full h-full mt-3"
+          echarts
+          [options]="monthlyDownTop5Equipments.option"
+          (chartInit)="monthlyDownTop5Equipments.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月各车间设备开机状况"
+        class="rhv-padding-8-rb"
+        style="height: 26.31%"
+      >
+        <div class="flex flex-col w-full h-full overflow-hidden">
+          <div
+            class="content-item flex-1"
+            style="height: 55%"
+            echarts
+            [options]="equipmentStartRate.option"
+            (chartInit)="equipmentStartRate.ec = $event"
+            theme="biyi"
+          ></div>
+          <div style="height: 45%" class="rhv-padding-top">
+            <rh-rank-table
+              class="w-full h-full overflow-hidden"
+              [rhColumns]="equipmentStartRankTable.columns"
+              [rhData]="equipmentStartRankTable.data"
+              [rhShowHeader]="equipmentStartRankTable.showHeader"
+              [rhShowRank]="equipmentStartRankTable.showRank"
+              [rhPageSize]="equipmentStartRankTable.pageSize"
+              [rhVisibleRate]="equipmentStartRankTable.visibleRate"
+            ></rh-rank-table>
+          </div>
+        </div>
+      </rh-item-container>
+    </div>
+  </div>
+</rh-page-frame>

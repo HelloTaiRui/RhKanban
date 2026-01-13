@@ -1,0 +1,581 @@
+{
+  "item": "车间生产退料情况",
+  "children": [
+    {
+      "item": "2025-01",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 3566,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 10431,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 3890,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 21691,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 121687,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-02",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 17645,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 11249,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 12454,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 6993,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 105944,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-03",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 13174,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 29747,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 41947,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 16968,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 193891,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-04",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 8656,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 19599,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 54615,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 11993,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 201675,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-05",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 11491,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 21057,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 46534,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 12346,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 161648,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-06",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 8966,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 13494,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 60159,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 9926,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 174025,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-07",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 1204,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 20223,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 33441,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 10524,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 4233,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 180189,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-08",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 1645,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 22895,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 49175,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 13279,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 9776,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 154754,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-09",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 26146,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 5632,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 47819,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 2800,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 5150,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 93146,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-10",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 23652,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 2958,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 16642,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 10237,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 55024,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-11",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-12",
+      "value1": null,
+      "children": [
+        {
+          "item": "环电装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "丝印车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "泰国装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭咖啡机装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "谭家岭装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

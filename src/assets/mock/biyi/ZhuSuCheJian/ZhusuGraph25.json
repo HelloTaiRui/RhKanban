@@ -1,0 +1,125 @@
+{
+  "item": "当日注射速度分析",
+  "children": [
+    {
+      "item": "21:18",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 217,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:19",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 218,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:20",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 217,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:21",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 218,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:22",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 217,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:23",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 218,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:25",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 217,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:26",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 218,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:29",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 217,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:30",
+      "value1": null,
+      "children": [
+        {
+          "item": "注射速度",
+          "value1": 218,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

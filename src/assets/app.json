@@ -1,0 +1,12 @@
+{
+    "description": "This is systemApp",
+    "data": {
+        "requireVerifyCode": true,
+        "verifyUrl": "http://192.168.0.121:8088/favicon.ico",
+        "verfiyResponseType": "arraybuffer",
+        "isLocalMode": false
+    },
+    "modules": [],
+    "methods": [],
+    "_useMaps": {}
+}

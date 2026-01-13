@@ -1,0 +1,353 @@
+{
+  "item": "设备点检进度统计",
+  "children": [
+    {
+      "item": "BY-BPDY-001",
+      "value1": null,
+      "children": [
+        {
+          "item": "3",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-BPDY-002",
+      "value1": null,
+      "children": [
+        {
+          "item": "3",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-BPDY-020",
+      "value1": null,
+      "children": [
+        {
+          "item": "3",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXD-001",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXD-002",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXD-008",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXD-016",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXD-018",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXD-024",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXS-001",
+      "value1": null,
+      "children": [
+        {
+          "item": "5",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXS-002",
+      "value1": null,
+      "children": [
+        {
+          "item": "5",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXS-003",
+      "value1": null,
+      "children": [
+        {
+          "item": "5",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXS-004",
+      "value1": null,
+      "children": [
+        {
+          "item": "5",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXS-008",
+      "value1": null,
+      "children": [
+        {
+          "item": "5",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXS-021",
+      "value1": null,
+      "children": [
+        {
+          "item": "5",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXS-035",
+      "value1": null,
+      "children": [
+        {
+          "item": "5",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-FXS-036",
+      "value1": null,
+      "children": [
+        {
+          "item": "5",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-JQR-001",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-JQR-003",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-JQR-004",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-JQR-005",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-JQR-021",
+      "value1": null,
+      "children": [
+        {
+          "item": "4",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-XT-001",
+      "value1": null,
+      "children": [
+        {
+          "item": "9",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-XT-002",
+      "value1": null,
+      "children": [
+        {
+          "item": "9",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-XT-006",
+      "value1": null,
+      "children": [
+        {
+          "item": "9",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-XT-010",
+      "value1": null,
+      "children": [
+        {
+          "item": "9",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-XT-E7",
+      "value1": null,
+      "children": [
+        {
+          "item": "9",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-XT-F1",
+      "value1": null,
+      "children": [
+        {
+          "item": "9",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "BY-XT-F3",
+      "value1": null,
+      "children": [
+        {
+          "item": "9",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "item": "成品检验不良原因分析（Top6）",
+  "children": [
+    {
+      "item": "100078-顶盖未扣到位",
+      "value1": null,
+      "children": [
+        {
+          "item": "不良数量",
+          "value1": 224,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "100041-内有异物（塑料件）",
+      "value1": null,
+      "children": [
+        {
+          "item": "不良数量",
+          "value1": 87,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "100147-壳体划伤",
+      "value1": null,
+      "children": [
+        {
+          "item": "不良数量",
+          "value1": 82,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "100038-丝印不良 ",
+      "value1": null,
+      "children": [
+        {
+          "item": "不良数量",
+          "value1": 73,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "100147-顶盖划伤",
+      "value1": null,
+      "children": [
+        {
+          "item": "不良数量",
+          "value1": 57,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "100041-机内异物（塑料件）",
+      "value1": null,
+      "children": [
+        {
+          "item": "不良数量",
+          "value1": 50,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

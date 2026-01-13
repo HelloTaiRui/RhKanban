@@ -1,0 +1,17 @@
+<div class="relative w-full h-full">
+  <div
+    class="tick"
+    *ngFor="let item of ticks; trackBy: trackByIndex"
+    [nz-tooltip]="tipTpl"
+    [ngStyle]="{
+      backgroundColor: rhBgColorMap[item.state],
+      width: item.width,
+      left: item.left
+    }"
+  >
+    <ng-template #tipTpl>
+      <div>{{ item.startTime }} ~ {{ item.endTime }}</div>
+      <div>{{ rhStateNameMap[item.state] }}</div>
+    </ng-template>
+  </div>
+</div>

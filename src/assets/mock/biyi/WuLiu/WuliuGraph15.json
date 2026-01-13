@@ -1,0 +1,23 @@
+{
+  "item": "作业车辆实时容积率情况",
+  "children": [
+    {
+      "item": "作业车辆实时容积率情况",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行中车辆",
+          "value1": 8,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 26.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "item": "本月机台停机Top5",
+  "children": [
+    {
+      "item": "A62",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机时长",
+          "value1": 113.3698,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "B51",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机时长",
+          "value1": 80.2621,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A06",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机时长",
+          "value1": 78.3256,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A16",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机时长",
+          "value1": 72.8861,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "A18",
+      "value1": null,
+      "children": [
+        {
+          "item": "停机时长",
+          "value1": 72.7191,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

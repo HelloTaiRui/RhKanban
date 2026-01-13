@@ -1,0 +1,53 @@
+{
+  "item": "生产销售架构图",
+  "children": [
+    {
+      "item": "本年",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单数",
+          "value1": 153900,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 145900,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数",
+          "value1": 108880,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "本月",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单数",
+          "value1": 12390,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 10390,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数",
+          "value1": 8888,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

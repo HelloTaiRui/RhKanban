@@ -1,0 +1,77 @@
+{
+  "item": "产品不良分布图",
+  "children": [
+    {
+      "item": "划伤",
+      "value1": null,
+      "children": [
+        {
+          "item": null,
+          "value1": 888203,
+          "value2": 43,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "其他",
+      "value1": null,
+      "children": [
+        {
+          "item": null,
+          "value1": 701099,
+          "value2": 30,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "变形",
+      "value1": null,
+      "children": [
+        {
+          "item": null,
+          "value1": 182950,
+          "value2": 9,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "掉漆",
+      "value1": null,
+      "children": [
+        {
+          "item": null,
+          "value1": 123125,
+          "value2": 6,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "缺料",
+      "value1": null,
+      "children": [
+        {
+          "item": null,
+          "value1": 116787,
+          "value2": 6,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "料花",
+      "value1": null,
+      "children": [
+        {
+          "item": null,
+          "value1": 48552,
+          "value2": 2,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

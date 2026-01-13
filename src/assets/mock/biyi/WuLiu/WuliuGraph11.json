@@ -1,0 +1,125 @@
+{
+  "item": "成品月度库存周转次数分析",
+  "children": [
+    {
+      "item": "01月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 3136,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "02月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 2330,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "03月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 4279,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "04月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 4641,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "05月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 4455,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "06月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 4419,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "07月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 4311,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "08月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 4170,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "09月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 3909,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10月",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存周转次数",
+          "value1": 2717,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

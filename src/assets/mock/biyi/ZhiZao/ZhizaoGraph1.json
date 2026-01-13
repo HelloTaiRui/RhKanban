@@ -1,0 +1,173 @@
+{
+  "item": "本月计划达成率统计",
+  "children": [
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "实际",
+          "value1": 26647,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 79.9,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划",
+          "value1": 33340,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "实际",
+          "value1": 25591,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 90.6,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划",
+          "value1": 28233,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "实际",
+          "value1": 25935,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 90.9,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划",
+          "value1": 28543,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "实际",
+          "value1": 25813,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 79.7,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划",
+          "value1": 32388,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "实际",
+          "value1": 22253,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 69.4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划",
+          "value1": 32064,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "实际",
+          "value1": 26375,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 86.3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划",
+          "value1": 30561,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "实际",
+          "value1": 3271,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 10.4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划",
+          "value1": 31501,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

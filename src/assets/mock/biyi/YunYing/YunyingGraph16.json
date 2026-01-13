@@ -1,0 +1,17 @@
+{
+  "item": "本月装配车间设备开机率",
+  "children": [
+    {
+      "item": "数据获取中",
+      "value1": null,
+      "children": [
+        {
+          "item": "提示",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

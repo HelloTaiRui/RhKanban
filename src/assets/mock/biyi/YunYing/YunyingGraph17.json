@@ -1,0 +1,77 @@
+{
+  "item": "本月总装检验合格率",
+  "children": [
+    {
+      "item": "泰国",
+      "value1": null,
+      "children": [
+        {
+          "item": "排名",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总数",
+          "value1": 197,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "合格率",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "中意",
+      "value1": null,
+      "children": [
+        {
+          "item": "排名",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总数",
+          "value1": 2925,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "合格率",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "本厂",
+      "value1": null,
+      "children": [
+        {
+          "item": "排名",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总数",
+          "value1": 3650,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "合格率",
+          "value1": 97,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

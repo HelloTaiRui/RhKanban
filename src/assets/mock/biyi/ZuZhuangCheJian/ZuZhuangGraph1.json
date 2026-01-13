@@ -1,0 +1,3081 @@
+{
+  "item": "成品产线看板",
+  "value1": null,
+  "children": [
+    {
+      "item": "Z01",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 12301.2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:41",
+              "value1": 1,
+              "value2": 1766795400000,
+              "value3": 1766796096000,
+              "children": null
+            },
+            {
+              "item": "08:41~08:49",
+              "value1": 1,
+              "value2": 1766796096000,
+              "value3": 1766796596601,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z02",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 2504.4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 2,
+              "value2": 1766795400000,
+              "value3": 1766796596605,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z03",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 2854,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:32",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795520000,
+              "children": null
+            },
+            {
+              "item": "08:32~08:49",
+              "value1": 1,
+              "value2": 1766795520000,
+              "value3": 1766796596609,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z04",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 3324.8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:48",
+              "value1": 1,
+              "value2": 1766795400000,
+              "value3": 1766796513000,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z05",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 6538.4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:32",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795520000,
+              "children": null
+            },
+            {
+              "item": "08:32~08:49",
+              "value1": 1,
+              "value2": 1766795520000,
+              "value3": 1766796596614,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z06",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 1,
+              "value2": 1766795400000,
+              "value3": 1766796596617,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z07",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 1,
+              "value2": 1766795400000,
+              "value3": 1766796596620,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z08",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 2,
+              "value2": 1766795400000,
+              "value3": 1766796596622,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z09",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 1,
+              "value2": 1766795400000,
+              "value3": 1766796596625,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z10",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 376.4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 1,
+              "value2": 1766795400000,
+              "value3": 1766796596627,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z11",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 3398.4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 2,
+              "value2": 1766795400000,
+              "value3": 1766796596629,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z12",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 2624.4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 2,
+              "value2": 1766795400000,
+              "value3": 1766796596631,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "item": "Z13",
+      "value1": null,
+      "value2": null,
+      "value3": null,
+      "children": [
+        {
+          "item": "当月",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划达成率",
+              "value1": 60,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "安灯停线",
+              "value1": 8,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "异常费用",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "验货异常",
+              "value1": 32,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "月度离职率",
+              "value1": 4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线人均产值",
+              "value1": 449,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线退料数量",
+              "value1": 1120,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "用电统计",
+              "value1": 588.4,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "产线状态",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "实时状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "00:00~08:30",
+              "value1": 2,
+              "value2": 1766764800000,
+              "value3": 1766795400000,
+              "children": null
+            },
+            {
+              "item": "08:30~08:49",
+              "value1": 2,
+              "value2": 1766795400000,
+              "value3": 1766796596634,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 2,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        },
+        {
+          "item": "CAF-R901-D（101S）",
+          "value1": null,
+          "value2": null,
+          "value3": null,
+          "children": [
+            {
+              "item": "计划",
+              "value1": 4022,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "实际",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "不良",
+              "value1": 0,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "码垛数",
+              "value1": 24,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "达成率",
+              "value1": 91,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "日均人员效率",
+              "value1": 38.51,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "一次合格率",
+              "value1": 100,
+              "value2": null,
+              "value3": null,
+              "children": null
+            },
+            {
+              "item": "产线状态",
+              "value1": 1,
+              "value2": null,
+              "value3": null,
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

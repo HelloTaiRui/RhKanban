@@ -1,0 +1,89 @@
+{
+  "item": "洲际年度出货数量统计（本年度）",
+  "children": [
+    {
+      "item": "欧洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "出货量",
+          "value1": 4152536,
+          "value2": 50.63,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "北美洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "出货量",
+          "value1": 1568790,
+          "value2": 19.13,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "亚洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "出货量",
+          "value1": 1121066,
+          "value2": 13.67,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "其他",
+      "value1": null,
+      "children": [
+        {
+          "item": "出货量",
+          "value1": 502586,
+          "value2": 6.13,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "南美洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "出货量",
+          "value1": 345694,
+          "value2": 4.21,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "大洋洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "出货量",
+          "value1": 301774,
+          "value2": 3.68,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "非洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "出货量",
+          "value1": 209074,
+          "value2": 2.55,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

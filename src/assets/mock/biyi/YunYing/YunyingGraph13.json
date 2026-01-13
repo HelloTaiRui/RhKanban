@@ -1,0 +1,89 @@
+{
+  "item": "近7日成品库存数量趋势",
+  "children": [
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品库存",
+          "value1": 654891,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品库存",
+          "value1": 665776,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品库存",
+          "value1": 674202,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品库存",
+          "value1": 679257,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品库存",
+          "value1": 678434,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品库存",
+          "value1": 676498,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/19",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品库存",
+          "value1": 685284,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

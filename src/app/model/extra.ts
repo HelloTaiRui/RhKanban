@@ -1,0 +1,1 @@
+export type RhCustomElementsData = Record<string, any>;

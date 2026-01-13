@@ -1,0 +1,11 @@
+{
+  "name": "rhv-server",
+  "bin": "mitv.js",
+  "private": true,
+  "pkg": {
+      "outputPath": "dist/pkg",
+      "targets": [
+          "node16-win-x64"
+      ]
+  }
+}

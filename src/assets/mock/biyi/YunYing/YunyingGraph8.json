@@ -1,0 +1,29 @@
+{
+  "item": "园区使用能耗汇总",
+  "children": [
+    {
+      "item": "本年度（2025年）",
+      "value1": null,
+      "children": [
+        {
+          "item": "总能耗",
+          "value1": 191075.68,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "本月度（10月）",
+      "value1": null,
+      "children": [
+        {
+          "item": "总能耗",
+          "value1": 171688.95,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

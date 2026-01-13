@@ -1,0 +1,245 @@
+{
+  "item": "成品库龄分布数据",
+  "children": [
+    {
+      "item": "电烤盘",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 1500,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 1200,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 900,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "鸡尾酒机",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 1800,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 1600,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 1900,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "煎烤器",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 2500,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 1300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 800,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "咖啡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 1000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 1600,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 700,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 2200,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 1000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 900,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "奶泡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 1600,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 1100,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 400,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "暖风机",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 3500,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 500,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "水杯",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 1800,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 1500,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 1400,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "塔扇",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 1000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 900,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 900,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "1个月以内",
+          "value1": 2000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 1000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 900,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

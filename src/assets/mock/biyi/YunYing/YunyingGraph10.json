@@ -1,0 +1,125 @@
+{
+  "item": "月度来料合格率统计",
+  "children": [
+    {
+      "item": "2025-01",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/01",
+          "value1": 26171,
+          "value2": 493,
+          "value3": 98.1
+        }
+      ]
+    },
+    {
+      "item": "2025-02",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/02",
+          "value1": 23039,
+          "value2": 354,
+          "value3": 98.5
+        }
+      ]
+    },
+    {
+      "item": "2025-03",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/03",
+          "value1": 44854,
+          "value2": 817,
+          "value3": 98.2
+        }
+      ]
+    },
+    {
+      "item": "2025-04",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/04",
+          "value1": 41619,
+          "value2": 1015,
+          "value3": 97.6
+        }
+      ]
+    },
+    {
+      "item": "2025-05",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/05",
+          "value1": 35353,
+          "value2": 799,
+          "value3": 97.7
+        }
+      ]
+    },
+    {
+      "item": "2025-06",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/06",
+          "value1": 36986,
+          "value2": 848,
+          "value3": 97.7
+        }
+      ]
+    },
+    {
+      "item": "2025-07",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/07",
+          "value1": 43566,
+          "value2": 884,
+          "value3": 98
+        }
+      ]
+    },
+    {
+      "item": "2025-08",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/08",
+          "value1": 39434,
+          "value2": 1168,
+          "value3": 97
+        }
+      ]
+    },
+    {
+      "item": "2025-09",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/09",
+          "value1": 36132,
+          "value2": 1057,
+          "value3": 97.1
+        }
+      ]
+    },
+    {
+      "item": "2025-10",
+      "value1": null,
+      "children": [
+        {
+          "item": "25/10",
+          "value1": 23487,
+          "value2": 576,
+          "value3": 97.5
+        }
+      ]
+    }
+  ]
+}

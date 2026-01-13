@@ -1,0 +1,20 @@
+{
+  "item": "员工出勤状况",
+  "children": [
+    {
+      "item": "员工总人数(人)",
+      "value1": 4566,
+      "children": null
+    },
+    {
+      "item": "今日在岗人数(人)",
+      "value1": 4566,
+      "children": null
+    },
+    {
+      "item": "今日休假人数(人)",
+      "value1": 0,
+      "children": null
+    }
+  ]
+}

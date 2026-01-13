@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@evn/*": ["src/environments/*"],
+      "@configs": ["src/app/configs"],
+      "@configs/*": ["src/app/configs/*"],
+      "@model": ["src/app/model"],
+      "@model/*": ["src/app/model/*"],
+      "@data": ["src/app/data"],
+      "@data/*": ["src/app/data/*"],
+      "@core": ["src/app/core"],
+      "@core/*": ["src/app/core/*"],
+      "@shared": ["src/app/shared"],
+      "@shared/*": ["src/app/shared/*"],
+      "@runtime": ["src/app/rhv/runtime"],
+      "@runtime/*": ["src/app/rhv/runtime/*"],
+      "@rhv": ["src/app/rhv"],
+      "@rhv/*": ["src/app/rhv/*"],
+      "@editor": ["src/app/editor"],
+      "@editor/*": ["src/app/editor/*"]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}

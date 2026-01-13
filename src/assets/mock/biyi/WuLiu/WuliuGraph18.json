@@ -1,0 +1,29 @@
+{
+  "item": "今日出入库状况",
+  "children": [
+    {
+      "item": "今日实时",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库数",
+          "value1": 242,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "等待数",
+          "value1": 520,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "出库数",
+          "value1": 1687,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

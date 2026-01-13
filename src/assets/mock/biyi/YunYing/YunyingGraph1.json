@@ -1,0 +1,173 @@
+{
+  "item": "年度生产量汇总统计图",
+  "children": [
+    {
+      "item": "电烤盘",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 70890,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 39973,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "鸡尾酒机",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025",
+          "value1": 360,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "煎锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 13200,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "煎烤器",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 57236,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 15752,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "咖啡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 45194,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 289627,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 9101873,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 6663175,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "奶泡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 32779,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 60795,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "暖风机",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 206753,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 230096,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "塔扇",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 16116,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 86092,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 911907,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 689650,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

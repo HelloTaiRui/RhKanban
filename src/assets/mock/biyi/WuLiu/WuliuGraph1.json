@@ -1,0 +1,53 @@
+{
+  "item": "当日立库环境状况",
+  "children": [
+    {
+      "item": "温度指数",
+      "value1": null,
+      "children": [
+        {
+          "item": "当前温度(°C)",
+          "value1": 18,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "湿度指数",
+      "value1": null,
+      "children": [
+        {
+          "item": "当前湿度(%)",
+          "value1": 87,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "气压指数",
+      "value1": null,
+      "children": [
+        {
+          "item": "当前气压(hPa)",
+          "value1": 1018,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "PM2.5指数",
+      "value1": null,
+      "children": [
+        {
+          "item": "PM2.5浓度(μg/m³)",
+          "value1": 35,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

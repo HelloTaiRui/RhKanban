@@ -1,0 +1,125 @@
+{
+  "item": "本年度销售员销售总额Top10",
+  "children": [
+    {
+      "item": "徐雯雯",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 2849822,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "方璐",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 2302112,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "章园园",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 1546189,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "冯婷婷",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 555929,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "金晓虎",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 320285,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "傅禹程",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 265241,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "黄熔熔",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 255874,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "黄婷婷",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 241315,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "郑湾湾",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 128787,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "焦珍",
+      "value1": null,
+      "children": [
+        {
+          "item": "销售总额",
+          "value1": 114835,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

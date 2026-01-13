@@ -1,0 +1,80 @@
+{
+  "item": "生产设备使用能耗情况",
+  "children": [
+    {
+      "item": "10/12",
+      "value1": 0,
+      "children": null
+    },
+    {
+      "item": "10/13",
+      "value1": 0,
+      "children": null
+    },
+    {
+      "item": "10/14",
+      "value1": 0,
+      "children": null
+    },
+    {
+      "item": "10/15",
+      "value1": 0,
+      "children": null
+    },
+    {
+      "item": "10/16",
+      "value1": 0,
+      "children": null
+    },
+    {
+      "item": "10/17",
+      "value1": 0,
+      "children": null
+    },
+    {
+      "item": "10/18",
+      "value1": 0,
+      "children": null
+    },
+    {
+      "item": "10/19",
+      "value1": 0,
+      "children": null
+    },
+    {
+      "item": "10/20",
+      "value1": 42,
+      "children": null
+    },
+    {
+      "item": "10/21",
+      "value1": 32,
+      "children": null
+    },
+    {
+      "item": "10/22",
+      "value1": 9411.03,
+      "children": null
+    },
+    {
+      "item": "10/23",
+      "value1": 37140.04,
+      "children": null
+    },
+    {
+      "item": "10/24",
+      "value1": 37635.03,
+      "children": null
+    },
+    {
+      "item": "10/25",
+      "value1": 36744.02,
+      "children": null
+    },
+    {
+      "item": "10/26",
+      "value1": 15530.96,
+      "children": null
+    }
+  ]
+}

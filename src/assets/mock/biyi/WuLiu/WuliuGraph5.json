@@ -1,0 +1,95 @@
+{
+  "item": "账龄分析",
+  "children": [
+    {
+      "item": "半成品",
+      "value1": null,
+      "children": [
+        {
+          "item": "1月以内",
+          "value1": 21763515,
+          "value2": 10.16,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 28762832,
+          "value2": 13.42,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 67097203.138,
+          "value2": 31.31,
+          "value3": null
+        },
+        {
+          "item": "6个月以上",
+          "value1": 96689110.002,
+          "value2": 45.12,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "产成品",
+      "value1": null,
+      "children": [
+        {
+          "item": "1月以内",
+          "value1": 275733,
+          "value2": 42.07,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 160857,
+          "value2": 24.54,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 175522,
+          "value2": 26.78,
+          "value3": null
+        },
+        {
+          "item": "6个月以上",
+          "value1": 43313,
+          "value2": 6.61,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "原材料",
+      "value1": null,
+      "children": [
+        {
+          "item": "1月以内",
+          "value1": 10880198,
+          "value2": 8.03,
+          "value3": null
+        },
+        {
+          "item": "1-3个月",
+          "value1": 12843607,
+          "value2": 9.48,
+          "value3": null
+        },
+        {
+          "item": "3-6个月",
+          "value1": 29301143.573358,
+          "value2": 21.63,
+          "value3": null
+        },
+        {
+          "item": "6个月以上",
+          "value1": 82451416.8606,
+          "value2": 60.86,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

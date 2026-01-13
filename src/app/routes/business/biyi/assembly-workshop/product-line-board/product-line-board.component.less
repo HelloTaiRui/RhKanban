@@ -1,0 +1,154 @@
+@import "../../injection-molding-workshop/biyi-workshop-board.base.less";
+
+.status {
+  width: var(--rhv-size);
+  height: var(--rhv-size);
+
+  &-running {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgb(30, 230, 163) 0%,
+      rgb(30, 230, 163) 50%,
+      rgba(30, 230, 163, 0.25) 51%,
+      rgba(30, 230, 163, 0.25) 100%
+    );
+  }
+
+  &-error {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 209, 92, 1) 0%,
+      rgba(255, 209, 92, 1) 50%,
+      rgba(255, 209, 92, 0.25) 51%,
+      rgba(255, 209, 92, 0.25) 100%
+    );
+  }
+
+  &-down {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(238, 111, 124, 1) 0%,
+      rgba(238, 111, 124, 1) 50%,
+      rgba(238, 111, 124, 0.25) 51%,
+      rgba(238, 111, 124, 0.25) 100%
+    );
+  }
+
+  &-standby {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(211, 211, 211, 1) 0%,
+      rgba(211, 211, 211, 1) 50%,
+      rgba(211, 211, 211, 0.25) 51%,
+      rgba(211, 211, 211, 0.25) 100%
+    );
+  }
+
+  &-rest {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(170, 247, 117) 0%,
+      rgba(170, 247, 117) 50%,
+      rgba(170, 247, 117, 0.25) 51%,
+      rgba(170, 247, 117, 0.25) 100%
+    );
+  }
+}
+
+.ant-table-thead > tr > th {
+  border: 0;
+  font-size: var(--rhv-size-4-half);
+  line-height: var(--rhv-size-6-half);
+  padding: var(--rhv-size-2) var(--rhv-size-3-half) !important;
+  color: #9ebfdb;
+  border: 1px solid rgba(158, 191, 219, 0.1);
+  text-align: center;
+}
+
+.ant-table-tbody > tr > td {
+  border: 0;
+  font-size: var(--rhv-size-4-half);
+  line-height: var(--rhv-size-6-half);
+  padding: var(--rhv-size-1) var(--rhv-size-1) !important;
+  color: #fff;
+  background: rgba(7, 131, 250, 0.01) !important;
+  //border: 1px solid rgba(158, 191, 219, 0.1);
+  box-shadow: 1px 1px rgba(158, 191, 219, 0.1);
+  text-align: center;
+}
+
+.bg-tr {
+  background: rgba(7, 131, 250, 0.05) !important;
+}
+
+.tick-name {
+  color: #abd6ff;
+  font-size: var(--rhv-size-3-half);
+  text-align: left;
+}
+
+.full-height-table {
+  height: 100%;
+
+  & > nz-spin {
+    height: 100%;
+
+    & > .ant-spin-container {
+      height: 100%;
+
+      & > .ant-table {
+        height: 100%;
+
+        & > nz-table-inner-default {
+          height: 100%;
+
+          & > .ant-table-content {
+            height: 100%;
+            & > table {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-spin-text {
+  color: #fff !important;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ant-modal .ant-table{
+  background-color: transparent !important;
+}
+
+.ant-modal .ant-table thead > tr > th{
+  background-color: transparent !important;
+  border-bottom: unset;
+}
+
+&::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 5px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 5px;
+}
+
+&::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #535353;
+}
+
+&::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: transparent;
+}

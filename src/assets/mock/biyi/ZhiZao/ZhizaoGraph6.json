@@ -1,0 +1,101 @@
+{
+  "item": "近7日生产产量汇总",
+  "children": [
+    {
+      "item": "10/19",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 981872,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 1468059,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 1128526,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 1072117,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 1017372,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 1072634,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 95857,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 3878,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

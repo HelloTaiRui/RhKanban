@@ -1,0 +1,149 @@
+{
+  "item": "当日设备温度分析",
+  "children": [
+    {
+      "item": "21:18",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 289.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:19",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 288.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:20",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 288.8,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:21",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 289.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:22",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 288.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:23",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 289,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:24",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 289,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:26",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 289.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:27",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 289.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:28",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 289.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:29",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 290.3,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "21:30",
+      "value1": null,
+      "children": [
+        {
+          "item": "温度值",
+          "value1": 290.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

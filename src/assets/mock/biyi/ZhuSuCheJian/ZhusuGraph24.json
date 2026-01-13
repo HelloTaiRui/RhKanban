@@ -1,0 +1,299 @@
+{
+  "item": "今日生产工单信息",
+  "children": [
+    {
+      "item": "JH2510190425",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单号: JH2510190425",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产产品: AF-94A开关支架",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划数量",
+          "value1": 6000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "完工数量",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "交货日期",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "JH2510190442",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单号: JH2510190442",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产产品: AF-94A开关支架",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划数量",
+          "value1": 6000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "完工数量",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "交货日期",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "JH2510190441",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单号: JH2510190441",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产产品: AF-94A开关支架",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划数量",
+          "value1": 6000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "完工数量",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "交货日期",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "JH2510190433",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单号: JH2510190433",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产产品: AF-94A开关支架",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划数量",
+          "value1": 6000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "完工数量",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "交货日期",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "JH2510190416",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单号: JH2510190416",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产产品: AF-94A开关支架",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划数量",
+          "value1": 6000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "完工数量",
+          "value1": 240,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "交货日期",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "JH2510190414",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单号: JH2510190414",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产产品: AF-94A开关支架",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划数量",
+          "value1": 6000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "完工数量",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "交货日期",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "JH2510080219",
+      "value1": null,
+      "children": [
+        {
+          "item": "工单号: JH2510080219",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产产品: AF-611温控旋钮装饰圈",
+          "value1": null,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "计划数量",
+          "value1": 6000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "完工数量",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "交货日期",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

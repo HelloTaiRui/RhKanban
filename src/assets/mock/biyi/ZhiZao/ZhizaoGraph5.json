@@ -1,0 +1,113 @@
+{
+  "item": "月度生产产量汇总",
+  "children": [
+    {
+      "item": "2月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 2769276,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "3月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 37012011,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "4月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 36561814,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "5月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 31169251,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "6月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 33232547,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "7月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 34970998,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "8月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 32700200,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "9月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 31017977,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10月",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库总量",
+          "value1": 22206458,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

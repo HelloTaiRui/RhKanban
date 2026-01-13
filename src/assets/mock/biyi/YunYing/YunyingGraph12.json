@@ -1,0 +1,131 @@
+{
+  "item": "成品库存占比统计",
+  "children": [
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品总数",
+          "value1": 493334,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "库存占比(%)",
+          "value1": 37.48,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品总数",
+          "value1": 82244,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "库存占比(%)",
+          "value1": 6.25,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "咖啡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品总数",
+          "value1": 33346,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "库存占比(%)",
+          "value1": 2.53,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "塔扇",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品总数",
+          "value1": 23505,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "库存占比(%)",
+          "value1": 1.79,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "暖风机",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品总数",
+          "value1": 18664,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "库存占比(%)",
+          "value1": 1.42,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "奶泡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品总数",
+          "value1": 5292,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "库存占比(%)",
+          "value1": 0.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "煎烤器",
+      "value1": null,
+      "children": [
+        {
+          "item": "成品总数",
+          "value1": 719,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "库存占比(%)",
+          "value1": 0.05,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

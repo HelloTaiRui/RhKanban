@@ -1,0 +1,125 @@
+{
+  "item": "产品投诉原因分析图",
+  "children": [
+    {
+      "item": "售后响应慢",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 10,
+          "value2": 2,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "维修质量问题",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 18,
+          "value2": 0,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "退换货难",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 18,
+          "value2": 1,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "价格波动",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 8,
+          "value2": 2,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "性能故障",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 20,
+          "value2": 1,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "三包及保修争议",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 18,
+          "value2": 0,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "虚假宣传",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 8,
+          "value2": 2,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "智能化体验差",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 18,
+          "value2": 1,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "外观瑕疵",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 18,
+          "value2": 0,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "质量缺陷",
+      "value1": null,
+      "children": [
+        {
+          "item": "数量",
+          "value1": 18,
+          "value2": 1,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "item": "近3日工单完工情况",
+  "children": [
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "CAF-DC111上定位销支架",
+          "value1": 19065,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-810A操作面板",
+          "value1": 14720,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-625A导轨支架",
+          "value1": 9790,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-99A微动开关座",
+          "value1": 12500,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CME001锅炉接头",
+          "value1": 12452,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CAF-DC111右立柱上",
+          "value1": 13851,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CAF-DC111强电隔离件",
+          "value1": 11098,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFD-6300A微动开关支架",
+          "value1": 13235,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-20离心风叶（阻燃）",
+          "value1": 7840,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-415A电机支架",
+          "value1": 7820,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFD-936A手柄",
+          "value1": 11816,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-99A电源板盒",
+          "value1": 11056,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-96A开关支架",
+          "value1": 11420,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFO-1210A右支架",
+          "value1": 13296,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-625A右导轨",
+          "value1": 13560,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "CAF-DC111上定位销支架",
+          "value1": 26334,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-810A操作面板",
+          "value1": 28160,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-625A导轨支架",
+          "value1": 26290,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-99A微动开关座",
+          "value1": 14700,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CME001锅炉接头",
+          "value1": 22470,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CAF-DC111右立柱上",
+          "value1": 16704,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CAF-DC111强电隔离件",
+          "value1": 9696,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFD-6300A微动开关支架",
+          "value1": 9850,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-20离心风叶（阻燃）",
+          "value1": 12338,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-415A电机支架",
+          "value1": 16000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFD-936A手柄",
+          "value1": 7636,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-99A电源板盒",
+          "value1": 11910,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-96A开关支架",
+          "value1": 5640,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFO-1210A右支架",
+          "value1": 8296,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-625A右导轨",
+          "value1": 7370,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "CAF-DC111上定位销支架",
+          "value1": 1152,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-810A操作面板",
+          "value1": 1280,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-625A导轨支架",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-99A微动开关座",
+          "value1": 7800,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CME001锅炉接头",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CAF-DC111右立柱上",
+          "value1": 4026,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "CAF-DC111强电隔离件",
+          "value1": 13424,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFD-6300A微动开关支架",
+          "value1": 4720,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-20离心风叶（阻燃）",
+          "value1": 6860,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-415A电机支架",
+          "value1": 980,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFD-936A手柄",
+          "value1": 5184,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-99A电源板盒",
+          "value1": 480,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-96A开关支架",
+          "value1": 5540,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AFO-1210A右支架",
+          "value1": 816,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "AF-625A右导轨",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

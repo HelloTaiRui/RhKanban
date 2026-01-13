@@ -1,0 +1,131 @@
+{
+  "item": "近7日开机率统计",
+  "children": [
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机时长",
+          "value1": 78908.38,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 23.25,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机时长",
+          "value1": 57342.58,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 17.49,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机时长",
+          "value1": 86893.47,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 25.18,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机时长",
+          "value1": 55629.95,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 52.99,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机时长",
+          "value1": 58706.56,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 36.45,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机时长",
+          "value1": 86480.08,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 29.34,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机时长",
+          "value1": 16592.27,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 48.24,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "item": "产品月度结构分析图（本年度各月份各产品类型的销售数量）",
+  "children": [
+    {
+      "item": "电烤盘",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-01",
+          "value1": 4479,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-02",
+          "value1": 12352,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-03",
+          "value1": 9109,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-04",
+          "value1": 4042,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-05",
+          "value1": 2664,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-06",
+          "value1": 500,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-08",
+          "value1": 1317,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-09",
+          "value1": 1141,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-10",
+          "value1": 8530,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "鸡尾酒机",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-07",
+          "value1": 380,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-08",
+          "value1": 20500,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "煎烤器",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-01",
+          "value1": 9724,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-05",
+          "value1": 2001,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-06",
+          "value1": 4162,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "咖啡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-01",
+          "value1": 17404,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-02",
+          "value1": 65873,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-03",
+          "value1": 65285,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-04",
+          "value1": 62750,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-05",
+          "value1": 42236,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-06",
+          "value1": 14828,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-07",
+          "value1": 23238,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-08",
+          "value1": 38619,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-09",
+          "value1": 57530,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-10",
+          "value1": 37401,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-01",
+          "value1": 664344,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-02",
+          "value1": 846988,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-03",
+          "value1": 761656,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-04",
+          "value1": 695492,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-05",
+          "value1": 745641,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-06",
+          "value1": 895068,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-07",
+          "value1": 704226,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-08",
+          "value1": 513790,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-09",
+          "value1": 616260,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-10",
+          "value1": 408744,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "奶泡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-01",
+          "value1": 2880,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-02",
+          "value1": 8960,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-03",
+          "value1": 14512,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-04",
+          "value1": 14008,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-05",
+          "value1": 2825,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-06",
+          "value1": 1000,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-07",
+          "value1": 11869,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-08",
+          "value1": 8601,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-09",
+          "value1": 8107,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-10",
+          "value1": 270,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "暖风机",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-01",
+          "value1": 3002,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-02",
+          "value1": 17324,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-03",
+          "value1": 88836,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-04",
+          "value1": 139985,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-05",
+          "value1": 2380,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-06",
+          "value1": 2002,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-07",
+          "value1": 4003,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-08",
+          "value1": 2002,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-09",
+          "value1": 5049,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-10",
+          "value1": 601,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "水杯",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-07",
+          "value1": 13312,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-09",
+          "value1": 50,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "塔扇",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-01",
+          "value1": 5458,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-02",
+          "value1": 8391,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-03",
+          "value1": 60943,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-05",
+          "value1": 60,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-06",
+          "value1": 2664,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-07",
+          "value1": 1533,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-08",
+          "value1": 9052,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-09",
+          "value1": 32897,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-10",
+          "value1": 6865,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "2025-01",
+          "value1": 59545,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-02",
+          "value1": 96697,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-03",
+          "value1": 101338,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-04",
+          "value1": 40966,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-05",
+          "value1": 63548,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-06",
+          "value1": 68286,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-07",
+          "value1": 80975,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-08",
+          "value1": 84367,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-09",
+          "value1": 92845,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025-10",
+          "value1": 55616,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

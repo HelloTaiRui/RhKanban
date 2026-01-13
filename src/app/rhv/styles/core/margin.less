@@ -1,0 +1,165 @@
+/**
+ * @ Author: zhoujs
+ * @ Create Time: 2020-10-10 16:27:21
+ * @ Modified by: zhoujs
+ * @ Modified time: 2024-04-15 11:22:13
+ * @ Description:
+ */
+
+
+
+////////////////////////margin/////////////////////
+
+
+.generate-margin(@margin) {
+
+    margin: @margin;
+
+    &-left {
+        margin-left: @margin  !important;
+    }
+
+    &-right {
+        margin-right: @margin  !important;
+    }
+
+    &-top {
+        margin-top: @margin  !important;
+    }
+
+    &-bottom {
+        margin-bottom: @margin  !important;
+    }
+
+    &-lt {
+        margin-top   : @margin  !important;
+        margin-right : 0;
+        margin-bottom: 0;
+        margin-left  : @margin  !important;
+    }
+
+    &-lb {
+        margin-top   : 0;
+        margin-right : 0;
+        margin-bottom: @margin  !important;
+        margin-left  : @margin  !important;
+    }
+
+    &-rt {
+        margin-top   : @margin  !important;
+        margin-right : @margin  !important;
+        margin-bottom: 0;
+        margin-left  : 0;
+    }
+
+    &-rb {
+        margin-top   : 0;
+        margin-right : @margin  !important;
+        margin-bottom: @margin  !important;
+        margin-left  : 0;
+    }
+
+    &-h {
+        margin-top   : 0;
+        margin-right : @margin  !important;
+        margin-bottom: 0;
+        margin-left  : @margin  !important;
+    }
+
+    &-v {
+        margin-top   : @margin  !important;
+        margin-right : 0;
+        margin-bottom: @margin  !important;
+        margin-left  : 0;
+    }
+
+}
+
+.rhv-margin-0 {
+    .generate-margin(var(--rhv-size-0))
+}
+
+.rhv-margin-0-half {
+    .generate-margin(var(--rhv-size-0-half))
+}
+
+.rhv-margin-1 {
+    .generate-margin(var(--rhv-size-1))
+}
+
+.rhv-margin-1-half {
+    .generate-margin(var(--rhv-size-1-half))
+}
+
+.rhv-margin-2 {
+    .generate-margin(var(--rhv-size-2))
+}
+
+.rhv-margin-2-half {
+    .generate-margin(var(--rhv-size-2-half))
+}
+
+.rhv-margin-3 {
+    .generate-margin(var(--rhv-size-3))
+}
+
+.rhv-margin-3-half {
+    .generate-margin(var(--rhv-size-3-half))
+}
+
+.rhv-margin-4 {
+    .generate-margin(var(--rhv-size-4))
+}
+
+.rhv-margin-4-half {
+    .generate-margin(var(--rhv-size-4-half))
+}
+
+.rhv-margin-5,
+.rhv-margin {
+    .generate-margin(var(--rhv-size-5))
+}
+
+.rhv-margin-5-half {
+    .generate-margin(var(--rhv-size-5-half))
+}
+
+.rhv-margin-6 {
+    .generate-margin(var(--rhv-size-6))
+}
+
+.rhv-margin-6-half {
+    .generate-margin(var(--rhv-size-6-half))
+}
+
+.rhv-margin-7 {
+    .generate-margin(var(--rhv-size-7))
+}
+
+.rhv-margin-7-half {
+    .generate-margin(var(--rhv-size-7-half))
+}
+
+.rhv-margin-8 {
+    .generate-margin(var(--rhv-size-8))
+}
+
+.rhv-margin-8-half {
+    .generate-margin(var(--rhv-size-8-half))
+}
+
+.rhv-margin-9 {
+    .generate-margin(var(--rhv-size-9))
+}
+
+.rhv-margin-9-half {
+    .generate-margin(var(--rhv-size-9-half))
+}
+
+.rhv-margin-10 {
+    .generate-margin(var(--rhv-size-10))
+}
+
+.rhv-margin-10-half {
+    .generate-margin(var(--rhv-size-10-half))
+}

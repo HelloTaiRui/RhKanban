@@ -1,0 +1,35 @@
+{
+  "item": "立库容积率统计",
+  "children": [
+    {
+      "item": "立库容积率",
+      "value1": null,
+      "children": [
+        {
+          "item": "当前容积率(%)",
+          "value1": 9.3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总库位数",
+          "value1": 19008,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已占用库位",
+          "value1": 1766,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "可用库位",
+          "value1": 17242,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "item": "月度人员数量",
+  "children": [
+    {
+      "item": "01月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 129,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 125,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "02月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 164,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 164,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "03月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 149,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 161,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "04月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 160,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 155,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "05月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 166,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 151,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "06月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 171,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 128,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "07月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 179,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 135,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "08月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 160,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 163,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "09月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 162,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 176,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 173,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 262,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "11月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 160,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "12月",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 154,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

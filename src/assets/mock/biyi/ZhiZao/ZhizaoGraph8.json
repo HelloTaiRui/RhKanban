@@ -1,0 +1,77 @@
+{
+  "item": "本月退料原因统计",
+  "children": [
+    {
+      "item": "划伤",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数量",
+          "value1": 55521,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "其他",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数量",
+          "value1": 22703,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "变形",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数量",
+          "value1": 9908,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "掉漆",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数量",
+          "value1": 9305,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "孔堵",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数量",
+          "value1": 8918,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "焊接不良",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数量",
+          "value1": 3933,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

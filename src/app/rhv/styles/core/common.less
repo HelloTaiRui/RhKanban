@@ -1,0 +1,32 @@
+/**
+ * @ Author: zhoujs
+ * @ Create Time: 2020-10-10 15:25:24
+ * @ Modified by: zhoujs
+ * @ Modified time: 2024-05-11 17:17:55
+ * @ Description:
+ */
+
+
+[rhv-color-primary] {
+    color: #0C84F1;
+}
+
+
+.generate-color(@names, @colors, @i: 1) when (@i=<length(@rhv-colors)) {
+
+    @name : extract(@names, @i);
+    @color: extract(@colors, @i);
+
+    .rhv-color-@{name} {
+        color: @color;
+    }
+
+    .rhv-bg-color-@{name} {
+        background-color: @color;
+    }
+
+    .rhv-border-color-@{name} {
+        border-color: @color;
+    }
+
+}

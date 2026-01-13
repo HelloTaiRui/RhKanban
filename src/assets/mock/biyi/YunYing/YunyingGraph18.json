@@ -1,0 +1,53 @@
+{
+  "item": "各车间计划数量（分组）",
+  "children": [
+    {
+      "item": "总装",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数量",
+          "value1": 7093894,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "咖啡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数量",
+          "value1": 285820,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "环电",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数量",
+          "value1": 187426,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "泰国",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数量",
+          "value1": 468677,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

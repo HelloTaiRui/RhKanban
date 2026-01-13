@@ -1,0 +1,102 @@
+@import "../biyi-big-board.base.less";
+
+.rank-table table {
+  border-spacing: 0 var(--rhv-size-3-half) !important;
+}
+
+.rank-table-header table {
+  border-spacing: 0 !important;
+}
+
+.ant-table-thead > tr > th {
+  border: 0;
+  font-size: var(--rhv-size-4-half) !important;
+  line-height: var(--rhv-size-6-half) !important;
+  padding: 0 !important; //var(--rhv-size-3) 0;
+  color: #9ebfdb;
+}
+
+.ant-table-tbody > tr > td {
+  border: 0;
+  font-size: var(--rhv-size-4-half) !important;
+  line-height: var(--rhv-size-6-half) !important;
+  padding: 0 !important; //var(--rhv-size-3) 0;
+  color: #fff;
+  background: rgba(7, 131, 250, 0.01) !important;
+}
+
+.ruler-border {
+  border-width: 0px 1px 0px 1px;
+  border-style: solid;
+  border-color: rgba(171, 214, 255, 0.2);
+}
+
+.tick-border {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(171, 214, 255, 0.2);
+}
+
+.ruler-name {
+  top: 0;
+  left: var(--rhv-size-2);
+  font-size: var(--rhv-size-3-half);
+}
+
+.timeline-table .rank-table table {
+  border-spacing: 0 0 !important;
+}
+
+.rank-symbol {
+  /*   border: 1px solid;
+  border-image-source: linear-gradient(180deg, #abd6ff 0%, #0783fa 100%);
+  box-shadow: 0px 2px 10px 0px rgba(16, 174, 255, 0.5); */
+  margin: auto;
+  width: var(--rhv-size-6);
+  height: var(--rhv-size-6);
+  border-radius: var(--rhv-size-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: linear-gradient(#0d365d, #0d365d) padding-box padding-box,
+    linear-gradient(180deg, #abd6ff 0%, #0783fa 100%) border-box;
+  box-shadow: 0px var(--rhv-size-0-half) var(--rhv-size-2-half)
+    rgba(16, 174, 255, 0.5);
+  border: var(--rhv-size-0-half) solid transparent;
+  font-size: var(--rhv-size-4-half);
+}
+
+.not-active {
+  opacity: 0.2;
+}
+
+.timeline-area .item-container {
+  padding-bottom: 0 !important;
+}
+
+.status {
+  width: var(--rhv-size);
+  height: var(--rhv-size);
+  border-radius: 0;
+
+  &-running {
+    background: rgb(30, 230, 163);
+  }
+
+  &-error {
+    background: rgba(255, 209, 92, 1);
+  }
+
+  &-down {
+    background: rgba(238, 111, 124, 1);
+  }
+
+  &-standby {
+    background: rgb(211, 211, 211);//#ABD6FF;
+  }
+
+  &-rest {
+    background: #aaf775;//rgb(198, 224, 180);
+  }
+}

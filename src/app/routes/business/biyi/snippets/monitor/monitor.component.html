@@ -1,0 +1,90 @@
+<div class="flex flex-col overflow-hidden h-full">
+  <div class="flex items-center cursor-pointer" (click)="showModal = true">
+    <object
+      data="assets/img/biyi/icon_二级标题.svg"
+      type="image/svg+xml"
+      class="rhv-margin-2-right sub-title-svg-icon"
+    ></object>
+    <span class="label">{{ rhTitle }}</span>
+  </div>
+  <div class="w-full" [class.hidden]="rhHidSegment">
+    <rh-segment
+      [rhMaxVisibleNumber]="rhMaxSize"
+      [rhOptions]="segmentsData"
+      [rhAutoPlayInterval]="rhDisplayInterval"
+      [rhNameList]="rhNameList"
+      [(ngModel)]="curSelectItem"
+      (ngModelChange)="play($event)"
+    ></rh-segment>
+  </div>
+  <div class="w-full flex-1 overflow-hidden">
+    <div class="w-full h-full overflow-hidden" [id]="id"></div>
+  </div>
+</div>
+
+<nz-modal
+  nzWidth="80vw"
+  nzTitle="请选择监控点"
+  [(nzVisible)]="showModal"
+  (nzOnCancel)="showModal = false"
+  (nzOnOk)="onOk()"
+>
+  <div
+    class="w-full flex flex-col overflow-hidden"
+    style="height: 70vh; gap: 1rem"
+  >
+    <div class="w-full overflow-hidden">
+      <input
+        type="text"
+        nz-input
+        nzSize="large"
+        [(ngModel)]="searchValue"
+        class="w-full"
+        placeholder="搜索监控点"
+        (ngModelChange)="filter($event)"
+      />
+    </div>
+    <div class="flex w-full overflow-hidden">
+      当前已选择：
+      <div
+        class="flex flex-1 overflow-auto"
+        style="flex-wrap: wrap; gap: 0.4rem"
+      >
+        <div
+          class="selected-item"
+          *ngFor="let item of selectedList; trackBy: trackByIndex"
+        >
+          <div class="flex flex-col">
+            <span class="label"
+              >区域：<span class="value">{{ item.regionPathName }}</span>
+            </span>
+            <span class="label"
+              >名称：<span class="value">{{ item.name }}</span>
+            </span>
+            <span calss="label"
+              >编码：<span class="value">{{ item.indexCode }}</span>
+            </span>
+          </div>
+          <i
+            class="cursor-pointer"
+            nz-icon
+            nzType="close-circle"
+            nzTheme="outline"
+            (click)="onClickItem(item)"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <div
+        class="item"
+        [class.selected]="selected.has(item.indexCode)"
+        (click)="onClickItem(item)"
+        *ngFor="let item of list; trackBy: trackByIndex"
+      >
+        <div>{{ item.regionPathName }}</div>
+        <div>{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+</nz-modal>

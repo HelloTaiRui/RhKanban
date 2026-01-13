@@ -1,0 +1,65 @@
+{
+  "item": "总装产线线上日批次计划达成率",
+  "children": [
+    {
+      "item": "E1线",
+      "value1": null,
+      "children": [
+        {
+          "item": "达成率",
+          "value1": 127.8,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "E6线",
+      "value1": null,
+      "children": [
+        {
+          "item": "达成率",
+          "value1": 116.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "E2线",
+      "value1": null,
+      "children": [
+        {
+          "item": "达成率",
+          "value1": 109.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "G2线",
+      "value1": null,
+      "children": [
+        {
+          "item": "达成率",
+          "value1": 104.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "Z-09线",
+      "value1": null,
+      "children": [
+        {
+          "item": "达成率",
+          "value1": 103.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

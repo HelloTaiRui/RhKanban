@@ -1,0 +1,21 @@
+.empty-area {
+    display       : flex;
+    align-items   : center;
+    height        : 60%;
+    width         : 100%;
+    flex-direction: column;
+
+    img {
+        //width: 50%;
+        height: 50%;
+    }
+
+    span {
+        color     : #999999;
+        font-size : 2rem;
+        margin-top: 1rem;
+        padding   : 0 1rem;
+        text-align: center;
+        word-break: keep-all;
+    }
+}

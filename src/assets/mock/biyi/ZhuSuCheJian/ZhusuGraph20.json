@@ -1,0 +1,29 @@
+{
+  "item": "当前机台运行情况",
+  "children": [
+    {
+      "item": "计划达成率",
+      "value1": null,
+      "children": [
+        {
+          "item": "达成率(%)",
+          "value1": 108.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "设备开机率",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机率(%)",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

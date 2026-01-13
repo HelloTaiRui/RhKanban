@@ -1,0 +1,248 @@
+<rh-page-frame
+  rhTitle="注塑车间机台看板"
+  rhBgImg="assets/img/biyi/车间看板_BG2.png"
+  rhHeaderImg="assets/img/biyi/车间看板_BG_顶部.png"
+  rhRightTitle="21:30:08"
+>
+  <div class="w-full h-full overflow-hidden flex">
+    <div class="h-full flex flex-col" style="width: 20.52%">
+      <rh-item-container
+        rhTitle="当前机台运行情况"
+        class="rhv-padding-8-lb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="runningStatus.option"
+          (chartInit)="runningStatus.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日设备开机率分析"
+        class="rhv-padding-8-lb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="equipmentRunAnalysis.option"
+          (chartInit)="equipmentRunAnalysis.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="当日设备生产时段达成分析"
+        class="rhv-padding-8-lb"
+        style="height: 33.3%"
+      >
+        <rh-rank-table
+          class="w-full h-full overflow-hidden"
+          [rhColumns]="productionRankTable.columns"
+          [rhData]="productionRankTable.data"
+          [rhShowHeader]="productionRankTable.showHeader"
+          [rhShowRank]="productionRankTable.showRank"
+          [rhPageSize]="productionRankTable.pageSize"
+          [rhVisibleRate]="productionRankTable.visibleRate"
+        ></rh-rank-table>
+      </rh-item-container>
+    </div>
+    <div class="h-full flex flex-col flex-1 rhv-padding-8-h overflow-hidden">
+      <div class="w-full flex-1 flex flex-col">
+        <div
+          class="flex w-full overflow-hidden justify-between rhv-margin-4-top"
+          style="gap: var(--rhv-size-6); height: calc(6 * var(--rhv-size))"
+        >
+          <div class="info-container info-container-border">
+            <div class="label flex items-center">
+              <object
+                data="assets/img/biyi/温度.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right svg-icon"
+              ></object>
+            </div>
+            <div class="flex flex-col flex-1 h-full gap-1 items-center">
+              <div class="label">温度指数</div>
+              <div class="label flex items-baseline gap-1.5">
+                <span class="value">{{
+                  machineStatusData.data?.states[0] || 0
+                }}</span>
+                ℃
+              </div>
+            </div>
+          </div>
+          <div class="info-container info-container-border">
+            <div class="label flex items-center">
+              <object
+                data="assets/img/biyi/湿度.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right svg-icon"
+              ></object>
+            </div>
+            <div class="flex flex-col flex-1 h-full gap-1 items-center">
+              <div class="label">湿度指数</div>
+              <div class="label flex items-baseline gap-1.5">
+                <span class="value">{{
+                  machineStatusData.data?.states[1] || 0
+                }}</span>
+                %
+              </div>
+            </div>
+          </div>
+          <div class="info-container info-container-border">
+            <div class="label flex items-center">
+              <object
+                data="assets/img/biyi/气压.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right svg-icon"
+              ></object>
+            </div>
+            <div class="flex flex-col flex-1 h-full gap-1 items-center">
+              <div class="label">气压指数</div>
+              <div class="label flex items-baseline gap-1.5">
+                <span class="value">{{
+                  machineStatusData.data?.states[2] || 0
+                }}</span>
+                hPa
+              </div>
+            </div>
+          </div>
+          <div class="info-container info-container-border">
+            <div class="label flex items-center">
+              <object
+                data="assets/img/biyi/pm.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right svg-icon"
+              ></object>
+            </div>
+            <div class="flex flex-col flex-1 h-full gap-1 items-center">
+              <div class="label">PM2.5指数</div>
+              <div class="label flex items-baseline gap-1.5">
+                <span class="value">{{
+                  machineStatusData.data?.states[3] || 0
+                }}</span>
+                μg/m³
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full overflow-hidden flex-1">
+          <img src="assets/img/biyi/注塑机.png" alt="" class="w-full" />
+        </div>
+        <div class="state-info-container rhv-padding-8-h rhv-padding-2-half-v">
+          <div
+            class="flex items-center"
+            style="margin-left: calc(-1.2 * var(--rhv-size))"
+          >
+            <object
+              data="assets/img/biyi/装饰_副标题.svg"
+              type="image/svg+xml"
+              class="rhv-margin-2-right"
+              style="height: var(--rhv-size)"
+            ></object>
+            <span class="title">设备信息</span>
+          </div>
+          <div class="flex justify-between flex-1 items-center">
+            <div class="label">
+              设备名称：<span class="basic-value">{{
+                machineStatusData.data?.info[0]
+              }}</span>
+            </div>
+            <div class="label">
+              设备编码：<span class="basic-value">{{
+                machineStatusData.data?.info[1]
+              }}</span>
+            </div>
+            <div class="label">
+              设备型号：<span class="basic-value">{{
+                machineStatusData.data?.info[2]
+              }}</span>
+            </div>
+            <div class="label">
+              设备状态：<span class="basic-value">{{
+                stateNameMap[machineStatusData.data?.info[3]]
+              }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-full rhv-padding-8-top rhv-padding-bottom">
+          <div class="w-full" style="height: var(--rhv-size-10)">
+            <rh-ruler
+              style="background: rgba(7, 131, 250, 0.2)"
+              [rhTicks]="timelineTicks"
+            ></rh-ruler>
+          </div>
+          <rh-status-timeline
+            style="height: var(--rhv-size-10)"
+            [rhData]="machineStatusData.data?.timelineData"
+            [rhBgColorMap]="stateColorMap"
+            [rhStateNameMap]="stateNameMap"
+            [rhCurTime]="machineStatusData.dataset.curTime"
+          ></rh-status-timeline>
+        </div>
+      </div>
+
+      <rh-item-container
+        class="rhv-padding-8-bottom"
+        rhTitle="今日生产工单信息"
+        style="height: 33.3%"
+      >
+        <rh-rank-table
+          class="w-full h-full overflow-hidden"
+          [rhColumns]="ordersRankTable.columns"
+          [rhData]="ordersRankTable.data"
+          [rhShowHeader]="ordersRankTable.showHeader"
+          [rhShowRank]="ordersRankTable.showRank"
+          [rhPageSize]="ordersRankTable.pageSize"
+          [rhVisibleRate]="ordersRankTable.visibleRate"
+          [rhTemplates]="{ state: stateTpl }"
+        ></rh-rank-table>
+        <ng-template #stateTpl let-row="row">
+          {{ orderStatusNameMap[row.rawData.State] }}
+        </ng-template>
+      </rh-item-container>
+    </div>
+    <div class="h-full flex flex-col" style="width: 20.52%">
+      <rh-item-container
+        rhTitle="当日设备注射速度分析"
+        class="rhv-padding-8-rb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="flowAnalysis.option"
+          (chartInit)="flowAnalysis.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="当日设备压力分析"
+        class="rhv-padding-8-rb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="pressureAnalysis.option"
+          (chartInit)="pressureAnalysis.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="当日设备温度分析"
+        class="rhv-padding-8-rb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="temperatureAnalysis.option"
+          (chartInit)="temperatureAnalysis.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+  </div>
+</rh-page-frame>

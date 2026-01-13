@@ -1,0 +1,113 @@
+{
+  "item": "注塑车间退料原因分析",
+  "children": [
+    {
+      "item": "划伤",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数",
+          "value1": 1700,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 48,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "缺料",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数",
+          "value1": 652,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 18.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "气纹",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数",
+          "value1": 444,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 12.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "料花",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数",
+          "value1": 426,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 12,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "其他",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数",
+          "value1": 162,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 4.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "表面发白",
+      "value1": null,
+      "children": [
+        {
+          "item": "退料数",
+          "value1": 157,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "占比(%)",
+          "value1": 4.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

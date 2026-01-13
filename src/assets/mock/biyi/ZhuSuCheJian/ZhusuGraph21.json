@@ -1,0 +1,257 @@
+{
+  "item": "近7日设备开机率分析",
+  "children": [
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 18.97,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0.33,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 2.4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "空闲",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 82.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 19.6,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0.33,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0.03,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "空闲",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 85.2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 22.24,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0.5,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "空闲",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 96.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 8.87,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0.43,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "空闲",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 38.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 10.57,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0.07,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "空闲",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 45.9,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 13.3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0.33,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "空闲",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 57.8,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 9.83,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "空闲",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

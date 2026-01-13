@@ -1,0 +1,94 @@
+{
+  "item": "成品品类统计",
+  "children": [
+    {
+      "item": "成品总量(件)",
+      "value1": 537971.6,
+      "children": null
+    },
+    {
+      "item": "产成品类-空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "空气炸锅",
+          "value1": 401060,
+          "value2": 74.55,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "产成品类-油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "油炸锅",
+          "value1": 55940,
+          "value2": 10.4,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "产成品类-咖啡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "咖啡机",
+          "value1": 39484,
+          "value2": 7.34,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "产成品类-塔扇",
+      "value1": null,
+      "children": [
+        {
+          "item": "塔扇",
+          "value1": 23505,
+          "value2": 4.37,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "产成品类-暖风机",
+      "value1": null,
+      "children": [
+        {
+          "item": "暖风机",
+          "value1": 10840,
+          "value2": 2.01,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "产成品类-奶泡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "奶泡机",
+          "value1": 5404,
+          "value2": 1,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "产成品类-煎烤器",
+      "value1": null,
+      "children": [
+        {
+          "item": "煎烤器",
+          "value1": 721,
+          "value2": 0.13,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

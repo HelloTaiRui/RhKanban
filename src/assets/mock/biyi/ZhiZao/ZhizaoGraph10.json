@@ -1,0 +1,125 @@
+{
+  "item": "产线员工地区分布",
+  "children": [
+    {
+      "item": "贵州省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 713,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "河南省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 667,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "浙江省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 358,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "甘肃省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 358,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "四川省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 347,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "云南省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 232,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "安徽省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 180,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "湖南省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 144,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "黑龙江省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 127,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "陕西省",
+      "value1": null,
+      "children": [
+        {
+          "item": "员工数量",
+          "value1": 112,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

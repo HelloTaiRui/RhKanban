@@ -1,0 +1,87 @@
+<ng-container [ngSwitch]="rhMode">
+  <nz-radio-group
+    *ngSwitchCase="'borderedSegment'"
+    [(ngModel)]="value"
+    nzButtonStyle="solid"
+    class="bordered-mode"
+  >
+    <label
+      *ngFor="let item of visibleOptions; trackBy: trackByIndex"
+      nz-radio-button
+      [nzValue]="item.Value"
+      ><span class="with-gradient">{{ item.Text }}</span>
+    </label>
+  </nz-radio-group>
+  <nz-radio-group
+    *ngSwitchDefault
+    [(ngModel)]="value"
+    nzButtonStyle="solid"
+    class="with-ruler-mode"
+  >
+    <label
+      *ngFor="let item of visibleOptions; index as i; trackBy: trackByIndex"
+      nz-radio-button
+      [nzValue]="item.Value"
+    >
+      <div class="flex flex-col items-center justify-center">
+        <span>{{ rhNameList[i] || item.Text }}</span>
+        <div style="width: 1px; height: 1px; position: relative">
+          <ng-container
+            [ngTemplateOutlet]="pointerTpl"
+            *ngIf="rhShowAnchor && item.Value === value"
+          ></ng-container>
+        </div>
+      </div>
+    </label>
+  </nz-radio-group>
+</ng-container>
+
+<ng-template #pointerTpl>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 22 20"
+    fill="none"
+    class="anchor"
+  >
+    <g filter="drop-shadow(0 0 6px #10AEFF)">
+      <path d="M11 6L15.3301 13.5L6.66987 13.5L11 6Z" fill="#0783FA" />
+    </g>
+    <defs>
+      <filter
+        id="filter0_d_1721_1007"
+        x="0.669922"
+        y="0"
+        width="20.6602"
+        height="19.5"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset />
+        <feGaussianBlur stdDeviation="3" />
+        <feComposite in2="hardAlpha" operator="out" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0.0627451 0 0 0 0 0.682353 0 0 0 0 1 0 0 0 1 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_1721_1007"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_1721_1007"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+</ng-template>

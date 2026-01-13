@@ -1,0 +1,225 @@
+<rh-page-frame
+  rhTitle="注塑车间运营看板"
+  rhBgImg="assets/img/biyi/车间看板_BG.png"
+  rhHeaderImg="assets/img/biyi/车间看板_BG_顶部.png"
+>
+  <div class="flex flex-col w-full h-full overflow-hidden">
+    <div class="flex w-full rhv-padding-5-half-h" style="height: 33.3%">
+      <rh-item-container
+        rhTitle="当前生产达成情况"
+        class="rhv-padding-2-half-h rhv-padding-8-bottom h-full"
+        style="width: 20%"
+      >
+        <div class="flex w-full h-full overflow-hidden items-center">
+          <div
+            style="width: 40%; height: 70%"
+            class="content-item"
+            echarts
+            [options]="productionRate.option"
+            (chartInit)="productionRate.ec = $event"
+            theme="biyi"
+          ></div>
+          <div class="flex flex-col" style="width: 60%">
+            <div class="card-item">
+              <div class="basic-value">生产计划数：</div>
+              <div class="basic-value">
+                {{ productionRateData.data[0].toLocaleString() }}
+              </div>
+            </div>
+            <div class="card-item">
+              <div class="basic-value">生产完成数：</div>
+              <div class="basic-value">
+                {{ productionRateData.data[1].toLocaleString() }}
+              </div>
+            </div>
+            <div class="card-item" style="margin: 0">
+              <div class="basic-value">生产合格数：</div>
+              <div class="basic-value">
+                {{ productionRateData.data[2].toLocaleString() }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月生产计划达成率统计"
+        class="rhv-padding-2-half-h rhv-padding-8-bottom h-full"
+        style="width: 30%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="planArchiveRate.option"
+          (chartInit)="planArchiveRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="生产产量汇总统计"
+        class="rhv-padding-2-half-h rhv-padding-8-bottom h-full"
+        style="width: 30%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="productionSummary.option"
+          (chartInit)="productionSummary.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="月度人员数量"
+        class="rhv-padding-2-half-h rhv-padding-8-bottom h-full"
+        style="width: 20%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="quitRate.option"
+          (chartInit)="quitRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="flex w-full rhv-padding-5-half-h" style="height: 33.3%">
+      <rh-item-container
+        rhTitle="生产设备开机率统计"
+        class="rhv-padding-2-half-h rhv-padding-8-bottom h-full"
+        style="width: 30%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="equipmentStartRate.option"
+          (chartInit)="equipmentStartRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月机台开机率最高Top5"
+        class="rhv-padding-2-half-h rhv-padding-8-bottom h-full"
+        style="width: 20%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="top5equipments.option"
+          (chartInit)="top5equipments.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月机台停机Top5"
+        class="rhv-padding-2-half-h rhv-padding-8-bottom h-full"
+        style="width: 20%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="top5downEquipments.option"
+          (chartInit)="top5downEquipments.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="生产设备使用能耗情况"
+        class="rhv-padding-2-half-h rhv-padding-8-bottom h-full"
+        style="width: 30%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="equipmentEnergyConsumption.option"
+          (chartInit)="equipmentEnergyConsumption.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="flex w-full rhv-padding-5-half-h" style="height: 33.3%">
+      <!--       <rh-item-container
+        rhTitle="本月生产次品分析"
+        class="rhv-padding-8-bottom h-full w-1/2"
+      >
+        <div
+          class="flex w-full h-full overflow-hidden rhv-padding-6-top rhv-padding-2-bottom gap-4"
+        >
+          <div class="h-full flex flex-col" style="width: 59%">
+            <div class="flex items-center">
+              <object
+                data="assets/img/biyi/icon_二级标题.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right sub-title-svg-icon"
+              ></object>
+              <span class="label">本月次品数量统计</span>
+            </div>
+            <div
+              class="w-full h-full"
+              echarts
+              [options]="badProductSummary.option"
+              (chartInit)="badProductSummary.ec = $event"
+              theme="biyi"
+            ></div>
+          </div>
+          <div class="flex-1 h-full flex flex-col">
+            <div class="flex items-center">
+              <object
+                data="assets/img/biyi/icon_二级标题.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right sub-title-svg-icon"
+              ></object>
+              <span class="label">本月次品类型占比Top5</span>
+            </div>
+            <div
+              class="w-full h-full"
+              echarts
+              [options]="badTop5.option"
+              (chartInit)="badTop5.ec = $event"
+              theme="biyi"
+            ></div>
+          </div>
+        </div>
+      </rh-item-container> -->
+      <rh-item-container
+        rhTitle="注塑车间退料原因分析"
+        class="rhv-padding-8-bottom h-full"
+        style="width: 20%"
+      >
+        <div
+          class="flex w-full h-full overflow-hidden rhv-padding-6-top rhv-padding-2-bottom gap-4"
+        >
+          <div
+            class="w-full h-full"
+            echarts
+            [options]="badTop5.option"
+            (chartInit)="badTop5.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近3日工单完工情况"
+        class="rhv-padding-8-lb h-full"
+        style="width: 80%"
+      >
+        <div class="like-table w-full h-full rhv-padding-top">
+          <div class="like-tr" style="height: calc(8 * var(--rhv-size))">
+            <div
+              class="like-td"
+              *ngFor="let th of tableData.dimensions; trackBy: trackByIndex"
+            >
+              {{ th }}
+            </div>
+          </div>
+          <div
+            class="like-tr"
+            *ngFor="let tr of tableData.dataset; trackBy: trackByIndex"
+          >
+            <div class="like-td" *ngFor="let td of tr; trackBy: trackByIndex">
+              {{ td }}
+            </div>
+          </div>
+        </div>
+      </rh-item-container>
+    </div>
+  </div>
+</rh-page-frame>

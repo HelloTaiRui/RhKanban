@@ -1,0 +1,119 @@
+@import "../biyi-workshop-board.base.less";
+
+.ant-progress-bg {
+  height: var(--rhv-size-3) !important;
+}
+
+.items-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 var(--rhv-size-6) var(--rhv-size-4) var(--rhv-size-8);
+  overflow: hidden;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--rhv-size-2) var(--rhv-size-2) 0;
+
+  .item-box-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: var(--rhv-size);
+    padding-bottom: 0;
+    justify-content: space-between;
+  }
+
+  &-border {
+    //border: 1px solid var(--rhv-primary-item-color);
+    background: linear-gradient(
+          to left,
+          var(--rhv-primary-color),
+          var(--rhv-secondary-color)
+        )
+        left top no-repeat,
+      linear-gradient(
+          to bottom,
+          var(--rhv-primary-color),
+          var(--rhv-primary-color)
+        )
+        left top no-repeat,
+      linear-gradient(
+          to left,
+          var(--rhv-primary-color),
+          var(--rhv-primary-color)
+        )
+        right top no-repeat,
+      linear-gradient(
+          to bottom,
+          var(--rhv-primary-color),
+          var(--rhv-primary-color)
+        )
+        right top no-repeat,
+      linear-gradient(
+          to left,
+          var(--rhv-primary-color),
+          var(--rhv-primary-color)
+        )
+        left bottom no-repeat,
+      linear-gradient(
+          to bottom,
+          var(--rhv-primary-color),
+          var(--rhv-primary-color)
+        )
+        left bottom no-repeat,
+      linear-gradient(
+          to left,
+          var(--rhv-primary-color),
+          var(--rhv-primary-color)
+        )
+        right bottom no-repeat,
+      linear-gradient(
+          to left,
+          var(--rhv-primary-color),
+          var(--rhv-primary-color)
+        )
+        right bottom no-repeat;
+    background-size: var(--rhv-size-0-half) var(--rhv-size),
+      var(--rhv-size) var(--rhv-size-0-half),
+      var(--rhv-size-0-half) var(--rhv-size),
+      var(--rhv-size) var(--rhv-size-0-half);
+    background-color: transparent;
+    overflow: hidden;
+    box-shadow: 0px 0px var(--rhv-size) var(--rhv-size-1) #0783fa66 inset;
+  }
+}
+
+.rank-symbol {
+  /*   border: 1px solid;
+  border-image-source: linear-gradient(180deg, #abd6ff 0%, #0783fa 100%);
+  box-shadow: 0px 2px 10px 0px rgba(16, 174, 255, 0.5); */
+  margin: auto;
+  width: var(--rhv-size-6);
+  height: var(--rhv-size-6);
+  border-radius: var(--rhv-size-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: linear-gradient(#0d365d, #0d365d) padding-box padding-box,
+    linear-gradient(180deg, #abd6ff 0%, #0783fa 100%) border-box;
+  box-shadow: 0px var(--rhv-size-0-half) var(--rhv-size-2-half)
+    rgba(16, 174, 255, 0.5);
+  border: var(--rhv-size-0-half) solid transparent;
+  font-size: var(--rhv-size-4-half);
+}
+
+.not-active {
+  opacity: 0.2;
+}
+
+.small-label {
+  font-size: var(--rhv-size-4);
+}

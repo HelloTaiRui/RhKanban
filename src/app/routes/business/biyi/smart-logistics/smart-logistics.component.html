@@ -1,0 +1,418 @@
+<rh-page-frame rhTitle="比依智慧物流看板" class="h-full w-full">
+  <div class="main-body">
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="当日立库环境状况"
+        class="rhv-padding-8-lb"
+        style="height: 24.12%"
+      >
+        <div
+          class="flex flex-col w-full h-full overflow-hidden rhv-padding-8-top rhv-padding-4-bottom"
+          style="gap: var(--rhv-size-6)"
+        >
+          <div
+            class="flex w-full h-1/2 overflow-hidden"
+            style="gap: var(--rhv-size-6)"
+          >
+            <div
+              class="info-container info-container-border flex px-4 py-4 w-1/2 h-full"
+            >
+              <div class="label flex items-center">
+                <object
+                  data="assets/img/biyi/温度.svg"
+                  type="image/svg+xml"
+                  class="rhv-margin-2-right svg-icon"
+                ></object>
+              </div>
+              <div class="flex flex-col flex-1 h-full gap-1 items-center">
+                <div class="label">温度指数</div>
+                <div class="label flex items-baseline gap-1.5">
+                  <span class="value">{{ environmentStatus.value[0] }}</span>
+                  ℃
+                </div>
+              </div>
+            </div>
+            <div
+              class="info-container info-container-border flex px-4 py-4 w-1/2 h-full"
+            >
+              <div class="label flex items-center">
+                <object
+                  data="assets/img/biyi/湿度.svg"
+                  type="image/svg+xml"
+                  class="rhv-margin-2-right svg-icon"
+                ></object>
+              </div>
+              <div class="flex flex-col flex-1 h-full gap-1 items-center">
+                <div class="label">湿度指数</div>
+                <div class="label flex items-baseline gap-1.5">
+                  <span class="value">{{ environmentStatus.value[1] }}</span>
+                  %
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-full h-1/2 overflow-hidden"
+            style="gap: var(--rhv-size-6)"
+          >
+            <div
+              class="info-container info-container-border flex px-4 py-4 w-1/2 h-full"
+            >
+              <div class="label flex items-center">
+                <object
+                  data="assets/img/biyi/气压.svg"
+                  type="image/svg+xml"
+                  class="rhv-margin-2-right svg-icon"
+                ></object>
+              </div>
+              <div class="flex flex-col flex-1 h-full gap-1 items-center">
+                <div class="label">气压指数</div>
+                <div class="label flex items-baseline gap-1.5">
+                  <span class="value">{{ environmentStatus.value[2] }}</span>
+                  hPa
+                </div>
+              </div>
+            </div>
+            <div
+              class="info-container info-container-border flex px-4 py-4 w-1/2 h-full"
+            >
+              <div class="label flex items-center">
+                <object
+                  data="assets/img/biyi/pm.svg"
+                  type="image/svg+xml"
+                  class="rhv-margin-2-right svg-icon"
+                ></object>
+              </div>
+              <div class="flex flex-col flex-1 h-full gap-1 items-center">
+                <div class="label">PM2.5指数</div>
+                <div class="label flex items-baseline gap-1.5">
+                  <span class="value">{{ environmentStatus.value[3] }}</span>
+                  μg/m³
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="库存结构分析(金额)"
+        class="rhv-padding-8-lb"
+        style="height: 22.9%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="inventoryStructure.option"
+          (chartInit)="inventoryStructure.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="帐龄分析"
+        class="rhv-padding-8-lb"
+        style="height: 26.67%"
+      >
+        <div class="flex flex-col w-full h-full">
+          <rh-segment
+            class="rhv-padding-top"
+            [rhMaxVisibleNumber]="4"
+            [rhAutoPlayInterval]="10000"
+            [rhOptions]="accountAgeList"
+            [(ngModel)]="curAccountAge"
+            (ngModelChange)="updateAccountAgeData($event)"
+          ></rh-segment>
+          <div
+            class="content-item"
+            echarts
+            [options]="accountAgeAnalysis.option"
+            (chartInit)="accountAgeAnalysis.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="月度库存类别金额分布"
+        class="rhv-padding-8-lb"
+        style="height: 26.31%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="monthlyInventoryCategory.option"
+          (chartInit)="monthlyInventoryCategory.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="立库容积率统计"
+        class="rhv-padding-8-lb"
+        style="height: 24.12%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="volStatistic.option"
+          (chartInit)="volStatistic.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="成品库存占比统计"
+        class="rhv-padding-8-lb"
+        style="height: 22.9%"
+      >
+        <div
+          class="content-item rhv-padding-3-top"
+          echarts
+          [options]="productCategory.option"
+          (chartInit)="productCategory.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="呆滞物料TOP5"
+        class="rhv-padding-8-lb"
+        style="height: 26.67%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="stagnantTop5Materials.option"
+          (chartInit)="stagnantTop5Materials.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="月度库存区域对比"
+        class="rhv-padding-8-lb"
+        style="height: 26.31%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="monthlyInventoryArea.option"
+          (chartInit)="monthlyInventoryArea.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group flex-1 overflow-hidden">
+      <div class="w-full flex gap-16 px-8 justify-center" style="height: 9%">
+        <div class="item-block w-1/4 h-3/5">
+          <div class="label">今日已入库(件)</div>
+          <div class="value">
+            {{ unifyNumber(statusOverview.value[0], 0).toLocaleString() }}
+          </div>
+        </div>
+        <div class="item-block w-1/4 h-3/5 mt-8">
+          <div class="label">今日待出库(件)</div>
+          <div class="value">
+            {{ unifyNumber(statusOverview.value[1], 0).toLocaleString() }}
+          </div>
+        </div>
+        <div class="item-block w-1/4 h-3/5">
+          <div class="label">今日已出库(件)</div>
+          <div class="value">
+            {{ unifyNumber(statusOverview.value[2], 0).toLocaleString() }}
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 overflow-hidden flex items-start justify-center rhv-padding-3-top"
+      >
+        <!--         <img
+          src="assets/img/biyi/主图_物流.png"
+          alt=""
+          width="100%"
+          height="100%"
+        /> -->
+        <rh-meixiang-digital-twin
+          [rhUseImg]="true"
+          rhPlaceholderImg="assets/video/智慧物流.mp4"
+          rhUrl="http://179.173.168.2:8181/webclient/?appliId=1428380410387103744"
+          [rhInteraction]="true"
+          class="w-full h-full"
+        ></rh-meixiang-digital-twin>
+      </div>
+      <rh-item-container
+        rhTitle="立库存储分析"
+        class="rhv-padding-8-lb rhv-padding-8-right"
+        style="height: 26.31%"
+      >
+        <div
+          class="flex w-full h-full overflow-hidden rhv-padding-10-top"
+          style="gap: var(--rhv-size-2)"
+        >
+          <div
+            class="storage-item"
+            *ngFor="
+              let item of storageAnalysisData.data.details;
+              trackBy: trackByIndex
+            "
+          >
+            <div class="item-value">{{ item.name }}</div>
+            <div class="fill" [style.height]="item.height">
+              <div
+                class="item-value item-label"
+                [style.top]="
+                  item.percent > 95 ? 'calc(-1 * var(--rhv-size-5))' : 'calc(-1 * var(--rhv-size-8))'
+                "
+              >
+                {{ item.percent }}%
+              </div>
+            </div>
+            <div
+              class="flex flex-col w-full h-full overflow-hidden storage-tick-wrapper"
+            >
+              <div
+                *ngFor="
+                  let tick of storageTicks;
+                  index as i;
+                  trackBy: trackByIndex
+                "
+                class="storage-tick"
+              >
+                <div class="fill" [style.height]="item.ticksFill[i]"></div>
+              </div>
+            </div>
+            <div class="item-title">
+              <!-- {{ curDetailsData[item]?.name }} -->
+            </div>
+          </div>
+        </div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="成品近一年库存变化趋势"
+        class="rhv-padding-8-rb"
+        style="height: 24.12%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="inventoryChange.option"
+          (chartInit)="inventoryChange.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="当日AGV运行状态总览"
+        class="rhv-padding-8-rb"
+        style="height: 22.9%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="agvRunStatus.option"
+          (chartInit)="agvRunStatus.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="仓库物流通道使用情况"
+        class="rhv-padding-8-rb"
+        style="height: 26.67%"
+      >
+        <rh-rank-table
+          class="w-full h-full overflow-hidden channel-table"
+          [rhColumns]="logisticsChannelUseInfoRankTable.columns"
+          [rhData]="logisticsChannelUseInfoRankTable.data"
+          [rhShowHeader]="logisticsChannelUseInfoRankTable.showHeader"
+          [rhShowRank]="logisticsChannelUseInfoRankTable.showRank"
+          [rhPageSize]="logisticsChannelUseInfoRankTable.pageSize"
+          [rhVisibleRate]="logisticsChannelUseInfoRankTable.visibleRate"
+          [rhTemplates]="{ state: stateTpl }"
+        ></rh-rank-table>
+        <ng-template #stateTpl let-row="row">
+          <div class="flex items-center justify-center gap-2">
+            <div
+              class="status status-{{
+                logisticsChannelStateIconMap[row.rawData.State]
+              }}"
+            ></div>
+            <div>{{ logisticsChannelStateNameMap[row.rawData.State] }}</div>
+          </div>
+        </ng-template>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日立库成品出入库数量统计"
+        class="rhv-padding-8-rb"
+        style="height: 26.31%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="productInOutSummary.option"
+          (chartInit)="productInOutSummary.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="成品收发月度统计图"
+        class="rhv-padding-8-rb"
+        style="height: 24.12%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="productInOutMonthlySummary.option"
+          (chartInit)="productInOutMonthlySummary.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="AGV工作频率情况"
+        class="rhv-padding-8-rb"
+        style="height: 22.9%"
+      >
+        <rh-rank-table
+          class="w-full h-full overflow-hidden"
+          [rhColumns]="agvWorkRankTable.columns"
+          [rhData]="agvWorkRankTable.data"
+          [rhShowHeader]="agvWorkRankTable.showHeader"
+          [rhShowRank]="agvWorkRankTable.showRank"
+          [rhPageSize]="agvWorkRankTable.pageSize"
+          [rhVisibleRate]="agvWorkRankTable.visibleRate"
+        ></rh-rank-table>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="作业车辆实时容积率情况"
+        class="rhv-padding-8-rb"
+        style="height: 26.67%"
+      >
+        <div class="w-full h-full flex flex-col overflow-hidden gap-4 pt-4">
+          <div class="flex items-center">
+            <div class="mark-primary rhv-margin-3-right"></div>
+            <div class="label">运行中车辆(辆)：</div>
+            <div class="medium-value">{{ workingCarNum }}</div>
+          </div>
+          <div
+            class="w-full h-full"
+            echarts
+            [options]="carRate.option"
+            (chartInit)="carRate.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="本月立库成品出入库总量统计"
+        class="rhv-padding-8-rb"
+        style="height: 26.31%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="curMonthProductInOut.option"
+          (chartInit)="curMonthProductInOut.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+  </div>
+</rh-page-frame>

@@ -1,0 +1,125 @@
+{
+  "item": "本月供应商供料不良Top5",
+  "children": [
+    {
+      "item": "广东天粤印刷科技有限公司",
+      "value1": null,
+      "children": [
+        {
+          "item": "不合格数",
+          "value1": 7,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总数",
+          "value1": 7,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不合格比例",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "温州行远流体科技有限公司",
+      "value1": null,
+      "children": [
+        {
+          "item": "不合格数",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总数",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不合格比例",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "浙江奥科半导体有限公司",
+      "value1": null,
+      "children": [
+        {
+          "item": "不合格数",
+          "value1": 4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总数",
+          "value1": 4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不合格比例",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "揭阳市顺成发微电机有限公司",
+      "value1": null,
+      "children": [
+        {
+          "item": "不合格数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不合格比例",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "湖南珑宝电机有限公司",
+      "value1": null,
+      "children": [
+        {
+          "item": "不合格数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不合格比例",
+          "value1": 100,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

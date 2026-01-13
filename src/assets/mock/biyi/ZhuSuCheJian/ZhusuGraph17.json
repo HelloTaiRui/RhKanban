@@ -1,0 +1,131 @@
+{
+  "item": "近7日产量统计",
+  "children": [
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 322290,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率(%)",
+          "value1": 58.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 318220,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率(%)",
+          "value1": 57.86,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 182487,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率(%)",
+          "value1": 33.18,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 15567,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率(%)",
+          "value1": 2.83,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率(%)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率(%)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率(%)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+/**
+ * @ Author: zhoujs
+ * @ Create Time: 2020-10-08 09:23:49
+ * @ Modified by: zhoujs
+ * @ Modified time: 2024-03-14 21:11:54
+ * @ Description:
+ */
+
+ @normal-color: #d9d9d9;
+ @white: #fff;
+// Table
+// --
+@table-header-bg   : transparent;
+@table-row-hover-bg: #262626;
+
+// Tooltip
+// ---
+// Tooltip max width
+@tooltip-max-width  : auto;
+// Tooltip text color
+@tooltip-color      : #fff;
+// Tooltip background color
+@tooltip-bg         : rgba(0, 0, 0, 0.75);
+// Tooltip arrow width
+@tooltip-arrow-width: 5px;
+// Tooltip distance with trigger
+@tooltip-distance   : @tooltip-arrow-width - 1px + 4px;
+// Tooltip arrow color
+@tooltip-arrow-color: @tooltip-bg;
+
+body {
+    color: rgba(255, 255, 255, .85);
+}
+
+.ant-table {
+    background: transparent;
+    color     : rgba(255, 255, 255, 0.85)
+}
+
+.ant-table-small {
+    border: 0;
+}
+
+.ant-table-thead>tr>th {
+    border: 0;
+}
+
+.ant-table-tbody>tr>td {
+    border: 0;
+}
+
+.ant-table {
+    font-size: var(--rhv-size-4);
+}
+
+.ant-card {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    color          : rgba(255, 255, 255, 0.85);
+}
+
+.ant-card-bordered {
+    border: 1px solid #e8e8e8;
+}
+
+.ant-card-head {
+    border    : none;
+    padding   : var(--rhv-size);
+    font-size : var(--rhv-size);
+    min-height: 0;
+}
+
+.ant-card-head-wrapper {
+    justify-content: space-between;
+}
+
+.ant-card-head-title {
+    padding  : 0;
+    font-size: var(--rhv-size);
+}
+
+.ant-card-extra {
+    padding: 0;
+}
+
+.ant-statistic-content {
+    font-size: var(--rhv-size);
+    padding  : 0;
+}
+
+.ant-card-body {
+    padding: var(--rhv-size);
+}
+
+/* .ant-tooltip {
+    max-width: unset;
+} */

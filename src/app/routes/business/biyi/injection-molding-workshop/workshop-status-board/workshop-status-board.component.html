@@ -1,0 +1,214 @@
+<rh-page-frame
+  rhTitle="注塑车间状态看板"
+  rhBgImg="assets/img/biyi/车间看板_BG.png"
+  rhHeaderImg="assets/img/biyi/车间看板_BG_顶部.png"
+>
+  <div class="w-full h-full overflow-hidden flex">
+    <div class="h-full flex flex-col" style="width: 22.52%">
+      <rh-item-container
+        rhTitle="当前车间运行情况"
+        class="rhv-padding-5-lb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="runningStatus.option"
+          (chartInit)="runningStatus.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日开机率统计"
+        class="rhv-padding-5-lb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="startRate.option"
+          (chartInit)="startRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日设备能耗使用统计"
+        class="rhv-padding-5-lb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="energyConsumption.option"
+          (chartInit)="energyConsumption.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div
+      class="h-full flex flex-col flex-1 overflow-hidden items-center relative"
+      style="padding-top: calc(4 * var(--rhv-size))"
+    >
+      <div
+        class="flex rhv-padding-8-left absolute left-0"
+        style="top: var(--rhv-size); left: 0; padding-top: var(--rhv-size-2)"
+      >
+        <div class="rhv-margin-5-right">
+          设备总数：{{ equipmentsStatus.data?.list.length || 0 }}
+        </div>
+        <div class="flex items-center rhv-margin-5-right">
+          <div class="status status-running"></div>
+          运行：{{ equipmentsStatus.data?.summary[1] || 0 }}
+        </div>
+        <div class="flex items-center rhv-margin-5-right">
+          <div class="status status-error"></div>
+          待机：{{ equipmentsStatus.data?.summary[2] || 0 }}
+        </div>
+        <div class="flex items-center rhv-margin-5-right">
+          <div class="status status-down"></div>
+          停机：{{ equipmentsStatus.data?.summary[3] || 0 }}
+        </div>
+        <div class="flex items-center rhv-margin-5-right">
+          <div class="status status-standby"></div>
+          未知：{{ equipmentsStatus.data?.summary[0] || 0 }}
+        </div>
+      </div>
+      <div
+        class="flex rhv-padding-8-right absolute"
+        style="top: var(--rhv-size); right: 0; padding-top: var(--rhv-size-2)"
+      >
+        <div
+          class="rank-symbol cursor-pointer rhv-margin-5-left"
+          [class.not-active]="item !== curPageIndex"
+          *ngFor="let item of pageList; trackBy: trackByIndex"
+          (click)="jumpTo(item)"
+        >
+          {{ item + 1 }}
+        </div>
+      </div>
+      <div class="workshop-row">
+        <div class="row">
+          <ng-container [ngTemplateOutlet]="bgTpl"></ng-container>
+          <ng-container
+            [ngTemplateOutlet]="marksTpl"
+            [ngTemplateOutletContext]="{ rowIndex: 0 }"
+          ></ng-container>
+        </div>
+      </div>
+      <div class="workshop-row">
+        <div class="row">
+          <ng-container [ngTemplateOutlet]="bgTpl"></ng-container>
+          <ng-container
+            [ngTemplateOutlet]="marksTpl"
+            [ngTemplateOutletContext]="{ rowIndex: 1 }"
+          ></ng-container>
+        </div>
+      </div>
+      <div class="workshop-row">
+        <div class="row">
+          <ng-container [ngTemplateOutlet]="bgTpl"></ng-container>
+          <ng-container
+            [ngTemplateOutlet]="marksTpl"
+            [ngTemplateOutletContext]="{ rowIndex: 2 }"
+          ></ng-container>
+        </div>
+      </div>
+      <div class="workshop-row">
+        <div class="row">
+          <ng-container [ngTemplateOutlet]="bgTpl"></ng-container>
+          <ng-container
+            [ngTemplateOutlet]="marksTpl"
+            [ngTemplateOutletContext]="{ rowIndex: 3 }"
+          ></ng-container>
+        </div>
+      </div>
+      <ng-template #bgTpl>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1021 154"
+          fill="none"
+        >
+          <path
+            d="M90.0656 0H1020.5L971.5 154H0L90.0656 0Z"
+            fill="white"
+            fill-opacity="0.15"
+          />
+          <image
+            xlink:href="assets/img/biyi/注塑机_产线.png"
+            x="59"
+            width="915"
+          ></image>
+        </svg>
+      </ng-template>
+      <ng-template #marksTpl let-rowIndex="rowIndex">
+        <div class="relative">
+          <div
+            *ngFor="let item of pointsData[rowIndex]; trackBy: trackByIndex"
+            class="mark-item"
+            [style.left]="item[1]"
+          >
+            <span>{{ item[0] }}</span>
+            <ng-container
+              [ngTemplateOutlet]="stateTpl"
+              [ngTemplateOutletContext]="{
+                item: equipmentsStatus.data?.items[item[0]]
+              }"
+            ></ng-container>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template #stateTpl let-item="item">
+        <div
+          class="status status-{{
+            item ? statusIconMap[item[1]] : statusIconMap[0]
+          }}"
+        ></div>
+        <!-- <div *ngIf="item">{{ item[2] }}h</div> -->
+      </ng-template>
+    </div>
+    <div class="h-full flex flex-col" style="width: 22.52%">
+      <rh-item-container
+        rhTitle="当前人员到岗情况"
+        class="rhv-padding-5-rb"
+        style="height: 33.3%"
+      >
+        <rh-rank-table
+          class="w-full h-full overflow-hidden employee-table"
+          [rhColumns]="personRankTable.columns"
+          [rhData]="personRankTable.data"
+          [rhShowHeader]="personRankTable.showHeader"
+          [rhShowRank]="personRankTable.showRank"
+          [rhPageSize]="personRankTable.pageSize"
+          [rhVisibleRate]="personRankTable.visibleRate"
+        ></rh-rank-table>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日生产计划达成率"
+        class="rhv-padding-5-rb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="planArchiveRate.option"
+          (chartInit)="planArchiveRate.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="近7日产量统计"
+        class="rhv-padding-5-rb"
+        style="height: 33.3%"
+      >
+        <div
+          class="content-item"
+          echarts
+          [options]="productionSummary.option"
+          (chartInit)="productionSummary.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+  </div>
+</rh-page-frame>

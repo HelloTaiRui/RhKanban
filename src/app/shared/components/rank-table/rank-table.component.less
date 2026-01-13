@@ -1,0 +1,58 @@
+:host ::ng-deep .rank-table table {
+  border-collapse: separate;
+  border-spacing: 0 var(--rhv-size-4);
+}
+
+:host ::ng-deep .rank-table-header table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+:host::ng-deep .ant-table-thead > tr > th {
+  border: 0;
+  font-size: var(--rhv-size-4-half);
+  line-height: var(--rhv-size-6-half);
+  padding: var(--rhv-size-3) 0;
+  color: #9ebfdb;
+}
+
+:host::ng-deep .ant-table-tbody > tr > td {
+  border: 0;
+  font-size: var(--rhv-size-4-half);
+  line-height: var(--rhv-size-6-half);
+  padding: var(--rhv-size-3) 0;
+  color: #fff;
+  background: rgba(7, 131, 250, 0.01) !important;
+}
+
+:host::ng-deep .ant-table-tbody > tr:nth-child(odd) > td {
+  background: rgba(7, 131, 250, 0.05) !important;
+}
+/* 
+.td-odd {
+  background: rgba(7, 131, 250, 0.05) !important;
+}
+
+.td-even {
+  background: rgba(7, 131, 250, 0.01) !important;
+} */
+
+.rank-symbol {
+  /*   border: 1px solid;
+  border-image-source: linear-gradient(180deg, #abd6ff 0%, #0783fa 100%);
+  box-shadow: 0px 2px 10px 0px rgba(16, 174, 255, 0.5); */
+  margin: auto;
+  width: var(--rhv-size-6);
+  height: var(--rhv-size-6);
+  border-radius: var(--rhv-size-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: linear-gradient(#0d365d, #0d365d) padding-box padding-box,
+    linear-gradient(180deg, #abd6ff 0%, #0783fa 100%) border-box;
+  box-shadow: 0px var(--rhv-size-0-half) var(--rhv-size-2-half)
+    rgba(16, 174, 255, 0.5);
+  border: var(--rhv-size-0-half) solid transparent;
+  font-size: var(--rhv-size-4-half);
+}

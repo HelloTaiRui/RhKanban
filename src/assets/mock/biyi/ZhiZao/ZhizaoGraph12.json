@@ -1,0 +1,125 @@
+{
+  "item": "本月设备点检及时率",
+  "children": [
+    {
+      "item": "10/17",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 243,
+          "value3": 243
+        }
+      ]
+    },
+    {
+      "item": "10/18",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 227,
+          "value3": 227
+        }
+      ]
+    },
+    {
+      "item": "10/19",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 226,
+          "value3": 226
+        }
+      ]
+    },
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 222,
+          "value3": 222
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 201,
+          "value3": 201
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 204,
+          "value3": 204
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 232,
+          "value3": 232
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 227,
+          "value3": 227
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 256,
+          "value3": 256
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "白班",
+          "value1": 100,
+          "value2": 156,
+          "value3": 156
+        }
+      ]
+    }
+  ]
+}

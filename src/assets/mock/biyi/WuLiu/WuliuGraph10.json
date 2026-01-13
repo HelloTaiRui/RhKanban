@@ -1,0 +1,89 @@
+{
+  "item": "近一年库存变化趋势",
+  "children": [
+    {
+      "item": "25/04",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存数量",
+          "value1": 907973,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/05",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存数量",
+          "value1": 870558,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/06",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存数量",
+          "value1": 798432,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/07",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存数量",
+          "value1": 853902,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/08",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存数量",
+          "value1": 811871,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/09",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存数量",
+          "value1": 673627,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "25/10",
+      "value1": null,
+      "children": [
+        {
+          "item": "库存数量",
+          "value1": 861581,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

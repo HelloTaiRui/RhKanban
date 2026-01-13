@@ -1,0 +1,167 @@
+{
+  "item": "近7天生产指标达成情况",
+  "children": [
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "中意装配九车间",
+          "value1": 9,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 14.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "泰国装配车间",
+          "value1": 141.5,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 80.5,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 91.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "泰国装配车间",
+          "value1": 63.7,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 80.8,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 87.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "泰国装配车间",
+          "value1": 70.8,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 82.6,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 97.5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "泰国装配车间",
+          "value1": 53.2,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 77.5,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 99.3,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "泰国装配车间",
+          "value1": 133.8,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 72.7,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 99.4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "泰国装配车间",
+          "value1": 96,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "中意装配九车间",
+          "value1": 82.3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "总部装配车间",
+          "value1": 91.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

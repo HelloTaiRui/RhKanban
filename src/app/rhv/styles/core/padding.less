@@ -1,0 +1,165 @@
+/**
+ * @ Author: zhoujs
+ * @ Create Time: 2020-10-10 16:27:21
+ * @ Modified by: zhoujs
+ * @ Modified time: 2024-04-15 11:17:41
+ * @ Description:
+ */
+
+
+
+////////////////////////padding/////////////////////
+
+
+.generate-padding(@padding) {
+
+    padding: @padding;
+
+    &-left {
+        padding-left: @padding  !important;
+    }
+
+    &-right {
+        padding-right: @padding  !important;
+    }
+
+    &-top {
+        padding-top: @padding  !important;
+    }
+
+    &-bottom {
+        padding-bottom: @padding  !important;
+    }
+
+    &-lt {
+        padding-top   : @padding  !important;
+        padding-right : 0;
+        padding-bottom: 0;
+        padding-left  : @padding  !important;
+    }
+
+    &-lb {
+        padding-top   : 0;
+        padding-right : 0;
+        padding-bottom: @padding  !important;
+        padding-left  : @padding  !important;
+    }
+
+    &-rt {
+        padding-top   : @padding  !important;
+        padding-right : @padding  !important;
+        padding-bottom: 0;
+        padding-left  : 0;
+    }
+
+    &-rb {
+        padding-top   : 0;
+        padding-right : @padding  !important;
+        padding-bottom: @padding  !important;
+        padding-left  : 0;
+    }
+
+    &-h {
+        padding-top   : 0;
+        padding-right : @padding  !important;
+        padding-bottom: 0;
+        padding-left  : @padding  !important;
+    }
+
+    &-v {
+        padding-top   : @padding  !important;
+        padding-right : 0;
+        padding-bottom: @padding  !important;
+        padding-left  : 0;
+    }
+
+}
+
+.rhv-padding-0 {
+    .generate-padding(var(--rhv-size-0))
+}
+
+.rhv-padding-0-half {
+    .generate-padding(var(--rhv-size-0-half))
+}
+
+.rhv-padding-1 {
+    .generate-padding(var(--rhv-size-1))
+}
+
+.rhv-padding-1-half {
+    .generate-padding(var(--rhv-size-1-half))
+}
+
+.rhv-padding-2 {
+    .generate-padding(var(--rhv-size-2))
+}
+
+.rhv-padding-2-half {
+    .generate-padding(var(--rhv-size-2-half))
+}
+
+.rhv-padding-3 {
+    .generate-padding(var(--rhv-size-3))
+}
+
+.rhv-padding-3-half {
+    .generate-padding(var(--rhv-size-3-half))
+}
+
+.rhv-padding-4 {
+    .generate-padding(var(--rhv-size-4))
+}
+
+.rhv-padding-4-half {
+    .generate-padding(var(--rhv-size-4-half))
+}
+
+.rhv-padding-5,
+.rhv-padding {
+    .generate-padding(var(--rhv-size-5))
+}
+
+.rhv-padding-5-half {
+    .generate-padding(var(--rhv-size-5-half))
+}
+
+.rhv-padding-6 {
+    .generate-padding(var(--rhv-size-6))
+}
+
+.rhv-padding-6-half {
+    .generate-padding(var(--rhv-size-6-half))
+}
+
+.rhv-padding-7 {
+    .generate-padding(var(--rhv-size-7))
+}
+
+.rhv-padding-7-half {
+    .generate-padding(var(--rhv-size-7-half))
+}
+
+.rhv-padding-8 {
+    .generate-padding(var(--rhv-size-8))
+}
+
+.rhv-padding-8-half {
+    .generate-padding(var(--rhv-size-8-half))
+}
+
+.rhv-padding-9 {
+    .generate-padding(var(--rhv-size-9))
+}
+
+.rhv-padding-9-half {
+    .generate-padding(var(--rhv-size-9-half))
+}
+
+.rhv-padding-10 {
+    .generate-padding(var(--rhv-size-10))
+}
+
+.rhv-padding-10-half {
+    .generate-padding(var(--rhv-size-10-half))
+}

@@ -1,0 +1,672 @@
+<rh-page-frame rhTitle="比依智慧营销看板" class="h-full w-full">
+  <div class="main-body">
+    <div class="horizontal-group" style="width: 30%">
+      <rh-item-container
+        rhTitle="客户分布总览"
+        class="rhv-padding-6-lb w-full"
+        style="height: 25.7%"
+      >
+        <div
+          class="flex w-full h-full overflow-hidden rhv-padding-6-top rhv-padding-2-bottom gap-16"
+        >
+          <div class="flex-1 h-full flex flex-col">
+            <div class="flex items-center">
+              <object
+                data="assets/img/biyi/icon_二级标题.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right sub-title-svg-icon"
+              ></object>
+              <span class="label">全球客户国别分布</span>
+            </div>
+            <div
+              class="w-full h-full"
+              echarts
+              [options]="countriesDistribution.option"
+              (chartInit)="countriesDistribution.ec = $event"
+            ></div>
+          </div>
+          <div class="flex-1 h-full flex flex-col">
+            <div class="flex items-center">
+              <object
+                data="assets/img/biyi/icon_二级标题.svg"
+                type="image/svg+xml"
+                class="rhv-margin-2-right sub-title-svg-icon"
+              ></object>
+              <span class="label">洲际年度出货数量统计</span>
+            </div>
+            <div
+              class="w-full h-full"
+              echarts
+              [options]="continentSaleSummary.option"
+              (chartInit)="continentSaleSummary.ec = $event"
+              theme="biyi"
+            ></div>
+          </div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="洲际年度出货变化统计"
+        class="rhv-padding-6-lb w-1/2"
+        style="height: 21.32%"
+      >
+        <div
+          class="flex flex-col h-full overflow-hidden relative rhv-padding-6-top"
+        >
+          <rh-segment
+            [rhMaxVisibleNumber]="5"
+            [rhAutoPlayInterval]="10000"
+            [rhOptions]="continentSaleChange.data.segmentsData"
+            [(ngModel)]="continentSaleChange.dataset.curSelectedItem"
+            (ngModelChange)="continentSaleChange.dataset.updateCurItem($event)"
+            style="z-index: 2"
+          ></rh-segment>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 140"
+            fill="none"
+            style="position: absolute; width: 114%; height: 100%; top: 1.5rem"
+          >
+            <path
+              d="M7.76172 0.75H354.143C392.308 0.75 423.25 31.7528 423.25 70C423.25 108.247 392.308 139.25 354.143 139.25H294.635C290.764 139.25 287.623 136.105 287.623 132.223C287.623 128.34 290.764 125.194 294.635 125.194H354.143C384.566 125.194 409.227 100.482 409.227 70C409.227 39.5184 384.566 14.8057 354.143 14.8057H7.76172C3.89068 14.8056 0.75 11.6601 0.75 7.77734C0.750234 3.89483 3.89082 0.750101 7.76172 0.75Z"
+              stroke="#415C74"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M7.76172 7.8H354.143C392.308 7.8 417.25 39.7528 415.5 70C417 100.247 393 132.5 350.143 133.5H294.635"
+              stroke="#0783FA"
+              stroke-width="18"
+              stroke-linecap="round"
+              [attr.stroke-dasharray]="continentSaleChange.dataset.primary_dash"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 600 90"
+            fill="none"
+            style="position: absolute; width: 136%; height: 100%; top: 1.5rem"
+          >
+            <path
+              d="M7.75098 0.75H352.785C377.346 0.75 397.25 20.5648 397.25 45C397.25 69.4352 377.346 89.25 352.785 89.25H294.652C290.783 89.25 287.652 86.1288 287.651 82.2861C287.651 78.4432 290.782 75.3213 294.652 75.3213H352.785C369.606 75.3213 383.248 61.7494 383.248 45C383.248 28.2506 369.606 14.6787 352.785 14.6787H7.75098C3.88107 14.6787 0.75 11.5567 0.75 7.71387C0.750227 3.87118 3.88121 0.750052 7.75098 0.75Z"
+              stroke="#415C74"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M7.75098 7.6H352.785C377.346 7.6 384.25 22.5648 388.25 33C397.25 63.4352 370.346 83.25 352.785 83.25H294.652"
+              stroke="#07D1FA"
+              stroke-width="18"
+              stroke-linecap="round"
+              [attr.stroke-dasharray]="
+                continentSaleChange.dataset.secondary_dash
+              "
+            />
+          </svg>
+
+          <div class="flex absolute gap-6" style="bottom: var(--rhv-size-4)">
+            <div class="flex flex-col gap-4">
+              <div class="label">上年度出货量</div>
+              <div class="label">
+                <span class="first-value">
+                  {{ continentSaleChange.dataset.curItem[0] }}</span
+                >
+                <span>万件</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="label">本年度出货量</div>
+              <div class="label">
+                <span class="second-value">
+                  {{ continentSaleChange.dataset.curItem[1] }}</span
+                >
+                <span>万件</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="生产销售架构图"
+        class="rhv-padding-6-lb w-1/2"
+        style="height: 21.32%"
+      >
+        <div
+          class="flex flex-col h-full overflow-hidden relative rhv-padding-6-top items-end"
+        >
+          <rh-segment
+            rhMode="borderedSegment"
+            [rhMaxVisibleNumber]="5"
+            [rhAutoPlayInterval]="10000"
+            [rhOptions]="productSaleStructData.data.segmentsData"
+            [(ngModel)]="productSaleStructData.dataset.curSelectedItem"
+            (ngModelChange)="
+              productSaleStructData.dataset.updateCurItem($event)
+            "
+            style="z-index: 2"
+          ></rh-segment>
+          <div
+            class="w-full h-full"
+            echarts
+            [options]="productSaleStruct.option"
+            (chartInit)="productSaleStruct.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="产品销量同比图"
+        class="rhv-padding-6-lb w-1/2"
+        style="height: 26.67%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="productSaleCompare.option"
+          (chartInit)="productSaleCompare.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="产品月度结构分析图"
+        class="rhv-padding-6-lb w-1/2"
+        style="height: 26.67%"
+      >
+        <div class="flex flex-col w-full h-full rhv-padding-6-top">
+          <rh-segment
+            [rhMaxVisibleNumber]="6"
+            [rhAutoPlayInterval]="10000"
+            [rhOptions]="monthlyProductStructureData.data.segmentsData"
+            [(ngModel)]="monthlyProductStructureData.dataset.curItem"
+            (ngModelChange)="
+              monthlyProductStructureData.dataset.updateCurItem($event)
+            "
+          ></rh-segment>
+          <div
+            class="w-full h-full"
+            echarts
+            [options]="monthlyProductStructure.option"
+            (chartInit)="monthlyProductStructure.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="产品月度投诉量统计图"
+        class="rhv-padding-6-lb w-1/2"
+        style="height: 26.31%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="yearlyComplaint.option"
+          (chartInit)="yearlyComplaint.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="产品投诉原因分析图"
+        class="rhv-padding-6-lb w-1/2"
+        style="height: 26.31%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="productComplaintReason.option"
+          (chartInit)="productComplaintReason.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group flex-1 overflow-hidden">
+      <div
+        class="w-full flex gap-4 px-8"
+        style="height: 9%; margin-top: var(--rhv-size-10)"
+      >
+        <div class="item-block w-1/4 h-3/5">
+          <ng-container
+            [ngTemplateOutlet]="cardTpl"
+            [ngTemplateOutletContext]="{ item: '亚洲' }"
+          ></ng-container>
+        </div>
+        <div class="item-block w-1/4 h-3/5 mt-8">
+          <ng-container
+            [ngTemplateOutlet]="cardTpl"
+            [ngTemplateOutletContext]="{ item: '欧洲' }"
+          ></ng-container>
+        </div>
+        <div class="item-block w-1/4 h-3/5 mt-8">
+          <ng-container
+            [ngTemplateOutlet]="cardTpl"
+            [ngTemplateOutletContext]="{ item: '非洲' }"
+          ></ng-container>
+        </div>
+        <div class="item-block w-1/4 h-3/5">
+          <ng-container
+            [ngTemplateOutlet]="cardTpl"
+            [ngTemplateOutletContext]="{ item: '南美洲' }"
+          ></ng-container>
+        </div>
+      </div>
+      <div class="flex-1 w-full flex flex-col justify-end overflow-hidden">
+        <div class="w-full relative map">
+          <object
+            data="assets/echarts/map/world.svg"
+            type="image/svg+xml"
+            class="w-full"
+          ></object>
+          <div class="tag-marker" style="top: 27%; left: 17.5%">
+            <ng-container
+              [ngTemplateOutlet]="tagTpl"
+              [ngTemplateOutletContext]="{ item: '北美洲' }"
+            ></ng-container>
+          </div>
+          <div class="tag-marker" style="top: 62.5%; left: 30.3%">
+            <ng-container
+              [ngTemplateOutlet]="tagTpl"
+              [ngTemplateOutletContext]="{ item: '南美洲' }"
+            ></ng-container>
+          </div>
+          <div class="tag-marker" style="top: 26%; left: 56.2%">
+            <ng-container
+              [ngTemplateOutlet]="tagTpl"
+              [ngTemplateOutletContext]="{ item: '欧洲' }"
+            ></ng-container>
+          </div>
+          <div class="tag-marker" style="top: 33.7%; left: 69.5%">
+            <ng-container
+              [ngTemplateOutlet]="tagTpl"
+              [ngTemplateOutletContext]="{ item: '亚洲' }"
+            ></ng-container>
+          </div>
+          <div class="tag-marker" style="top: 54.5%; left: 53.7%">
+            <ng-container
+              [ngTemplateOutlet]="tagTpl"
+              [ngTemplateOutletContext]="{ item: '非洲' }"
+            ></ng-container>
+          </div>
+          <div class="tag-marker" style="top: 69%; left: 86%">
+            <ng-container
+              [ngTemplateOutlet]="tagTpl"
+              [ngTemplateOutletContext]="{ item: '大洋洲' }"
+            ></ng-container>
+          </div>
+          <div class="tag-marker" style="top: 37%; left: 80%">
+            <div class="home-tag-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 11 11"
+                fill="none"
+                class="tag-corner"
+              >
+                <path d="M11 1H1V11" stroke="#07D1FA" stroke-width="2" />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1606_1432"
+                    x1="6"
+                    y1="1"
+                    x2="6"
+                    y2="11"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#07D1FA" />
+                    <stop offset="1" stop-color="white" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="tag-title">本部</span>
+            </div>
+            <object
+              data="assets/img/biyi/icon_定位.svg"
+              type="image/svg+xml"
+              style="width: var(--rhv-size-8)"
+            ></object>
+          </div>
+          <ng-template #tagTpl let-item="item">
+            <div class="tag-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 11 11"
+                fill="none"
+                class="tag-corner"
+              >
+                <path d="M11 1H1V11" stroke="#FFD15C" stroke-width="2" />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1606_1539"
+                    x1="6"
+                    y1="1"
+                    x2="6"
+                    y2="11"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFD15C" />
+                    <stop offset="1" stop-color="white" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="tag-title">{{ item }}</span>
+            </div>
+            <div
+              class="tag-value"
+              [ngStyle]="{
+                width: (customerData.data?.size[item] || 30) + 'px',
+                height: (customerData.data?.size[item] || 30) + 'px'
+              }"
+            >
+              {{ customerData.data?.percents[item] || 0 }}%
+            </div>
+          </ng-template>
+        </div>
+      </div>
+      <div
+        class="w-full flex gap-16 px-8 justify-center"
+        style="height: 9%; margin-bottom: 5%"
+      >
+        <div class="item-block w-1/4 h-3/5">
+          <ng-container
+            [ngTemplateOutlet]="cardTpl"
+            [ngTemplateOutletContext]="{ item: '北美洲' }"
+          ></ng-container>
+        </div>
+        <div class="item-block w-1/4 h-3/5 mt-8">
+          <ng-container
+            [ngTemplateOutlet]="cardTpl"
+            [ngTemplateOutletContext]="{ item: '大洋洲' }"
+          ></ng-container>
+        </div>
+        <div class="item-block w-1/4 h-3/5">
+          <ng-container
+            [ngTemplateOutlet]="cardTpl"
+            [ngTemplateOutletContext]="{ item: '其他' }"
+          ></ng-container>
+        </div>
+      </div>
+      <ng-template #cardTpl let-item="item">
+        <div class="label">{{ item }}地区客户(个)</div>
+        <div class="value">
+          {{ (customerData.data?.values[item] || 0).toLocaleString() }}
+        </div>
+      </ng-template>
+      <rh-item-container
+        rhTitle="成品库龄分布图"
+        class="rhv-padding-6-lb rhv-padding-6-right"
+        style="height: 26.31%"
+      >
+        <div
+          class="flex flex-col w-full h-full overflow-hidden rhv-padding-6-top"
+          style="gap: var(--rhv-size-4)"
+        >
+          <rh-segment
+            class="storage-segment"
+            [rhMaxVisibleNumber]="24"
+            [rhAutoPlayInterval]="10000"
+            [rhShowAnchor]="true"
+            [rhOptions]="productAgeData.data?.segmentsData"
+            [(ngModel)]="productAgeData.dataset.curSelectedItem"
+            (ngModelChange)="productAgeData.dataset.updateCurItem($event)"
+          ></rh-segment>
+          <div class="flex w-full overflow-hidden" style="height: 5px">
+            <img src="assets/img/biyi/刻度线.png" height="100%" />
+            <img src="assets/img/biyi/刻度线.png" height="100%" />
+            <img src="assets/img/biyi/刻度线.png" height="100%" />
+          </div>
+          <div
+            class="flex flex-col w-full flex-1 overflow-hidden rhv-padding-top"
+            style="gap: var(--rhv-size-4)"
+          >
+            <div
+              class="flex flex-col w-full gap-1 item-wrapper"
+              *ngFor="
+                let item of productAgeData.dataset.curItem;
+                index as i;
+                trackBy: trackByIndex
+              "
+            >
+              <div class="flex w-full items-center justify-between">
+                <div class="flex items-center gap-1">
+                  <ng-container
+                    [ngTemplateOutlet]="prefixIcon"
+                    [ngTemplateOutletContext]="{
+                      fill:
+                        i == 0
+                          ? 'rgba(32, 230, 164, 1)'
+                          : 'rgba(255, 209, 92, 1)'
+                    }"
+                  ></ng-container>
+                  <div class="label">
+                    {{ item.name }}
+                  </div>
+                </div>
+
+                <div class="basic-value">
+                  {{ item.value }}件({{ item.percent }}%)
+                </div>
+              </div>
+              <div class="item-bg">
+                <div
+                  class="item-segment"
+                  [ngStyle]="{ left: item.left, width: item.width }"
+                ></div>
+              </div>
+            </div>
+            <ng-template #prefixIcon let-fill="fill">
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: var(--rhv-size); height: var(--rhv-size)"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  r="9.5"
+                  [attr.fill]="fill"
+                  fill-opacity="0.2"
+                  [attr.stroke]="fill"
+                />
+                <path
+                  d="M7.04811 8.45078C7.30958 8.45078 7.50146 8.5286 7.62376 8.68426C7.74605 8.83992 7.8072 9.01196 7.8072 9.20039V14.5706H5.42871V9.24955C5.42871 8.99558 5.51095 8.79896 5.67542 8.65969C5.83989 8.52041 6.01912 8.45078 6.21311 8.45078H7.04811ZM10.9954 5.42773C11.2231 5.42773 11.4045 5.49532 11.5394 5.6305C11.6744 5.76568 11.7418 5.92748 11.7418 6.11591V14.5706H9.376V6.14048C9.376 6.0176 9.4013 5.91109 9.4519 5.82098C9.50251 5.73086 9.56577 5.65713 9.64168 5.59978C9.71759 5.54243 9.80193 5.49942 9.89471 5.47075C9.98749 5.44207 10.0718 5.42773 10.1477 5.42773H10.9954ZM14.93 10.7488C15.0059 10.7488 15.0882 10.7693 15.1767 10.8102C15.2653 10.8512 15.3496 10.9085 15.4298 10.9823C15.5099 11.056 15.5774 11.14 15.6322 11.2342C15.687 11.3284 15.7144 11.4288 15.7144 11.5353V14.5706H13.3486V11.5598C13.3486 11.4697 13.3676 11.3755 13.4055 11.2772C13.4435 11.1789 13.4962 11.0908 13.5637 11.013C13.6311 10.9352 13.7113 10.8717 13.804 10.8225C13.8968 10.7734 13.998 10.7488 14.1077 10.7488H14.93Z"
+                  [attr.fill]="fill"
+                />
+              </svg>
+            </ng-template>
+          </div>
+        </div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="产品销售总量统计"
+        class="rhv-padding-6-rb"
+        style="height: 17.78%"
+      >
+        <div class="w-full h-full flex flex-col overflow-hidden gap-5 pt-5">
+          <div class="flex items-center">
+            <div class="mark-primary rhv-margin-3-right"></div>
+            <div class="label">
+              {{ salesSummaryData.data.title }}({{
+                salesSummaryData.data.sumData.unit
+              }})
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <div
+              class="number-item"
+              *ngFor="
+                let unitValue of salesSummaryData.data.sumData.result;
+                trackBy: trackByIndex
+              "
+            >
+              {{ unitValue }}
+            </div>
+          </div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="产品销量Top5"
+        class="rhv-padding-6-rb"
+        style="height: 24.97%"
+      >
+        <div
+          class="w-full h-full mt-3"
+          echarts
+          [options]="top5products.option"
+          (chartInit)="top5products.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="销售数量统计图"
+        class="rhv-padding-6-rb"
+        style="height: 30.94%"
+      >
+        <div class="flex flex-col items-end w-full h-full rhv-padding-6-top">
+          <rh-segment
+            [rhMaxVisibleNumber]="6"
+            [rhAutoPlayInterval]="3000"
+            [rhOptions]="salesSegmentsData"
+            rhMode="borderedSegment"
+          ></rh-segment>
+          <div
+            class="w-full h-full"
+            echarts
+            [options]="salesSummary.option"
+            (chartInit)="salesSummary.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="成品检验合格率统计"
+        class="rhv-padding-6-rb"
+        style="height: 26.31%"
+      >
+        <div class="flex flex-col w-full h-full rhv-padding-6-top">
+          <rh-segment
+            [rhMaxVisibleNumber]="6"
+            [rhAutoPlayInterval]="3000"
+            [rhOptions]="productGoodRateSegmentsData"
+            [(ngModel)]="curProductGoodRateItem"
+            (ngModelChange)="nextProductGoodRate($event)"
+          ></rh-segment>
+          <div
+            class="w-full h-full"
+            echarts
+            [options]="productGoodRate.option"
+            (chartInit)="productGoodRate.ec = $event"
+            theme="biyi"
+          ></div>
+        </div>
+      </rh-item-container>
+    </div>
+    <div class="vertical-group">
+      <rh-item-container
+        rhTitle="销售人员龙虎榜"
+        class="rhv-padding-6-rb"
+        style="height: 42.75%"
+      >
+        <div
+          class="flex w-full justify-between rhv-padding-3-top"
+          style="gap: var(--rhv-size-6)"
+        >
+          <div class="rank-card flex-1">
+            <div class="rank-card-header">
+              <div class="avatar">
+                <img src="assets/img/biyi/No1.jpg" class="w-full h-full" />
+                <object
+                  data="assets/img/biyi/icon_No1.svg"
+                  type="image/svg+xml"
+                  class="decorator"
+                ></object>
+              </div>
+            </div>
+            <div class="rank-card-body rank-1">
+              <div class="rank">No.1</div>
+              <div class="label rank-user-name rank-1-name">
+                {{ salesmanData.data?.first?.Name }}
+              </div>
+              <div class="detail-row">
+                <div class="label">销售额</div>
+                <div class="basic-value">
+                  {{ salesmanData.data?.first?.Value }}
+                </div>
+              </div>
+              <div class="detail-row">
+                <div class="label">占比</div>
+                <div class="basic-value">
+                  {{ salesmanData.data?.first.Rate }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rank-card flex-1">
+            <div class="rank-card-header">
+              <div class="avatar">
+                <img src="assets/img/biyi/No2.jpg" class="w-full h-full" />
+                <object
+                  data="assets/img/biyi/icon_No2.svg"
+                  type="image/svg+xml"
+                  class="decorator"
+                ></object>
+              </div>
+            </div>
+            <div class="rank-card-body rank-2">
+              <div class="rank">No.2</div>
+              <div class="label rank-user-name rank-2-name">
+                {{ salesmanData.data?.second?.Name }}
+              </div>
+              <div class="detail-row">
+                <div class="label">销售额</div>
+                <div class="basic-value">
+                  {{ salesmanData.data?.second?.Value }}
+                </div>
+              </div>
+              <div class="detail-row">
+                <div class="label">占比</div>
+                <div class="basic-value">
+                  {{ salesmanData.data?.second?.Rate }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <rh-rank-table
+          class="w-full h-full overflow-hidden"
+          [rhColumns]="salesmanRankTable.columns"
+          [rhData]="salesmanRankTable.data"
+          [rhShowHeader]="salesmanRankTable.showHeader"
+          [rhShowRank]="salesmanRankTable.showRank"
+          [rhPageSize]="salesmanRankTable.pageSize"
+          [rhVisibleRate]="salesmanRankTable.visibleRate"
+        ></rh-rank-table>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="成品收发月度统计图"
+        class="rhv-padding-6-rb"
+        style="height: 30.94%"
+      >
+        <div
+          class="w-full h-full"
+          echarts
+          [options]="productInOutSummary.option"
+          (chartInit)="productInOutSummary.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+      <rh-item-container
+        rhTitle="成品检验不良原因分析"
+        class="rhv-padding-6-rb"
+        style="height: 26.31%"
+      >
+        <div
+          class="w-full h-full mt-3"
+          echarts
+          [options]="productBadReason.option"
+          (chartInit)="productBadReason.ec = $event"
+          theme="biyi"
+        ></div>
+      </rh-item-container>
+    </div>
+  </div>
+</rh-page-frame>

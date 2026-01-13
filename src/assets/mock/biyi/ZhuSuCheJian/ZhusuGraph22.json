@@ -1,0 +1,305 @@
+{
+  "item": "当日设备生产时段达成分析",
+  "children": [
+    {
+      "item": "09:00-10:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 272,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 90.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "08:00-09:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "07:00-08:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "06:00-07:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "05:00-06:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "04:00-05:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "03:00-04:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "02:00-03:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "01:00-02:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "00:00-01:00",
+      "value1": null,
+      "children": [
+        {
+          "item": "计划数",
+          "value1": 300,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "生产数",
+          "value1": 332,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "不良数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "达成率",
+          "value1": 110.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

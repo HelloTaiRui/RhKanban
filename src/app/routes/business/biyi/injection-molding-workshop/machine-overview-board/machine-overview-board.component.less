@@ -1,0 +1,50 @@
+@import "../biyi-workshop-board.base.less";
+
+.info-container {
+  width: calc(13.5 * var(--rhv-size));
+  padding: var(--rhv-size);
+  display: flex;
+  height: 100%;
+}
+
+.svg-icon {
+  width: calc(3.2 * var(--rhv-size));
+}
+
+.state-info-container {
+  width: 100%;
+  height: calc(5.5 * var(--rhv-size));
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 131, 250, 0.06) 0%,
+    rgba(7, 131, 250, 0.02) 100%
+  );
+  box-shadow: 0px 0px 20px 4px rgba(7, 131, 250, 0.4) inset;
+}
+
+.rank-table table {
+  border-spacing: 0 var(--rhv-size-1) !important;
+}
+
+.rank-table-header table {
+  border-spacing: 0 !important;
+}
+
+.ant-table-thead > tr > th {
+  border: 0;
+  font-size: var(--rhv-size-4-half) !important;
+  line-height: var(--rhv-size-6-half) !important;
+  padding: 0 !important; //var(--rhv-size-3) 0;
+  color: #9ebfdb;
+}
+
+.ant-table-tbody > tr > td {
+  border: 0;
+  font-size: var(--rhv-size-4-half) !important;
+  line-height: var(--rhv-size-6-half) !important;
+  padding: 0 !important; //var(--rhv-size-3) 0;
+  color: #fff;
+  background: rgba(7, 131, 250, 0.01) !important;
+}

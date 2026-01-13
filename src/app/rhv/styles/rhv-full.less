@@ -1,0 +1,23 @@
+@import './core/rhv.less';
+@import "./ng-zorro-override.less";
+@import './components/components.less';
+
+
+ngx-monaco-editor {
+    min-height: 65vh;
+}
+
+html {
+    --rhv-published-font-size: unset;
+}
+
+body,
+html {
+    font-size: var(--rhv-size);
+}
+
+body[rhv-published],
+html[rhv-published] {
+    font-size           : var(--rhv-published-font-size);
+    --rhv-base-font-size: var(--rhv-published-font-size), var(var(--rhv-base-font-size));
+}

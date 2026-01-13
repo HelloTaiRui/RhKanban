@@ -1,0 +1,137 @@
+{
+  "item": "洲际年度出货变化统计",
+  "children": [
+    {
+      "item": "北美洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 1880833,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 1568790,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "大洋洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 305458,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 301774,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "非洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 230785,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 209074,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "南美洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 512905,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 345694,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "欧洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "2023",
+          "value1": 1100,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2024",
+          "value1": 5171528,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 4152536,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "其他",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 747211,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 502586,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "亚洲",
+      "value1": null,
+      "children": [
+        {
+          "item": "2024",
+          "value1": 1830833,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "2025",
+          "value1": 1121066,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

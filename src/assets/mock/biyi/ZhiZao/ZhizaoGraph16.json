@@ -1,0 +1,305 @@
+{
+  "item": "月度装配车间设备运行分析",
+  "children": [
+    {
+      "item": "1月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "3月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "4月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "5月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "6月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "7月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "8月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "9月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10月",
+      "value1": null,
+      "children": [
+        {
+          "item": "运行",
+          "value1": 171.67,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机",
+          "value1": 19.82,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率",
+          "value1": 2.7,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

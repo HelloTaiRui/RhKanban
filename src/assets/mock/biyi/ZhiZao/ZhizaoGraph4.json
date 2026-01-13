@@ -1,0 +1,125 @@
+{
+  "item": "本月生产成品不良项Top5",
+  "children": [
+    {
+      "item": "外观不良",
+      "value1": null,
+      "children": [
+        {
+          "item": "缺陷数量",
+          "value1": 38,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "缺陷占比(%)",
+          "value1": 13.8,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "排名",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "间隙 /  台阶大",
+      "value1": null,
+      "children": [
+        {
+          "item": "缺陷数量",
+          "value1": 30,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "缺陷占比(%)",
+          "value1": 10.9,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "排名",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "脏污,划伤",
+      "value1": null,
+      "children": [
+        {
+          "item": "缺陷数量",
+          "value1": 22,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "缺陷占比(%)",
+          "value1": 8,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "排名",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "装配不良",
+      "value1": null,
+      "children": [
+        {
+          "item": "缺陷数量",
+          "value1": 13,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "缺陷占比(%)",
+          "value1": 4.7,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "排名",
+          "value1": 4,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "划伤",
+      "value1": null,
+      "children": [
+        {
+          "item": "缺陷数量",
+          "value1": 11,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "缺陷占比(%)",
+          "value1": 4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "排名",
+          "value1": 5,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

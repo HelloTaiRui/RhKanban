@@ -1,0 +1,131 @@
+{
+  "item": "近7日立库成品出入库数量统计",
+  "children": [
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库数",
+          "value1": 264,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "出库数",
+          "value1": 402,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库数",
+          "value1": 240,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "出库数",
+          "value1": 4636,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库数",
+          "value1": 5818,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "出库数",
+          "value1": 5600,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库数",
+          "value1": 8711,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "出库数",
+          "value1": 4840,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库数",
+          "value1": 4672,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "出库数",
+          "value1": 2664,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库数",
+          "value1": 3999,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "出库数",
+          "value1": 8220,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "入库数",
+          "value1": 242,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "出库数",
+          "value1": 1167,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

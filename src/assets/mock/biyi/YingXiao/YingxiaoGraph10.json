@@ -1,0 +1,161 @@
+{
+  "item": "各产品类型销售数量",
+  "children": [
+    {
+      "item": "空气炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 51464119,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "油炸锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 9923756,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "电烤盘",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 2255811,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "煎烤器",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 722546,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "咖啡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 525872,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "暖风机",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 496000,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "煎锅",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 338399,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "塔扇",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 221695,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "奶泡机",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 126412,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "三明治华夫饼机",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 63392,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "鸡尾酒机",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 20880,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "水杯",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 13362,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "制冰机",
+      "value1": null,
+      "children": [
+        {
+          "item": "销量",
+          "value1": 1963,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

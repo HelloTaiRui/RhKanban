@@ -1,0 +1,77 @@
+{
+  "item": "仓库物流通道使用情况",
+  "children": [
+    {
+      "item": "1F_01",
+      "value1": null,
+      "children": [
+        {
+          "item": "状态",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "1F_02",
+      "value1": null,
+      "children": [
+        {
+          "item": "状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "1F_03",
+      "value1": null,
+      "children": [
+        {
+          "item": "状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "1F_04",
+      "value1": null,
+      "children": [
+        {
+          "item": "状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "1F_05",
+      "value1": null,
+      "children": [
+        {
+          "item": "状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "1F_06",
+      "value1": null,
+      "children": [
+        {
+          "item": "状态",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

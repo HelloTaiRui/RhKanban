@@ -1,0 +1,11 @@
+
+.generate-border(@i: 0) when (@i=< 6) {
+    
+    .rhv-border-@{i} {
+        border: unit(@i,'px') solid @rhv-border-color;
+    }
+
+    .generate-border((@i+1))
+}
+
+//.generate-border();

@@ -1,0 +1,65 @@
+{
+  "item": "本月各车间设备开机状况",
+  "children": [
+    {
+      "item": "装配车间",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机设备数",
+          "value1": 1641,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率(%)",
+          "value1": 86.4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机率(%)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机率(%)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "注塑T车间",
+      "value1": null,
+      "children": [
+        {
+          "item": "开机设备数",
+          "value1": 7196,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "开机率(%)",
+          "value1": 72.1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "待机率(%)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停机率(%)",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "item": "月度安灯情况",
+  "children": [
+    {
+      "item": "10/20",
+      "value1": null,
+      "children": [
+        {
+          "item": "安灯呼叫数",
+          "value1": 5,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已关闭数",
+          "value1": 5,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停线时长",
+          "value1": 56.1,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/21",
+      "value1": null,
+      "children": [
+        {
+          "item": "安灯呼叫数",
+          "value1": 4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已关闭数",
+          "value1": 4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停线时长",
+          "value1": 116.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/22",
+      "value1": null,
+      "children": [
+        {
+          "item": "安灯呼叫数",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已关闭数",
+          "value1": 2,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停线时长",
+          "value1": 2.6,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/23",
+      "value1": null,
+      "children": [
+        {
+          "item": "安灯呼叫数",
+          "value1": 5,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已关闭数",
+          "value1": 4,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停线时长",
+          "value1": 83.3,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/24",
+      "value1": null,
+      "children": [
+        {
+          "item": "安灯呼叫数",
+          "value1": 7,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已关闭数",
+          "value1": 3,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停线时长",
+          "value1": 34,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/25",
+      "value1": null,
+      "children": [
+        {
+          "item": "安灯呼叫数",
+          "value1": 1,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已关闭数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停线时长",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "10/26",
+      "value1": null,
+      "children": [
+        {
+          "item": "安灯呼叫数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "已关闭数",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "停线时长",
+          "value1": 0,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<ng-container *ngIf="rhUseImg; else iframeTpl">
+  <ng-container *ngIf="rhPlaceholderImg.endsWith('.mp4'); else imgTpl">
+    <video [src]="rhPlaceholderImg" style="width: 100%; height: 100%" autoplay loop></video>
+  </ng-container>
+  <ng-container #imgTpl>
+    <img [src]="rhPlaceholderImg" style="width: 100%; height: 100%" />
+  </ng-container>
+</ng-container>
+<ng-template #iframeTpl>
+  <iframe
+    *ngIf="targetUrl && !isDevMode; else tip"
+    #iframe
+    [src]="targetUrl"
+    class="w-full h-full overflow-hidden"
+    [class.fullscreen]="isFullscreen"
+    style="border: 0; width: 100%; height: 100%"
+  ></iframe>
+  <ng-template #tip>当前为本地开发模式，已关闭美象3d推流的显示！</ng-template>
+</ng-template>

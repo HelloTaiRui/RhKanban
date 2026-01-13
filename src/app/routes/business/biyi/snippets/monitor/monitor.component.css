@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.item {
+  width: calc(10 * var(--rhv-size));
+  height: calc(2.5 * var(--rhv-size));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #ffffff63;
+  cursor: pointer;
+}
+
+.selected {
+  background: #0784faa9;
+}
+
+.selected-item {
+  background: #0784faa9;
+  display: flex;
+  gap: 0.5rem;
+}

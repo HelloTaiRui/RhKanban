@@ -1,0 +1,102 @@
+<rh-page-frame
+  rhTitle="注塑车间设备总览看板"
+  rhBgImg="assets/img/biyi/车间看板_BG.png"
+  rhHeaderImg="assets/img/biyi/车间看板_BG_顶部.png"
+>
+  <div class="flex flex-col w-full h-full overflow-hidden">
+    <div
+      class="flex w-full overflow-hidden rhv-padding-8-left rhv-padding-4-bottom justify-between"
+    >
+      <div class="flex">
+        <div class="rhv-margin-8-right">设备总数：{{ sumQty }}</div>
+        <div class="flex items-center rhv-margin-8-right">
+          <div class="status status-running"></div>
+          运行：{{ summaryData[1] }}
+        </div>
+        <div class="flex items-center rhv-margin-8-right">
+          <div class="status status-error"></div>
+          待机：{{ summaryData[2] }}
+        </div>
+        <div class="flex items-center rhv-margin-8-right">
+          <div class="status status-down"></div>
+          停机：{{ summaryData[3] }}
+        </div>
+        <div class="flex items-center rhv-margin-8-right">
+          <div class="status status-standby"></div>
+          未知：{{ summaryData[0] }}
+        </div>
+      </div>
+      <div
+        class="flex rhv-padding-8-right"
+        style="top: var(--rhv-size); right: 0; padding-top: var(--rhv-size-2)"
+      >
+        <div
+          class="rank-symbol cursor-pointer rhv-margin-5-left"
+          [class.not-active]="item !== curPageIndex"
+          *ngFor="let item of pageList; trackBy: trackByIndex"
+          (click)="jumpTo(item)"
+        >
+          {{ item + 1 }}
+        </div>
+      </div>
+    </div>
+    <div class="items-container">
+      <div
+        class="item-box"
+        *ngFor="let item of visibleList; trackBy: trackByIndex"
+        style="width: 12.5%; height: 20%"
+      >
+        <div class="item-box-content item-box-border">
+          <div class="flex justify-between w-full items-center">
+            <div class="value">{{ item[0] }}</div>
+            <div
+              class="label flex-1 flex items-center justify-center small-label"
+            >
+              {{ item[1] }}
+            </div>
+            <div class="label flex items-center">
+              <div class="status status-{{ statusIconMap[item[2]] }}"></div>
+              {{ statusNameMap[item[2]] }}
+            </div>
+          </div>
+          <div class="flex justify-between w-full">
+            <div class="label">本月达成率</div>
+            <div class="basic-value">{{ item[3] }}%</div>
+          </div>
+          <div class="flex w-full">
+            <nz-progress
+              class="w-full"
+              [nzPercent]="item[3]"
+              [nzShowInfo]="false"
+              [nzStrokeColor]="'#0783FA'"
+            ></nz-progress>
+          </div>
+          <div class="flex justify-between w-full">
+            <div class="label">{{ item[4] }}</div>
+            <div class="label">{{ item[5] }}</div>
+          </div>
+          <div class="flex justify-between overflow-hidden gap-2 flex-1">
+            <div style="width: 40%" class="flex">
+              <img
+                src="assets/img/biyi/注塑机.png"
+                alt=""
+                class="w-full"
+                style="margin: auto"
+              />
+            </div>
+            <div class="flex flex-col justify-center gap-1.5 flex-1">
+              <div class="flex justify-between w-full">
+                <div class="label">开机率：</div>
+                <div class="basic-value">{{ item[6] }}%</div>
+              </div>
+              <div class="flex justify-between w-full">
+                <div class="label">本月产量：</div>
+                <div class="basic-value">{{ item[7] }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</rh-page-frame>

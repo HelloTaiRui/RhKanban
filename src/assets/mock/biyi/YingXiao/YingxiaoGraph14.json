@@ -1,0 +1,185 @@
+{
+  "item": "本年度各月生产量与出货量",
+  "children": [
+    {
+      "item": "2025-01",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 654761,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 938334,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-02",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 553735,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 489542,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-03",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 1105414,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 1027397,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-04",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 953519,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 980035,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-05",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 761989,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 717755,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-06",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 897532,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 875621,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-07",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 918928,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 880431,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-08",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 851939,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 902974,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-09",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 713608,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 912239,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    },
+    {
+      "item": "2025-10",
+      "value1": null,
+      "children": [
+        {
+          "item": "生产数量",
+          "value1": 605307,
+          "value2": null,
+          "value3": null
+        },
+        {
+          "item": "发货数量",
+          "value1": 695955,
+          "value2": null,
+          "value3": null
+        }
+      ]
+    }
+  ]
+}
