@@ -126,8 +126,9 @@ export class SmartLogisticsComponent extends RhvBoardBase {
   /** 账龄分析图 */
   accountAgeAnalysis = new RhHorizontalPieChart({
     unit: '',
-    centerUnit: '万件',
-    title: '总量',
+    centerUnit: '',
+    centerValue: '' as RhSafeAny,
+    title: '',
     radius: ['70%', '85%'],
     center: ['70%', '50%'],
     dimensions: ['账龄类别', '数值'],
@@ -152,10 +153,10 @@ export class SmartLogisticsComponent extends RhvBoardBase {
     if (data) {
       const details = data?.children || [];
       const summary = sumBy(details, 'value1');
-      this.accountAgeAnalysis.centerValue = RhmNumberHelper.unifyNumber(
+      /*       this.accountAgeAnalysis.centerValue = RhmNumberHelper.unifyNumber(
         summary / 10000,
         2
-      );
+      ); */
       this.accountAgeAnalysis.updateDataset(
         details.map((item) => [item.item, item.value1])
       );
@@ -227,8 +228,9 @@ export class SmartLogisticsComponent extends RhvBoardBase {
   productCategory = new RhHorizontalPieChart(
     {
       unit: '件',
-      centerUnit: '件',
-      title: '库存总量',
+      centerUnit: '',
+      centerValue:'' as RhSafeAny,
+      title: '',
       legendLabelWidth: 100,
       center: ['70%', '50%'],
       formatter: (name: string, value: number, percent: number) => {
@@ -262,7 +264,7 @@ export class SmartLogisticsComponent extends RhvBoardBase {
           item.children[0].value1,
         ]);
         const summary = sum(details.map((item) => item[1]));
-        this.productCategory.centerValue = summary;
+        //this.productCategory.centerValue = summary;
         return {
           dimensions: ['成品类别', '数量'],
           dataset: details,
