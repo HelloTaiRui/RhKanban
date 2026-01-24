@@ -123,11 +123,11 @@
   cursor: pointer;
 }
 
-.ant-modal .ant-table{
+.ant-modal .ant-table {
   background-color: transparent !important;
 }
 
-.ant-modal .ant-table thead > tr > th{
+.ant-modal .ant-table thead > tr > th {
   background-color: transparent !important;
   border-bottom: unset;
 }
@@ -151,4 +151,37 @@
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background: transparent;
+}
+
+.select-list {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 0.5rem;
+
+  & .item {
+    width: calc(10 * var(--rhv-size));
+    height: calc(7.5 * var(--rhv-size));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff63;
+    cursor: pointer;
+  }
+
+  & .selected {
+    background: #0784faa9;
+  }
+}
+
+.ant-picker-input > input {
+  font-size: var(--rhv-size);
+  cursor: pointer;
+}
+
+.ant-picker-panel-container {
+  background: #03314e;
 }

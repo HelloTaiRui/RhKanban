@@ -1,7 +1,8 @@
 <rh-page-frame
-  rhTitle="成品产线看板"
+  rhTitle="{{ workshopInfo.dataset.category }}产线看板"
   rhBgImg="assets/img/biyi/车间看板_BG.png"
   rhHeaderImg="assets/img/biyi/车间看板_BG_顶部.png"
+  [rhCenterTitleClicked]="openWorkshopSelectModal"
 >
   <div class="flex flex-col w-full h-full overflow-hidden rhv-padding-h">
     <div class="flex w-full justify-start">
@@ -32,12 +33,29 @@
         nzTemplateMode
         [nzWidthConfig]="widthConfig"
         class="full-height-table"
-        [style.opacity]="tableData.dataset.dataLoading ? 0.7 : 1"
+        [style.opacity]="linesData.dataset.dataLoading ? 0.7 : 1"
       >
         <thead>
           <tr>
             <th colspan="10">当日产线信息统计</th>
-            <th colspan="9">当月产线信息统计</th>
+            <th colspan="9">
+              <nz-month-picker
+                style="
+                  width: calc(4 * var(--rhv-size));
+                  padding: 0;
+                  border: 0;
+                  text-decoration: underline;
+                "
+                nzSize="small"
+                [(ngModel)]="monthInfo"
+                nzPlaceHolder="月份"
+                [nzAllowClear]="false"
+                [nzSuffixIcon]="null"
+                [nzInputReadOnly]="true"
+                (ngModelChange)="handleMonthChanged($event)"
+              ></nz-month-picker
+              >当月产线信息统计
+            </th>
           </tr>
           <tr class="bg-tr">
             <th>产线</th>
@@ -45,7 +63,7 @@
             <th>计划</th>
             <th>实际</th>
             <th>不良</th>
-            <th>码垛数</th>
+            <th>产线<br />人数</th>
             <th>达成率</th>
             <th>UPPH值</th>
             <th>一次<br />合格率</th>
@@ -57,14 +75,14 @@
             <th>验货<br />合格率</th>
             <th>月度<br />离职率</th>
             <th>月度<br />UPPH值</th>
-            <th>产线退料金额（工费）</th>
+            <th>产线<br />退料金额<br />（工费）</th>
             <th>用电<br />统计</th>
           </tr>
         </thead>
         <tbody>
           <ng-container
             *ngFor="
-              let line of tableData.data.linesData;
+              let line of linesData.dataset.result.linesData;
               index as lineIndex;
               trackBy: trackByIndex
             "
@@ -84,7 +102,13 @@
               <td>{{ row[2] }}</td>
               <td>{{ row[3] }}</td>
               <td>{{ row[4] }}</td>
-              <td>{{ row[5] }}%</td>
+              <td>
+                <span
+                  class="link"
+                  (click)="handleShowDetail(line.name, 'CompletenessInfos')"
+                  >{{ row[5] }}%</span
+                >
+              </td>
               <td>{{ row[6] }}</td>
               <td>{{ row[7] }}%</td>
               <ng-container *ngIf="i === 0">
@@ -92,10 +116,10 @@
                   <rh-status-timeline
                     class="block"
                     style="height: var(--rhv-size-4)"
-                    [rhCurTime]="tableData.dataset.curTime"
+                    [rhCurTime]="stateData.dataset.curTime"
                     [rhData]="line.stateData"
-                    [rhStartTime]="tableData.dataset.createStartTime"
-                    [rhEndTime]="tableData.dataset.createEndTime"
+                    [rhStartTime]="stateData.dataset.createStartTime"
+                    [rhEndTime]="stateData.dataset.createEndTime"
                     [rhBgColorMap]="stateColorMap"
                     [rhStateNameMap]="stateNameMap"
                   ></rh-status-timeline>
@@ -104,13 +128,13 @@
                     style="height: var(--rhv-size-5-half)"
                   >
                     <div
-                      *ngFor="let item of tableData.dataset.timelineTicks"
+                      *ngFor="let item of stateData.dataset.timelineTicks"
                       class="flex-1 h-full tick-border tick-name"
                     >
                       {{ item }}
                     </div>
                     <div class="tick-name">
-                      {{ tableData.dataset.lastTick }}
+                      {{ stateData.dataset.lastTick }}
                     </div>
                   </div>
                 </td>
@@ -118,16 +142,43 @@
                   <td [attr.rowspan]="num">{{ monthlyData[0] }}%</td>
                   <td [attr.rowspan]="num">{{ monthlyData[1] }}%</td>
                   <td [attr.rowspan]="num">
-                    {{ monthlyData[2][0] }}/{{ monthlyData[2][1] }}
+                    <span
+                      class="link"
+                      (click)="handleShowDetail(line.name, 'AndonInfos')"
+                      >{{ monthlyData[2][0]
+                      }}<!-- /{{ monthlyData[2][1] }} --></span
+                    >
                   </td>
-                  <td [attr.rowspan]="num">{{ monthlyData[3] }}</td>
-                  <td [attr.rowspan]="num">{{ monthlyData[4] }}%</td>
-                  <td [attr.rowspan]="num">{{ monthlyData[5] }}%</td>
+                  <td [attr.rowspan]="num">
+                    <span
+                      class="link"
+                      (click)="
+                        handleShowDetail(line.name, 'ExceptionHandledInfos')
+                      "
+                      >{{ monthlyData[3] }}</span
+                    >
+                  </td>
+                  <td [attr.rowspan]="num">
+                    <span
+                      class="link"
+                      (click)="handleShowDetail(line.name, 'InspectionInfos')"
+                      >{{ monthlyData[4] }}%</span
+                    >
+                  </td>
+                  <td [attr.rowspan]="num">
+                    <span
+                      class="link"
+                      (click)="handleShowDetail(line.name, 'EmployeeInfos')"
+                      >{{ monthlyData[5] }}%</span
+                    >
+                  </td>
                   <td [attr.rowspan]="num">{{ monthlyData[6] }}</td>
                   <td [attr.rowspan]="num">
-                    <span class="link" (click)="handleShowDetail(line.name)">{{
-                      monthlyData[7]
-                    }}</span>
+                    <span
+                      class="link"
+                      (click)="handleShowDetail(line.name, 'BadMaterialInfos')"
+                      >{{ monthlyData[7] }}</span
+                    >
                   </td>
                   <td [attr.rowspan]="num">{{ monthlyData[8] }}</td>
                 </ng-container>
@@ -135,8 +186,8 @@
             </tr>
           </ng-container>
           <tr
-            *ngIf="tableData.data.summaryData as summary"
-            [class.bg-tr]="tableData.data.linesData.length % 2 == 1"
+            *ngIf="linesData.dataset.result.summaryData as summary"
+            [class.bg-tr]="linesData.dataset.result.linesData.length % 2 == 1"
           >
             <td>{{ summary[0] }}</td>
             <td>{{ summary[1] }}</td>
@@ -150,7 +201,10 @@
             <td></td>
             <td>{{ summary[10] }}%</td>
             <td>{{ summary[11] }}%</td>
-            <td>{{ summary[12][0] }}/{{ summary[12][1] }}</td>
+            <td>
+              {{ summary[12][0]
+              }}<!-- /{{ summary[12][1] }} -->
+            </td>
             <td>{{ summary[13] }}</td>
             <td>{{ summary[14] }}%</td>
             <td>{{ summary[15] }}%</td>
@@ -161,10 +215,26 @@
         </tbody>
       </nz-table>
       <nz-spin
-        *ngIf="tableData.dataset.dataLoading"
+        *ngIf="todayData.dataset.dataLoading"
         nzTip="数据获取中，请稍等..."
         class="w-full h-full absolute"
-        style="top: 0; left: 0"
+        style="top: 0; left: 0; width: 30%"
+        nzSize="large"
+      >
+      </nz-spin>
+      <nz-spin
+        *ngIf="stateData.dataset.dataLoading"
+        nzTip="数据获取中，请稍等..."
+        class="w-full h-full absolute"
+        style="top: 0; left: 30%; width: 40%"
+        nzSize="large"
+      >
+      </nz-spin>
+      <nz-spin
+        *ngIf="monthData.dataset.dataLoading"
+        nzTip="数据获取中，请稍等..."
+        class="w-full h-full absolute"
+        style="top: 0; right: 0; width: 30%"
         nzSize="large"
       >
       </nz-spin>
@@ -177,13 +247,12 @@
   [nzTitle]="null"
   [nzBodyStyle]="{ padding: 0 }"
   [nzClosable]="false"
-  nzTitle="详情"
   [nzFooter]="null"
   nzWidth="80vw"
   (nzOnCancel)="detailModalVisible = false"
 >
   <rh-item-container
-    rhTitle="{{ curLineCode }}线退料明细"
+    rhTitle="{{ curLineCode }}{{ curDetailTable.title }}"
     style="width: 100%; height: 80vh"
   >
     <div class="w-full h-full overflow-hidden rhv-padding">
@@ -195,15 +264,12 @@
         <thead>
           <tr>
             <th nzWidth="4rem">序号</th>
-            <th nzWidth="9rem">退料单号</th>
-            <th nzWidth="7rem">销售单号</th>
-            <th nzWidth="8rem">工单号</th>
-            <th nzWidth="8rem">物料编码</th>
-            <th nzWidth="12rem">物料名称</th>
-            <th>物料规格</th>
-            <th nzWidth="6rem">退料数量</th>
-            <th nzWidth="6rem">单价</th>
-            <th nzWidth="6rem">总金额</th>
+            <th
+              *ngFor="let col of curDetailTable.columns; trackBy: trackByIndex"
+              [nzWidth]="col.width"
+            >
+              {{ col.title }}
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -216,27 +282,50 @@
             "
           >
             <td>{{ i + 1 }}</td>
-            <td>{{ row.materialReturnNo }}</td>
-            <td>{{ row.salesNo }}</td>
-            <td>{{ row.moNo }}</td>
-            <td>{{ row.itemCode }}</td>
-            <td>{{ row.itemName }}</td>
-            <td>{{ row.itemSpec }}</td>
-            <td>{{ row.returnQty }}</td>
-            <td>{{ row.price }}</td>
-            <td>{{ row.amount }}</td>
+            <td
+              *ngFor="let col of curDetailTable.columns; trackBy: trackByIndex"
+            >
+              {{ row[col.key] }}
+            </td>
           </tr>
         </tbody>
       </nz-table>
     </div>
-
     <nz-spin
       *ngIf="detailDataLoading"
       nzTip="数据获取中，请稍等..."
       class="w-full h-full absolute"
-      style="top: 0; left: 0"
+      style="top: 0; left: 30%; width: 40%"
       nzSize="large"
     >
     </nz-spin>
+  </rh-item-container>
+</nz-modal>
+
+<nz-modal
+  nzWidth="50vw"
+  [nzTitle]="null"
+  [nzFooter]="null"
+  [nzBodyStyle]="{ padding: 0 }"
+  [nzClosable]="false"
+  [(nzVisible)]="workshopSelectModalVisible"
+  (nzOnCancel)="workshopSelectModalVisible = false"
+>
+  <rh-item-container rhTitle="请选择车间">
+    <div
+      class="w-full flex flex-col overflow-hidden"
+      style="height: 20vh; gap: 1rem; min-height: 200px; padding: 1rem"
+    >
+      <div class="select-list">
+        <div
+          class="item"
+          [class.selected]="workshopInfo.dataset.category == item.category"
+          (click)="onClickItem(item)"
+          *ngFor="let item of workshopInfo.data; trackBy: trackByIndex"
+        >
+          <div>{{ item.category }}</div>
+        </div>
+      </div>
+    </div>
   </rh-item-container>
 </nz-modal>

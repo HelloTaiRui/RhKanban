@@ -43,7 +43,7 @@ export class RhBusinessApiService {
       controller,
       api,
       body,
-      configinfo.iotAddr,
+      configinfo.outerAddr,
       mockData,
       enableMock
     );

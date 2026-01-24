@@ -39,6 +39,8 @@ export class RhPageFrameComponent implements OnInit {
   @Input() rhBgImg: string = 'assets/images/v2025/bg.png';
   /** 顶部图URL */
   @Input() rhHeaderImg: string = 'assets/images/v2025/bg_top.png';
+  /** 中央标题被点击事件 */
+  @Input() rhCenterTitleClicked: () => any;
 
   leftTimeSubscription: Subscription;
   rightTimeSubscription: Subscription;

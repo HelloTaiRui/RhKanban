@@ -25,7 +25,11 @@
           style="height: var(--rhv-size-10)"
         />
       </div>
-      <div class="w-1/2 board-title">
+      <div
+        class="w-1/2 board-title"
+        [class.cursor-pointer]="rhCenterTitleClicked"
+        (click)="rhCenterTitleClicked()"
+      >
         {{ rhTitle }}
       </div>
       <div class="w-1/4 board-right-area">
