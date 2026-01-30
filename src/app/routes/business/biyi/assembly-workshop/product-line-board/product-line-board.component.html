@@ -37,8 +37,8 @@
       >
         <thead>
           <tr>
-            <th colspan="10">当日产线信息统计</th>
-            <th colspan="9">
+            <th colspan="13">当日产线信息统计</th>
+            <th colspan="11">
               <nz-month-picker
                 style="
                   width: calc(4 * var(--rhv-size));
@@ -55,6 +55,9 @@
                 (ngModelChange)="handleMonthChanged($event)"
               ></nz-month-picker
               >当月产线信息统计
+              <div class="inline-export-btn-area">
+                <span (click)="handleExportMonthData()"> 导出 </span>
+              </div>
             </th>
           </tr>
           <tr class="bg-tr">
@@ -67,7 +70,11 @@
             <th>达成率</th>
             <th>UPPH值</th>
             <th>一次<br />合格率</th>
+            <th>T0<br />齐套率</th>
+            <th>T1<br />齐套率</th>
+            <th>T2<br />齐套率</th>
             <th>产线状态</th>
+            <th>月度<br />完工数</th>
             <th>计划<br />达成率</th>
             <th>一次<br />合格率</th>
             <th>安灯<br />停线</th>
@@ -75,6 +82,7 @@
             <th>验货<br />合格率</th>
             <th>月度<br />离职率</th>
             <th>月度<br />UPPH值</th>
+            <th>产线<br />退料金额<br />（料费）</th>
             <th>产线<br />退料金额<br />（工费）</th>
             <th>用电<br />统计</th>
           </tr>
@@ -111,6 +119,9 @@
               </td>
               <td>{{ row[6] }}</td>
               <td>{{ row[7] }}%</td>
+              <td>{{ row[8] }}%</td>
+              <td>{{ row[9] }}%</td>
+              <td>{{ row[10] }}%</td>
               <ng-container *ngIf="i === 0">
                 <td [attr.rowspan]="num">
                   <rh-status-timeline
@@ -139,13 +150,14 @@
                   </div>
                 </td>
                 <ng-container *ngIf="line.monthlyData as monthlyData">
-                  <td [attr.rowspan]="num">{{ monthlyData[0] }}%</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[0] }}</td>
                   <td [attr.rowspan]="num">{{ monthlyData[1] }}%</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[2] }}%</td>
                   <td [attr.rowspan]="num">
                     <span
                       class="link"
                       (click)="handleShowDetail(line.name, 'AndonInfos')"
-                      >{{ monthlyData[2][0]
+                      >{{ monthlyData[3][0]
                       }}<!-- /{{ monthlyData[2][1] }} --></span
                     >
                   </td>
@@ -155,32 +167,33 @@
                       (click)="
                         handleShowDetail(line.name, 'ExceptionHandledInfos')
                       "
-                      >{{ monthlyData[3] }}</span
+                      >{{ monthlyData[4] }}</span
                     >
                   </td>
                   <td [attr.rowspan]="num">
                     <span
                       class="link"
                       (click)="handleShowDetail(line.name, 'InspectionInfos')"
-                      >{{ monthlyData[4] }}%</span
+                      >{{ monthlyData[5] }}%</span
                     >
                   </td>
                   <td [attr.rowspan]="num">
                     <span
                       class="link"
                       (click)="handleShowDetail(line.name, 'EmployeeInfos')"
-                      >{{ monthlyData[5] }}%</span
+                      >{{ monthlyData[6] }}%</span
                     >
                   </td>
-                  <td [attr.rowspan]="num">{{ monthlyData[6] }}</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[7] }}</td>
                   <td [attr.rowspan]="num">
                     <span
                       class="link"
                       (click)="handleShowDetail(line.name, 'BadMaterialInfos')"
-                      >{{ monthlyData[7] }}</span
+                      >{{ monthlyData[8] }}</span
                     >
                   </td>
-                  <td [attr.rowspan]="num">{{ monthlyData[8] }}</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[9] }}</td>
+                  <td [attr.rowspan]="num">{{ monthlyData[10] }}</td>
                 </ng-container>
               </ng-container>
             </tr>
@@ -198,19 +211,24 @@
             <td>{{ summary[6] }}%</td>
             <td>{{ summary[7] }}</td>
             <td>{{ summary[8] }}%</td>
-            <td></td>
+            <td>{{ summary[9] }}%</td>
             <td>{{ summary[10] }}%</td>
             <td>{{ summary[11] }}%</td>
-            <td>
-              {{ summary[12][0]
-              }}<!-- /{{ summary[12][1] }} -->
-            </td>
+            <td></td>
             <td>{{ summary[13] }}</td>
             <td>{{ summary[14] }}%</td>
             <td>{{ summary[15] }}%</td>
-            <td>{{ summary[16] }}</td>
+            <td>
+              {{ summary[16][0]
+              }}<!-- /{{ summary[12][1] }} -->
+            </td>
             <td>{{ summary[17] }}</td>
-            <td>{{ summary[18] }}</td>
+            <td>{{ summary[18] }}%</td>
+            <td>{{ summary[19] }}%</td>
+            <td>{{ summary[20] }}</td>
+            <td>{{ summary[21] }}</td>
+            <td>{{ summary[22] }}</td>
+            <td>{{ summary[23] }}</td>
           </tr>
         </tbody>
       </nz-table>
@@ -290,6 +308,9 @@
           </tr>
         </tbody>
       </nz-table>
+    </div>
+    <div class="export-btn-area">
+      <span (click)="handleExportDetailsData()"> 导出 </span>
     </div>
     <nz-spin
       *ngIf="detailDataLoading"

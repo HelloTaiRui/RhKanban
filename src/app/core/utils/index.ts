@@ -2,6 +2,7 @@ export * from './array-helper';
 export * from './control-value-accessor';
 export * from './data-load-helper';
 export * from './date-helper';
+export * from './file-helper';
 export * from './fn-utils';
 export * from './function-utils';
 export * from './http-error-formatter';

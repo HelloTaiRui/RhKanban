@@ -8,6 +8,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @NgModule({
   declarations: [ProductLineBoardComponent],
@@ -16,6 +17,7 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
     SharedModule,
     NzSpinModule,
     NzModalModule,
+    NzIconModule,
     AssemblyWorkshopRoutingModule,
     NzTableModule,
     NzDatePickerModule,

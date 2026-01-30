@@ -5,12 +5,10 @@ import {
   RhEquipmentStatus,
   useWorkEndTime,
   useWorkStartTime,
-  workTimelineTicks,
 } from '../../data';
-import { last } from 'lodash';
-import { httpErrorFormatter, MockHelper, MsgHelper } from '@core';
+import { FileHelper, httpErrorFormatter, MockHelper, MsgHelper } from '@core';
 import { of } from 'rxjs';
-import { DetailTableConfig, tables } from './board.utils';
+import { DetailTableConfig, monthTable, tables } from './board.utils';
 import { format } from 'date-fns';
 
 const createDemoData = () => {
@@ -188,7 +186,11 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     '5rem',
     '5rem',
     '5rem',
+    '5rem',
+    '5rem',
+    '5rem',
     '',
+    '5rem',
     '5rem',
     '5rem',
     '5rem',
@@ -196,6 +198,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     '4.5rem',
     '5rem',
     '5rem',
+    '6rem',
     '6rem',
     '5rem',
   ];
@@ -272,10 +275,15 @@ export class ProductLineBoardComponent extends RhvBoardBase {
           0,
           0,
           0,
+          0,
+          0,
+          0,
           '',
           0,
           0,
+          0,
           [0, 0],
+          0,
           0,
           0,
           0,
@@ -290,8 +298,8 @@ export class ProductLineBoardComponent extends RhvBoardBase {
             linesList.push(line);
             const lineData = {
               name: line,
-              monthlyData: MockHelper.genArr(9, () => '--'),
-              todayData: [MockHelper.genArr(8, () => '--')],
+              monthlyData: MockHelper.genArr(11, () => '--'),
+              todayData: [MockHelper.genArr(11, () => '--')],
               stateData: new RhBoardData('', null),
             };
             return lineData;
@@ -311,12 +319,12 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     },
     {
       result: {
-        summaryData: ['汇总', ...MockHelper.genArr(18, () => '--')],
+        summaryData: ['汇总', ...MockHelper.genArr(23, () => '--')],
         linesData: MockHelper.genArr(13, (i) => {
           return {
             name: `Z${(i + 1 + '').padStart(2, '0')}`,
-            todayData: [MockHelper.genArr(8, () => '--')],
-            monthlyData: MockHelper.genArr(9, () => '--'),
+            todayData: [MockHelper.genArr(11, () => '--')],
+            monthlyData: MockHelper.genArr(11, () => '--'),
             stateData: new RhBoardData('', null),
           };
         }),
@@ -346,7 +354,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
       onData: (data: any[]) => {
         this.todayData.dataset.dataLoading = false;
         let productSum = 0; //产品总数，用来算平均值
-        const summary = ['-', 0, 0, 0, 0, 0, 0, 0];
+        const summary = ['-', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         this.linesData.dataset.result.linesData.forEach((line) => {
           const item = data.find((el) => el.lineName == line.name);
           if (item) {
@@ -360,6 +368,9 @@ export class ProductLineBoardComponent extends RhvBoardBase {
               item.dayFinishRate,
               item.dayUPPH,
               item.dayQuantityRate,
+              item.dayCompletenessRate0,
+              item.dayCompletenessRate1,
+              item.dayCompletenessRate2,
             ];
             values.forEach((el, i) => {
               if (typeof el === 'number') {
@@ -369,7 +380,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
             line.todayData = [values];
           }
         });
-        const avgItem = [5, 6, 7];
+        const avgItem = [5, 6, 7, 8, 9, 10];
         const sumItem = [1, 2, 3, 4];
         avgItem.forEach((index) => {
           summary[index] =
@@ -472,11 +483,12 @@ export class ProductLineBoardComponent extends RhvBoardBase {
         //console.log(data);
         this.monthData.dataset.dataLoading = false;
         const lines = this.linesData.dataset.result.linesData;
-        const summary = [0, 0, [0, 0], 0, 0, 0, 0, 0, 0];
+        const summary = [0, 0, 0, [0, 0], 0, 0, 0, 0, 0, 0, 0];
         lines.forEach((line) => {
           const item = data.find((el) => el.lineName == line.name);
           if (item) {
             const values = [
+              item.monthFinishQty,
               item.monthFinishRate,
               item.monthQuantityRate,
               [item.monthAndonNumber, item.monthAndonNumber],
@@ -485,10 +497,11 @@ export class ProductLineBoardComponent extends RhvBoardBase {
               item.monthResignationRate,
               item.monthUPPH,
               item.monthBadMaterialReturnAmount,
+              item.monthWorkBadMaterialReturnAmount,
               item.energy,
             ];
             values.forEach((el, i) => {
-              if (i == 2) {
+              if (i == 3) {
                 //安灯特殊处理
                 summary[i][0] += (el[0] as RhSafeAny) || 0;
                 summary[i][1] += (el[1] as RhSafeAny) || 0;
@@ -501,8 +514,8 @@ export class ProductLineBoardComponent extends RhvBoardBase {
             line.monthlyData = values;
           }
         });
-        const monthlyAgvItem = [0, 1, 4, 5, 6];
-        const sumItem = [2, 3, 7, 8];
+        const monthlyAgvItem = [1, 2, 5, 6, 7];
+        const sumItem = [0, 3, 4, 8, 9, 10];
         monthlyAgvItem.forEach((index) => {
           summary[index] =
             lines.length === 0
@@ -520,7 +533,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
         });
         summary.forEach(
           (item, index) =>
-            (this.linesData.dataset.result.summaryData[index + 10] = item)
+            (this.linesData.dataset.result.summaryData[index + 13] = item)
         );
       },
     },
@@ -537,6 +550,8 @@ export class ProductLineBoardComponent extends RhvBoardBase {
   detailsData = [];
   /** 当前选中的产线 */
   curLineCode: string;
+  /** 明细接口的查询 */
+  private detailsQueryTime: number;
 
   /** 当前明细表格配置 */
   curDetailTable: DetailTableConfig = {
@@ -555,6 +570,8 @@ export class ProductLineBoardComponent extends RhvBoardBase {
       this.detailsData = [];
       const item = tables[type];
       this.curDetailTable = item;
+      const time = Date.now();
+      this.detailsQueryTime = time;
       const result = await this.apiSer
         .getOuter<RhSafeAny[]>(
           'ZhuSuCheJian',
@@ -567,6 +584,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
           false
         )
         .toPromise();
+      if (time !== this.detailsQueryTime) return;
       this.detailsData = item.formatter ? item.formatter(result) : result;
       this.detailDataLoading = false;
     } catch (error) {
@@ -592,5 +610,34 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     if (this.workshopStorageKey) {
       localStorage.setItem(this.workshopStorageKey, item.category);
     }
+  }
+  /** 导出明细数据 */
+  handleExportDetailsData() {
+    const item = this.curDetailTable;
+    const title = this.curLineCode + item.title;
+    FileHelper.exportTableDataToExcelFile(
+      this.detailsData,
+      item.exportColumns,
+      null,
+      title,
+      title + '_' + format(new Date(), 'yyyyMMdd_HH:mm:ss')
+    );
+  }
+  /** 导出月度数据 */
+  handleExportMonthData() {
+    const item = monthTable;
+    const title =
+      this.workshopInfo.dataset.category +
+      '_' +
+      this.formattedMonth +
+      '当月产线信息数据统计';
+    const data = this.monthData.data;
+    FileHelper.exportTableDataToExcelFile(
+      data,
+      item.exportColumns,
+      null,
+      title,
+      title + '_' + format(new Date(), 'yyyyMMdd_HH:mm:ss')
+    );
   }
 }

@@ -7,5 +7,6 @@ export * from './common';
 export * from './rhv.model';
 export * from './display-helper';
 export * from './extra';
+export * from './file';
 export * from './echarts';
 export * from './components/index';
