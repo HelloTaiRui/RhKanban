@@ -9,7 +9,7 @@ import {
 import { FileHelper, httpErrorFormatter, MockHelper, MsgHelper } from '@core';
 import { of } from 'rxjs';
 import { DetailTableConfig, monthTable, tables } from './board.utils';
-import { format } from 'date-fns';
+import { format, addDays } from 'date-fns';
 
 const createDemoData = () => {
   const lines = [
@@ -159,7 +159,7 @@ const createDemoData = () => {
           new RhBoardData('一次合格率', 97),
           new RhBoardData('产线状态', 100),
         ]),
-      ])
+      ]),
   );
 };
 
@@ -236,12 +236,18 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     },
     {
       category: localStorage.getItem(this.workshopStorageKey) || '空炸',
-    }
+    },
   );
   /** 选择的月份 */
   monthInfo: Date = new Date();
   /** 格式化后的月份值 */
   formattedMonth: string = format(new Date(), 'yyyy-MM');
+  //今天
+  formattedDate0: string = format(new Date(), 'yyyy-MM-dd');
+  // 明天
+  formattedDate1: string = format(addDays(new Date(), 1), 'yyyy-MM-dd');
+  // 后天
+  formattedDate2: string = format(addDays(new Date(), 2), 'yyyy-MM-dd');
   /** 处理月份变更事件 */
   handleMonthChanged(month: Date) {
     //console.log(month);
@@ -261,7 +267,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
         this.apiSer.getOuter(
           'ZhuSuCheJian',
           'GetZhusuGraphLineDashboard_LinesByCategory',
-          { category: this.workshopInfo.dataset.category }
+          { category: this.workshopInfo.dataset.category },
         ),
       interval: null,
       onData: (data: string[]) => {
@@ -305,7 +311,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
             return lineData;
           }),
         };
-        //console.log(result);
+        console.log('result', result);
         this.linesData.dataset.dataLoading = false;
         this.linesData.dataset.linesList = linesList;
         this.linesData.dataset.result = result;
@@ -331,7 +337,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
       },
       linesList: [],
       dataLoading: true,
-    }
+    },
   );
   /** 各产线当日数据 */
   todayData = new RhvDisplayInstance(
@@ -347,18 +353,19 @@ export class ProductLineBoardComponent extends RhvBoardBase {
             workLines: this.linesData.dataset.linesList,
           },
           'assets/mock/biyi/ZuZhuangCheJian/ZuZhuangGraph1.json', //new RhBoardData('成品看线看板表格数据', null, createDemoData()),
-          false
+          false,
         );
       },
       interval: 60000 * 5,
       onData: (data: any[]) => {
         this.todayData.dataset.dataLoading = false;
-        let productSum = 0; //产品总数，用来算平均值
+        // let productSum = 0; //产品总数，用来算平均值
+        const validCounts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         const summary = ['-', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         this.linesData.dataset.result.linesData.forEach((line) => {
           const item = data.find((el) => el.lineName == line.name);
           if (item) {
-            productSum += 1;
+            // productSum += 1;
             const values = [
               item.itemName,
               item.dayPlanQty,
@@ -375,6 +382,9 @@ export class ProductLineBoardComponent extends RhvBoardBase {
             values.forEach((el, i) => {
               if (typeof el === 'number') {
                 summary[i] += el as RhSafeAny;
+                if (el !== 0 && !isNaN(el)) {
+                  validCounts[i]++;
+                }
               }
             });
             line.todayData = [values];
@@ -382,24 +392,33 @@ export class ProductLineBoardComponent extends RhvBoardBase {
         });
         const avgItem = [5, 6, 7, 8, 9, 10];
         const sumItem = [1, 2, 3, 4];
+        // avgItem.forEach((index) => {
+        //   summary[index] =
+        //     productSum === 0
+        //       ? 0
+        //       : this.unifyNumber((summary[index] as number) / productSum, 2);
+        // });
+
+        //平均值计算去掉数值为0的
         avgItem.forEach((index) => {
+          const validCount = validCounts[index];
           summary[index] =
-            productSum === 0
+            validCount === 0
               ? 0
-              : this.unifyNumber((summary[index] as number) / productSum, 2);
+              : this.unifyNumber((summary[index] as number) / validCount, 2);
         });
         sumItem.forEach((index) => {
           summary[index] = this.unifyNumber(summary[index] as number, 2);
         });
         summary.forEach(
           (item, index) =>
-            (this.linesData.dataset.result.summaryData[index + 1] = item)
+            (this.linesData.dataset.result.summaryData[index + 1] = item),
         );
       },
     },
     {
       dataLoading: true,
-    }
+    },
   );
   /** 产线状态 */
   stateData = new RhvDisplayInstance(
@@ -414,12 +433,12 @@ export class ProductLineBoardComponent extends RhvBoardBase {
               null,
               this.linesData.dataset.result.linesData.map((line) => {
                 return new RhBoardData(
-                  line.name.replace('-', '').replace('线', ''),
+                  line.name,//.replace('-', '').replace('线', ''),
                   null,
-                  [new RhBoardData('', null), new RhBoardData('', 0, [], 0, 0)]
+                  [new RhBoardData('', null), new RhBoardData('', 0, [], 0, 0)],
                 );
-              })
-            )
+              }),
+            ),
           );
         }
         return this.apiSer.getOuter(
@@ -427,7 +446,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
           'ZhizaoGraph9',
           {},
           'assets/mock/biyi/ZhiZao/ZhizaoGraph9.json',
-          this.enableMock
+          this.enableMock,
         );
       },
       convertor: (data: RhBoardData) => {
@@ -439,7 +458,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
       onData: (data) => {
         this.stateData.dataset.dataLoading = false;
         this.linesData.dataset.result.linesData.forEach((line) => {
-          const lineKey = line.name.replace('-', '').replace('线', '');
+          const lineKey = line.name;//.replace('-', '').replace('线', '');
           const item = data.find((el) => el.item == lineKey);
           if (item) {
             line.stateData = item;
@@ -458,7 +477,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
       createStartTime: useWorkStartTime,
       createEndTime: useWorkEndTime,
       dataLoading: true,
-    }
+    },
   );
 
   /** 各产线月度数据 */
@@ -475,7 +494,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
             workLines: this.linesData.dataset.linesList,
           },
           'assets/mock/biyi/ZuZhuangCheJian/ZuZhuangGraph1.json', //new RhBoardData('成品看线看板表格数据', null, createDemoData()),
-          false
+          false,
         );
       },
       interval: 60000 * 5,
@@ -483,6 +502,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
         //console.log(data);
         this.monthData.dataset.dataLoading = false;
         const lines = this.linesData.dataset.result.linesData;
+        const validCounts = [0, 0, 0, [0, 0], 0, 0, 0, 0, 0, 0, 0];
         const summary = [0, 0, 0, [0, 0], 0, 0, 0, 0, 0, 0, 0];
         lines.forEach((line) => {
           const item = data.find((el) => el.lineName == line.name);
@@ -509,6 +529,9 @@ export class ProductLineBoardComponent extends RhvBoardBase {
               }
               if (typeof el === 'number') {
                 summary[i] += el as RhSafeAny;
+                if (el !== 0 && !isNaN(el)) {
+                  (validCounts[i] as number)++;
+                }
               }
             });
             line.monthlyData = values;
@@ -516,16 +539,27 @@ export class ProductLineBoardComponent extends RhvBoardBase {
         });
         const monthlyAgvItem = [1, 2, 5, 6, 7];
         const sumItem = [0, 3, 4, 8, 9, 10];
+        // monthlyAgvItem.forEach((index) => {
+        //   summary[index] =
+        //     lines.length === 0
+        //       ? 0
+        //       : this.unifyNumber((summary[index] as number) / lines.length, 2);
+        // });
+        //平均值计算去掉数值为0的
         monthlyAgvItem.forEach((index) => {
+          const validCount = validCounts[index];
           summary[index] =
             lines.length === 0
               ? 0
-              : this.unifyNumber((summary[index] as number) / lines.length, 2);
+              : this.unifyNumber(
+                  (summary[index] as number) / (validCount as number),
+                  2,
+                );
         });
         sumItem.forEach((index) => {
           if (Array.isArray(summary[index])) {
             summary[index] = (summary[index] as number[]).map((item) =>
-              this.unifyNumber(item, 2)
+              this.unifyNumber(item, 2),
             );
           } else {
             summary[index] = this.unifyNumber(summary[index] as number, 2);
@@ -533,13 +567,13 @@ export class ProductLineBoardComponent extends RhvBoardBase {
         });
         summary.forEach(
           (item, index) =>
-            (this.linesData.dataset.result.summaryData[index + 13] = item)
+            (this.linesData.dataset.result.summaryData[index + 13] = item),
         );
       },
     },
     {
       dataLoading: true,
-    }
+    },
   );
 
   /** 详情弹窗可见性 */
@@ -581,7 +615,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
             yearMonth: this.formattedMonth,
           },
           'assets/mock/biyi/ZuZhuangCheJian/ZuZhuangGraph2.json', //new RhBoardData('成品看线看板表格数据', null, createDemoData()),
-          false
+          false,
         )
         .toPromise();
       if (time !== this.detailsQueryTime) return;
@@ -589,12 +623,51 @@ export class ProductLineBoardComponent extends RhvBoardBase {
       this.detailDataLoading = false;
     } catch (error) {
       MsgHelper.ShowErrorMessage(
-        `获取详情数据失败！错误详情：${httpErrorFormatter(error)}`
+        `获取详情数据失败！错误详情：${httpErrorFormatter(error)}`,
       );
     }
     this.detailDataLoading = false;
   }
-
+  getWorkDate(type: string): string {
+    const dateMap: Record<string, string> = {
+      KitInfos0: this.formattedDate0,
+      KitInfos2: this.formattedDate1,
+      KitInfos3: this.formattedDate2,
+    };
+    return dateMap[type] || this.formattedDate0;
+  }
+  async handleShowDayDetail(lineCode: string, type: string) {
+    try {
+      this.detailModalVisible = true;
+      this.detailDataLoading = true;
+      this.curLineCode = lineCode;
+      this.detailsData = [];
+      const item = tables[type];
+      this.curDetailTable = item;
+      const time = Date.now();
+      this.detailsQueryTime = time;
+      const result = await this.apiSer
+        .getOuter<RhSafeAny[]>(
+          'ZhuSuCheJian',
+          item.api,
+          {
+            lineKey: lineCode,
+            workDate: this.getWorkDate(type),
+          },
+          'assets/mock/biyi/ZuZhuangCheJian/ZuZhuangGraph2.json', //new RhBoardData('成品看线看板表格数据', null, createDemoData()),
+          false,
+        )
+        .toPromise();
+      if (time !== this.detailsQueryTime) return;
+      this.detailsData = item.formatter ? item.formatter(result) : result;
+      this.detailDataLoading = false;
+    } catch (error) {
+      MsgHelper.ShowErrorMessage(
+        `获取详情数据失败！错误详情：${httpErrorFormatter(error)}`,
+      );
+    }
+    this.detailDataLoading = false;
+  }
   /** 车间选择面板是否可见 */
   workshopSelectModalVisible = false;
 
@@ -620,7 +693,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
       item.exportColumns,
       null,
       title,
-      title + '_' + format(new Date(), 'yyyyMMdd_HH:mm:ss')
+      title + '_' + format(new Date(), 'yyyyMMdd_HH:mm:ss'),
     );
   }
   /** 导出月度数据 */
@@ -637,7 +710,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
       item.exportColumns,
       null,
       title,
-      title + '_' + format(new Date(), 'yyyyMMdd_HH:mm:ss')
+      title + '_' + format(new Date(), 'yyyyMMdd_HH:mm:ss'),
     );
   }
 }

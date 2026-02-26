@@ -2,7 +2,11 @@ import { ExportFileHeaderInfo, RhSafeAny } from '@model';
 import { format } from 'date-fns';
 
 class ColumnItem {
-  constructor(public key: string, public title: string, public width: string) {}
+  constructor(
+    public key: string,
+    public title: string,
+    public width: string,
+  ) {}
 }
 
 export interface DetailTableConfig {
@@ -17,6 +21,32 @@ export const tables: Record<string, DetailTableConfig> = {
   BadMaterialInfos: {
     title: '退料明细',
     api: 'GetZhusuGraphLineDashboard_BadMaterialInfos',
+    columns: [
+      new ColumnItem('materialReturnNo', '退料单号', '9rem'),
+      new ColumnItem('salesNo', '销售单号', '7rem'),
+      new ColumnItem('moNo', '工单号', '8rem'),
+      new ColumnItem('itemCode', '物料编码', '8rem'),
+      new ColumnItem('itemName', '物料名称', '12rem'),
+      new ColumnItem('itemSpec', '物料规格', ''),
+      new ColumnItem('returnQty', '退料数量', '6rem'),
+      new ColumnItem('price', '单价', '6rem'),
+      new ColumnItem('amount', '总金额', '6rem'),
+    ],
+    exportColumns: [
+      new ExportFileHeaderInfo('materialReturnNo', '退料单号'),
+      new ExportFileHeaderInfo('salesNo', '销售单号'),
+      new ExportFileHeaderInfo('moNo', '工单号'),
+      new ExportFileHeaderInfo('itemCode', '物料编码'),
+      new ExportFileHeaderInfo('itemName', '物料名称'),
+      new ExportFileHeaderInfo('itemSpec', '物料规格'),
+      new ExportFileHeaderInfo('returnQty', '退料数量'),
+      new ExportFileHeaderInfo('price', '单价'),
+      new ExportFileHeaderInfo('amount', '总金额'),
+    ],
+  },
+  BadMaterialInfos2: {
+    title: '退料明细',
+    api: 'GetZhusuGraphLineDashboard_BadMaterialInfos2',
     columns: [
       new ColumnItem('materialReturnNo', '退料单号', '9rem'),
       new ColumnItem('salesNo', '销售单号', '7rem'),
@@ -134,13 +164,13 @@ export const tables: Record<string, DetailTableConfig> = {
         if (item.moStartTime) {
           item.moStartTime = format(
             new Date(item.moStartTime),
-            'yyyy/MM/dd HH:mm:ss'
+            'yyyy/MM/dd HH:mm:ss',
           );
         }
         if (item.moFinishTime) {
           item.moFinishTime = format(
             new Date(item.moFinishTime),
-            'yyyy/MM/dd HH:mm:ss'
+            'yyyy/MM/dd HH:mm:ss',
           );
         }
       });
@@ -189,6 +219,215 @@ export const tables: Record<string, DetailTableConfig> = {
       new ExportFileHeaderInfo('amount', '总金额'),
     ],
   },
+  KitInfos0: {
+    title: ' T0齐套数据',
+    api: 'GetZhusuGraphLineDashboard_CompletenessInfos',
+    columns: [
+      new ColumnItem('moNo', '工单号', '8rem'),
+      new ColumnItem('erpWarehouse', 'erp仓库', '9rem'),
+      new ColumnItem('itemCategory', '项目分类', '9rem'),
+      new ColumnItem('itemCode', '物料编码', '8rem'),
+      new ColumnItem('itemName', '物料名称', '15rem'),
+      new ColumnItem('lineName', '项目规格', '6rem'),
+      new ColumnItem('matchQty', '匹配数量', '6rem'),
+      new ColumnItem('moStartTime', '开始时间', '12rem'),
+      new ColumnItem('moFinishTime', '完成时间', '12rem'),
+      new ColumnItem('payableQty', '应付数量', '6rem'),
+      new ColumnItem('salesNo', '销售编号', '6rem'),
+      new ColumnItem('sendQty', '发送数量', '6rem'),
+      new ColumnItem('unSendQty', '没发送数量', '8rem'),
+    ],
+    formatter: (data: any[]) => {
+      data.forEach((item) => {
+        if (item.moStartTime) {
+          item.moStartTime = format(
+            new Date(item.moStartTime),
+            'yyyy/MM/dd HH:mm:ss',
+          );
+        }
+        if (item.moFinishTime) {
+          item.moFinishTime = format(
+            new Date(item.moFinishTime),
+            'yyyy/MM/dd HH:mm:ss',
+          );
+        }
+      });
+      return data;
+    },
+    exportColumns: [
+      new ExportFileHeaderInfo('moNo', '工单号'),
+      new ExportFileHeaderInfo('erpWarehouse', 'erp仓库'),
+      new ExportFileHeaderInfo('itemCategory', '项目分类'),
+      new ExportFileHeaderInfo('itemCode', '物料编码'),
+      new ExportFileHeaderInfo('itemName', '物料名称'),
+      new ExportFileHeaderInfo('lineName', '项目规格'),
+      new ExportFileHeaderInfo('matchQty', '匹配数量'),
+      new ExportFileHeaderInfo('moStartTime', '开始时间'),
+      new ExportFileHeaderInfo('moFinishTime', '完成时间'),
+      new ExportFileHeaderInfo('payableQty', '应付数量'),
+      new ExportFileHeaderInfo('salesNo', '销售编号'),
+      new ExportFileHeaderInfo('sendQty', '发送数量'),
+      new ExportFileHeaderInfo('unSendQty', '没发送数量'),
+    ],
+  },
+  KitInfos1: {
+    title: ' T1齐套数据',
+    api: 'GetZhusuGraphLineDashboard_CompletenessInfos',
+    columns: [
+      new ColumnItem('moNo', '工单号', '8rem'),
+      new ColumnItem('erpWarehouse', 'erp仓库', '9rem'),
+      new ColumnItem('itemCategory', '项目分类', '9rem'),
+      new ColumnItem('itemCode', '物料编码', '8rem'),
+      new ColumnItem('itemName', '物料名称', '15rem'),
+      new ColumnItem('lineName', '项目规格', '6rem'),
+      new ColumnItem('matchQty', '匹配数量', '6rem'),
+      new ColumnItem('moStartTime', '开始时间', '12rem'),
+      new ColumnItem('moFinishTime', '完成时间', '12rem'),
+      new ColumnItem('payableQty', '应付数量', '6rem'),
+      new ColumnItem('salesNo', '销售编号', '6rem'),
+      new ColumnItem('sendQty', '发送数量', '6rem'),
+      new ColumnItem('unSendQty', '没发送数量', '8rem'),
+    ],
+    formatter: (data: any[]) => {
+      data.forEach((item) => {
+        if (item.moStartTime) {
+          item.moStartTime = format(
+            new Date(item.moStartTime),
+            'yyyy/MM/dd HH:mm:ss',
+          );
+        }
+        if (item.moFinishTime) {
+          item.moFinishTime = format(
+            new Date(item.moFinishTime),
+            'yyyy/MM/dd HH:mm:ss',
+          );
+        }
+      });
+      return data;
+    },
+    exportColumns: [
+      new ExportFileHeaderInfo('moNo', '工单号'),
+      new ExportFileHeaderInfo('erpWarehouse', 'erp仓库'),
+      new ExportFileHeaderInfo('itemCategory', '项目分类'),
+      new ExportFileHeaderInfo('itemCode', '物料编码'),
+      new ExportFileHeaderInfo('itemName', '物料名称'),
+      new ExportFileHeaderInfo('lineName', '项目规格'),
+      new ExportFileHeaderInfo('matchQty', '匹配数量'),
+      new ExportFileHeaderInfo('moStartTime', '开始时间'),
+      new ExportFileHeaderInfo('moFinishTime', '完成时间'),
+      new ExportFileHeaderInfo('payableQty', '应付数量'),
+      new ExportFileHeaderInfo('salesNo', '销售编号'),
+      new ExportFileHeaderInfo('sendQty', '发送数量'),
+      new ExportFileHeaderInfo('unSendQty', '没发送数量'),
+    ],
+  },
+  KitInfos2: {
+    title: 'T2齐套数据',
+    api: 'GetZhusuGraphLineDashboard_CompletenessInfos',
+    columns: [
+      new ColumnItem('moNo', '工单号', '8rem'),
+      new ColumnItem('erpWarehouse', 'erp仓库', '9rem'),
+      new ColumnItem('itemCategory', '项目分类', '9rem'),
+      new ColumnItem('itemCode', '物料编码', '8rem'),
+      new ColumnItem('itemName', '物料名称', '15rem'),
+      new ColumnItem('lineName', '项目规格', '6rem'),
+      new ColumnItem('matchQty', '匹配数量', '6rem'),
+      new ColumnItem('moStartTime', '开始时间', '12rem'),
+      new ColumnItem('moFinishTime', '完成时间', '12rem'),
+      new ColumnItem('payableQty', '应付数量', '6rem'),
+      new ColumnItem('salesNo', '销售编号', '6rem'),
+      new ColumnItem('sendQty', '发送数量', '6rem'),
+      new ColumnItem('unSendQty', '没发送数量', '8rem'),
+    ],
+    formatter: (data: any[]) => {
+      data.forEach((item) => {
+        if (item.moStartTime) {
+          item.moStartTime = format(
+            new Date(item.moStartTime),
+            'yyyy/MM/dd HH:mm:ss',
+          );
+        }
+        if (item.moFinishTime) {
+          item.moFinishTime = format(
+            new Date(item.moFinishTime),
+            'yyyy/MM/dd HH:mm:ss',
+          );
+        }
+      });
+      return data;
+    },
+    exportColumns: [
+      new ExportFileHeaderInfo('moNo', '工单号'),
+      new ExportFileHeaderInfo('erpWarehouse', 'erp仓库'),
+      new ExportFileHeaderInfo('itemCategory', '项目分类'),
+      new ExportFileHeaderInfo('itemCode', '物料编码'),
+      new ExportFileHeaderInfo('itemName', '物料名称'),
+      new ExportFileHeaderInfo('lineName', '项目规格'),
+      new ExportFileHeaderInfo('matchQty', '匹配数量'),
+      new ExportFileHeaderInfo('moStartTime', '开始时间'),
+      new ExportFileHeaderInfo('moFinishTime', '完成时间'),
+      new ExportFileHeaderInfo('payableQty', '应付数量'),
+      new ExportFileHeaderInfo('salesNo', '销售编号'),
+      new ExportFileHeaderInfo('sendQty', '发送数量'),
+      new ExportFileHeaderInfo('unSendQty', '没发送数量'),
+    ],
+  },
+  DailyFinishQty: {
+    title: '月度完工数',
+    api: 'GetZhusuGraphLineDashboard_DailyFinishQty',
+    columns: [
+      new ColumnItem('lineName', '线路名称', '8rem'),
+      new ColumnItem('workDate', '工作日期', '14rem'),
+      new ColumnItem('finishQty', '完成数量', '8rem'),
+    ],
+    exportColumns: [
+      new ExportFileHeaderInfo('lineName', '线路名称'),
+      new ExportFileHeaderInfo('workDate', '工作日期'),
+      new ExportFileHeaderInfo('finishQty', '完成数量'),
+    ],
+  },
+  DailyFinishRate: {
+    title: '计划达成率',
+    api: 'GetZhusuGraphLineDashboard_DailyFinishRate',
+    columns: [
+      new ColumnItem('lineName', '线路名称', '8rem'),
+      new ColumnItem('workDate', '工作日期', '14rem'),
+      new ColumnItem('finishRate', '达成率', '8rem'),
+    ],
+    exportColumns: [
+      new ExportFileHeaderInfo('lineName', '线路名称'),
+      new ExportFileHeaderInfo('workDate', '工作日期'),
+      new ExportFileHeaderInfo('finishRate', '达成率'),
+    ],
+  },
+  DailyQualifiedRate: {
+    title: '一次性合格率',
+    api: 'GetZhusuGraphLineDashboard_DailyQualifiedRate',
+    columns: [
+      new ColumnItem('lineName', '线路名称', '8rem'),
+      new ColumnItem('workDate', '工作日期', '14rem'),
+      new ColumnItem('qualifiedRate', '合格率', '8rem'),
+    ],
+    exportColumns: [
+      new ExportFileHeaderInfo('lineName', '线路名称'),
+      new ExportFileHeaderInfo('workDate', '工作日期'),
+      new ExportFileHeaderInfo('qualifiedRate', '合格率'),
+    ],
+  },
+  DailyUpph: {
+    title: '月度UPPH值',
+    api: 'GetZhusuGraphLineDashboard_DailyUpph',
+    columns: [
+      new ColumnItem('lineName', '线路名称', '8rem'),
+      new ColumnItem('workDate', '工作日期', '14rem'),
+      new ColumnItem('upph', 'UPPH值', '8rem'),
+    ],
+    exportColumns: [
+      new ExportFileHeaderInfo('lineName', '线路名称'),
+      new ExportFileHeaderInfo('workDate', '工作日期'),
+      new ExportFileHeaderInfo('upph', 'UPPH值'),
+    ],
+  },
 };
 
 export const monthTable: DetailTableConfig = {
@@ -207,11 +446,11 @@ export const monthTable: DetailTableConfig = {
     new ExportFileHeaderInfo('monthUPPH', '月度UPPH值'),
     new ExportFileHeaderInfo(
       'monthBadMaterialReturnAmount',
-      '产线退料金额（料费）'
+      '产线退料金额（料费）',
     ),
     new ExportFileHeaderInfo(
       'monthWorkBadMaterialReturnAmount',
-      '产线退料金额（工费）'
+      '产线退料金额（工费）',
     ),
     new ExportFileHeaderInfo('energy', '用电统计'),
   ],

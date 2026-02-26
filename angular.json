@@ -144,5 +144,8 @@
       }
     }
   },
-  "defaultProject": "rhv"
+  "defaultProject": "rhv",
+  "cli": {
+    "analytics": "505bc5f2-7e4d-42f4-ba16-bb06f07bb987"
+  }
 }

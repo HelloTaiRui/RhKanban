@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4201",
     "create-tailwind": "npx tailwindcss  -o ./src/tailwind.css --minify",
     "prod": "node --max_old_space_size=8192 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer",
     "test": "ng test",
