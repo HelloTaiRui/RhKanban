@@ -19,11 +19,20 @@
           <div>宁波余姚市</div>
         </div>
         <div class="divider rhv-margin-8-right"></div>
-        <img
+        <!-- <img
           src="assets/img/biyi/天气.png"
           alt=""
           style="height: var(--rhv-size-10)"
-        />
+        /> -->
+        <div>
+          <img
+            [src]="getWeatherIconSimple(weatherData?.weatherText)"
+            [alt]="weatherData?.weatherText"
+            style="height: var(--rhv-size-10)"
+          />
+          {{ weatherData?.weatherText || "--" }}
+          {{ weatherData?.temperature || "--" }}℃
+        </div>
       </div>
       <div
         class="w-1/2 board-title"
