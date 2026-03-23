@@ -237,7 +237,7 @@ export class configinfo {
   }
   public static get outerAddr() {
     return (
-      configinfo.outerServerAddress + ':' + configinfo.appConfig.OuterApiPort
+      (configinfo.isBrowserProductionEnvironment ? configinfo.outerServerAddress : 'http://localhost:') + configinfo.appConfig.OuterApiPort
     );
   }
 }
