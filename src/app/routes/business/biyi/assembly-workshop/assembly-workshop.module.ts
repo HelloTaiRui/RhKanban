@@ -9,6 +9,7 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
 
 @NgModule({
   declarations: [ProductLineBoardComponent],
@@ -21,6 +22,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
     AssemblyWorkshopRoutingModule,
     NzTableModule,
     NzDatePickerModule,
+    NzTabsModule,
   ],
 })
 export class AssemblyWorkshopModule {}

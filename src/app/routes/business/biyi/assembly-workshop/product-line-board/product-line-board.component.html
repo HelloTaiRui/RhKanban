@@ -33,6 +33,7 @@
         nzTemplateMode
         [nzWidthConfig]="widthConfig"
         class="full-height-table"
+        [nzScroll]="{ y: 'calc(100vh - 180px)' }"
         [style.opacity]="linesData.dataset.dataLoading ? 0.7 : 1"
       >
         <thead>
@@ -104,7 +105,9 @@
                 trackBy: trackByIndex
               "
             >
-              <td *ngIf="i === 0" [attr.rowspan]="num">{{ line.name }}</td>
+              <td *ngIf="i === 0" [attr.rowspan]="num">
+                <span class="link" (click)="handleShowYearData(line.name)">{{ line.name }}</span>
+              </td>
               <td>{{ row[0] }}</td>
               <td>{{ row[1] }}</td>
               <td>{{ row[2] }}</td>
@@ -403,5 +406,81 @@
         </div>
       </div>
     </div>
+  </rh-item-container>
+</nz-modal>
+
+<!-- 年度数据弹框 -->
+<nz-modal
+  [(nzVisible)]="yearModalVisible"
+  [nzTitle]="null"
+  [nzBodyStyle]="{ padding: 0 }"
+  [nzClosable]="false"
+  [nzFooter]="null"
+  nzWidth="85vw"
+  (nzOnCancel)="yearModalVisible = false"
+>
+  <rh-item-container
+    [rhTitle]="curYearLineName + ' 年度数据统计'"
+    style="width: 100%; height: 80vh"
+  >
+    <div class="w-full h-full overflow-hidden rhv-padding">
+      <!-- Tab切换 -->
+      <nz-tabset
+        [nzSelectedIndex]="curYearTab === 'current' ? 0 : 1"
+        (nzSelectedIndexChange)="handleYearTabChange($event === 0 ? 'current' : 'last')"
+      >
+        <nz-tab nzTitle="当年({{ currentYearValue }})">
+        </nz-tab>
+        <nz-tab nzTitle="去年({{ lastYearValue }})">
+        </nz-tab>
+      </nz-tabset>
+
+      <!-- 年度数据表格 -->
+      <nz-table
+        nzTemplateMode
+        [nzScroll]="{ y: '65vh' }"
+        [style.opacity]="yearDataLoading ? 0.7 : 1"
+        *ngIf="getCurYearData() as yearData"
+      >
+        <thead>
+          <tr>
+            <th nzWidth="10rem">指标</th>
+            <th *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12]" nzWidth="5rem">{{ i }}月</th>
+            <th nzWidth="6rem">年度汇总</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="
+              let row of transformYearDataToTableRows(yearData);
+              index as i;
+              trackBy: trackByIndex
+            "
+            [class.bg-tr]="i % 2 == 1"
+          >
+            <td>{{ row.indicator }}</td>
+            <td *ngFor="let month of row.months; index as j; trackBy: trackByIndex">
+              {{ formatYearValue(month, row.isPercent) }}
+            </td>
+            <td>{{ formatYearValue(row.yearSummary, row.isPercent) }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </div>
+
+    <!-- 导出按钮 -->
+    <div class="export-btn-area">
+      <span (click)="handleExportYearData()"> 导出 </span>
+    </div>
+
+    <!-- 加载中提示 -->
+    <nz-spin
+      *ngIf="yearDataLoading"
+      nzTip="数据获取中，请稍等..."
+      class="w-full h-full absolute"
+      style="top: 0; left: 30%; width: 40%"
+      nzSize="large"
+    >
+    </nz-spin>
   </rh-item-container>
 </nz-modal>

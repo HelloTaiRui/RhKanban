@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { RhBoardData, RhSafeAny, RhvDisplayInstance } from '@model';
+import { RhBoardData, RhSafeAny, RhvDisplayInstance, ExportFileHeaderInfo } from '@model';
 import { RhColor, RhvBoardBase } from '@shared';
 import {
   RhEquipmentStatus,
@@ -10,6 +10,56 @@ import { FileHelper, httpErrorFormatter, MockHelper, MsgHelper } from '@core';
 import { of } from 'rxjs';
 import { DetailTableConfig, monthTable, tables } from './board.utils';
 import { format, addDays } from 'date-fns';
+
+/** 年度数据-月度数据接口 */
+interface MonthData {
+  month: number;
+  monthUPPH: number;
+  monthPlanQty: number;
+  monthFinishQty: number;
+  monthFinishRate: number;
+  monthQuantityRate: number;
+  monthAndonNumber: number;
+  monthAndonCloseNumber: number;
+  monthAndonAmount: number;
+  monthInspRate: number;
+  monthResignationRate: number;
+  monthBadMaterialReturnAmount: number;
+  monthWorkBadMaterialReturnAmount: number;
+}
+
+/** 年度数据接口 */
+interface YearData {
+  year: number;
+  yearUPPH: number;
+  yearPlanQty: number;
+  yearFinishQty: number;
+  yearFinishRate: number;
+  yearQuantityRate: number;
+  yearAndonNumber: number;
+  yearAndonCloseNumber: number;
+  yearAndonAmount: number;
+  yearInspRate: number;
+  yearResignationRate: number;
+  yearBadMaterialReturnAmount: number;
+  yearWorkBadMaterialReturnAmount: number;
+  monthlyData: MonthData[];
+}
+
+/** 年度数据响应接口 - postOuter会自动解包attach */
+interface YearDataResponse {
+  currentYear: YearData;
+  lastYear: YearData;
+}
+
+/** 年度数据表格行接口 */
+interface YearTableRow {
+  indicator: string;
+  key: string;
+  isPercent: boolean;
+  months: (number | string)[];
+  yearSummary: number | string;
+}
 
 const createDemoData = () => {
   const lines = [
@@ -177,7 +227,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
   public enableMock: boolean = false;
 
   widthConfig = [
-    '4.5rem',
+    '8rem',
     '10rem',
     '4rem',
     '4rem',
@@ -229,7 +279,8 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     {
       data$: of([
         { category: '咖啡机' },
-        { category: '空炸' },
+        { category: '城东空炸' },
+        { category: '中意空炸' },
         { category: '两季' },
       ]),
       interval: 60000,
@@ -249,7 +300,12 @@ export class ProductLineBoardComponent extends RhvBoardBase {
   // 后天
   formattedDate2: string = format(addDays(new Date(), 2), 'yyyy-MM-dd');
   /** 处理月份变更事件 */
-  handleMonthChanged(month: Date) {
+  /**
+ * 处理月份变更事件
+ * @param {Date} month - 选中的月份日期对象
+ * @returns {void}
+ */
+handleMonthChanged(month: Date) {
     //console.log(month);
     const value = format(month, 'yyyy-MM');
     if (value === this.formattedMonth) return;
@@ -576,6 +632,42 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     },
   );
 
+  /** 年度数据弹框可见性 */
+  yearModalVisible = false;
+  /** 年度数据加载中 */
+  yearDataLoading = false;
+  /** 当前选中的产线名称 */
+  curYearLineName: string = '';
+  /** 当前选中的Tab（当年/去年） */
+  curYearTab: 'current' | 'last' = 'current';
+  /** 年度数据响应 */
+  yearData: YearDataResponse | null = null;
+
+  /** 获取当前年份 */
+  get currentYearValue(): number | null {
+    return this.yearData?.currentYear?.year ?? null;
+  }
+
+  /** 获取去年年份 */
+  get lastYearValue(): number | null {
+    return this.yearData?.lastYear?.year ?? null;
+  }
+
+  /** 年度数据表格配置 */
+  yearTableConfig = [
+    { key: 'PlanQty', indicator: '计划数', isPercent: false },
+    { key: 'FinishQty', indicator: '完工数', isPercent: false },
+    { key: 'FinishRate', indicator: '计划达成率', isPercent: true },
+    { key: 'QuantityRate', indicator: '一次合格率', isPercent: true },
+    { key: 'AndonNumber', indicator: '安灯停线', isPercent: false },
+    { key: 'AndonAmount', indicator: '异常费用', isPercent: false },
+    { key: 'InspRate', indicator: '验货合格率', isPercent: true },
+    { key: 'ResignationRate', indicator: '月度离职率', isPercent: true },
+    { key: 'UPPH', indicator: 'UPPH值', isPercent: false },
+    { key: 'BadMaterialReturnAmount', indicator: '退料金额(料费)', isPercent: false },
+    { key: 'WorkBadMaterialReturnAmount', indicator: '退料金额(工费)', isPercent: false },
+  ];
+
   /** 详情弹窗可见性 */
   detailModalVisible = false;
   /** 详情数据加载中 */
@@ -708,6 +800,137 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     FileHelper.exportTableDataToExcelFile(
       data,
       item.exportColumns,
+      null,
+      title,
+      title + '_' + format(new Date(), 'yyyyMMdd_HH:mm:ss'),
+    );
+  }
+
+  /** 显示年度数据弹框 */
+  async handleShowYearData(lineName: string) {
+    try {
+      this.yearModalVisible = true;
+      this.yearDataLoading = true;
+      this.curYearLineName = lineName;
+      this.curYearTab = 'current';
+      this.yearData = null;
+
+      // 转换产线名称格式：Z01 -> Z-01线
+      const lineCode = lineName.replace(/^Z(\d+)$/, 'Z-$1线');
+
+      const result = await this.apiSer
+        .postOuter<YearDataResponse>(
+          'ZhuSuCheJian',
+          'GetZhusuGraphLineDashboard_Yearly',
+          {
+            yearMonth: format(new Date(), 'yyyy'),
+            workLines: [lineCode],
+          },
+        )
+        .toPromise();
+
+      console.log('年度数据返回:', result);
+      this.yearData = result;
+      this.yearDataLoading = false;
+    } catch (error) {
+      console.error('年度数据错误:', error);
+      MsgHelper.ShowErrorMessage(
+        `获取年度数据失败！错误详情：${httpErrorFormatter(error)}`,
+      );
+    }
+    this.yearDataLoading = false;
+  }
+
+  /** 获取当前Tab的年度数据 */
+  getCurYearData(): YearData | null {
+    if (!this.yearData) return null;
+    return this.curYearTab === 'current'
+      ? this.yearData.currentYear
+      : this.yearData.lastYear;
+  }
+
+  /** 将年度数据转换为表格行数据 */
+  transformYearDataToTableRows(data: YearData | null): YearTableRow[] {
+    if (!data) return [];
+
+    return this.yearTableConfig.map((config) => {
+      const months: (number | string)[] = [];
+      const monthKeyPrefix = 'month';
+
+      // 填充1-12月数据
+      for (let i = 1; i <= 12; i++) {
+        const monthData = data.monthlyData.find((m) => m.month === i);
+        if (monthData) {
+          const value = (monthData as RhSafeAny)[`${monthKeyPrefix}${config.key}`];
+          months.push(value ?? 0);
+        } else {
+          months.push(0);
+        }
+      }
+
+      // 年度汇总
+      const yearKey = `year${config.key}`;
+      const yearSummary = (data as RhSafeAny)[yearKey] ?? 0;
+
+      return {
+        indicator: config.indicator,
+        key: config.key,
+        isPercent: config.isPercent,
+        months,
+        yearSummary,
+      };
+    });
+  }
+
+  /** 格式化年度数据表格值 */
+  formatYearValue(value: number | string, isPercent: boolean): string {
+    if (typeof value !== 'number' || isNaN(value)) return '--';
+    if (isPercent) {
+      return (value * 100).toFixed(2) + '%';
+    }
+    return value.toFixed(2);
+  }
+
+  /** 处理Tab切换 */
+  handleYearTabChange(tab: 'current' | 'last') {
+    this.curYearTab = tab;
+  }
+
+  /** 导出年度数据 */
+  handleExportYearData() {
+    if (!this.yearData) return;
+
+    const yearData = this.getCurYearData();
+    if (!yearData) return;
+
+    const title = `${this.curYearLineName}_${yearData.year}年度数据统计`;
+    const rows = this.transformYearDataToTableRows(yearData);
+
+    // 构建导出数据
+    const exportData: RhSafeAny[] = rows.map((row) => {
+      const obj: RhSafeAny = {
+        指标: row.indicator,
+      };
+      // 月份
+      for (let i = 0; i < 12; i++) {
+        obj[`${i + 1}月`] = row.months[i];
+      }
+      obj['年度汇总'] = row.yearSummary;
+      return obj;
+    });
+
+    // 构建导出列头
+    const exportColumns: ExportFileHeaderInfo[] = [
+      new ExportFileHeaderInfo('指标', '指标'),
+    ];
+    for (let i = 1; i <= 12; i++) {
+      exportColumns.push(new ExportFileHeaderInfo(`${i}月`, `${i}月`));
+    }
+    exportColumns.push(new ExportFileHeaderInfo('年度汇总', '年度汇总'));
+
+    FileHelper.exportTableDataToExcelFile(
+      exportData,
+      exportColumns,
       null,
       title,
       title + '_' + format(new Date(), 'yyyyMMdd_HH:mm:ss'),
