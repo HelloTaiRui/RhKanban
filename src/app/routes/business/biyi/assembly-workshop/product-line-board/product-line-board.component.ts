@@ -482,7 +482,7 @@ handleMonthChanged(month: Date) {
     null,
     {
       data$: () => {
-        if (this.workshopInfo.dataset.category !== '空炸') {
+        if (this.workshopInfo.dataset.category !== '城东空炸') {
           return of(
             new RhBoardData(
               '',
@@ -497,10 +497,10 @@ handleMonthChanged(month: Date) {
             ),
           );
         }
-        return this.apiSer.getOuter(
+        return this.apiSer.postOuter(
           'ZhiZao',
           'ZhizaoGraph9',
-          {},
+          this.linesData.dataset.linesList,
           'assets/mock/biyi/ZhiZao/ZhizaoGraph9.json',
           this.enableMock,
         );
