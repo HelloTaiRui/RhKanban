@@ -28,7 +28,8 @@
         空闲<!-- ：{{ summaryData[0] }} -->
       </div>
     </div>
-    <div class="flex-1 w-full overflow-auto rhv-padding-bottom">
+    <div class="flex-1 w-full overflow-auto rhv-padding-bottom"
+         [class.uniform-spacing-container]="uniformSpacing > 0">
       <nz-table
         nzTemplateMode
         [nzWidthConfig]="widthConfig"

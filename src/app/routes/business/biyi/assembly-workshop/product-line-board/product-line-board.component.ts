@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ElementRef, OnDestroy, AfterViewInit } from '@angular/core';
 import { RhBoardData, RhSafeAny, RhvDisplayInstance, ExportFileHeaderInfo } from '@model';
 import { RhColor, RhvBoardBase } from '@shared';
 import {
@@ -6,10 +6,42 @@ import {
   useWorkEndTime,
   useWorkStartTime,
 } from '../../data';
-import { FileHelper, httpErrorFormatter, MockHelper, MsgHelper } from '@core';
+import { FileHelper, httpErrorFormatter, MockHelper, MsgHelper, RhBusinessApiService } from '@core';
 import { of } from 'rxjs';
 import { DetailTableConfig, monthTable, tables } from './board.utils';
 import { format, addDays } from 'date-fns';
+
+// ResizeObserver 类型声明（浏览器原生 API）
+declare const ResizeObserver: {
+  prototype: ResizeObserver;
+  new(callback: ResizeObserverCallback): ResizeObserver;
+};
+
+interface ResizeObserverCallback {
+  (entries: ResizeObserverEntry[], observer: ResizeObserver): void;
+}
+
+interface ResizeObserverEntry {
+  readonly borderBoxSize: ReadonlyArray<ResizeObserverSize>;
+  readonly contentBoxSize: ReadonlyArray<ResizeObserverSize>;
+  readonly devicePixelContentBoxSize: ReadonlyArray<ResizeObserverSize>;
+  readonly target: Element;
+}
+
+interface ResizeObserverSize {
+  readonly blockSize: number;
+  readonly inlineSize: number;
+}
+
+interface ResizeObserver {
+  disconnect(): void;
+  observe(target: Element, options?: ResizeObserverOptions): void;
+  unobserve(target: Element): void;
+}
+
+interface ResizeObserverOptions {
+  box?: 'content-box' | 'border-box' | 'device-pixel-content-box';
+}
 
 /** 年度数据-月度数据接口 */
 interface MonthData {
@@ -226,6 +258,101 @@ interface WorkshopInfo {
 export class ProductLineBoardComponent extends RhvBoardBase {
   public enableMock: boolean = false;
 
+  /** 均匀间距值（像素） */
+  uniformSpacing: number = 0;
+
+  /** ResizeObserver 实例 */
+  private resizeObserver: ResizeObserver | null = null;
+
+  constructor(
+    private elementRef: ElementRef,
+    public apiSer: RhBusinessApiService
+  ) {
+    super(apiSer);
+  }
+
+  /**
+   * 计算并更新表格行间距，使内容均匀分布填满容器
+   */
+  updateUniformSpacing() {
+    const container = this.elementRef.nativeElement.querySelector('.flex-1.w-full.overflow-auto');
+    const tableBody = container?.querySelector('.ant-table-tbody');
+    const tableHeader = container?.querySelector('.ant-table-thead');
+
+    if (!container || !tableBody) {
+      this.uniformSpacing = 0;
+      return;
+    }
+
+    const containerHeight = container.clientHeight;
+    const headerHeight = tableHeader?.clientHeight || 0;
+    const rows = tableBody.querySelectorAll('tr');
+
+    if (rows.length === 0) {
+      this.uniformSpacing = 0;
+      return;
+    }
+
+    // 计算所有行的总高度
+    let totalRowHeight = 0;
+    rows.forEach(row => {
+      totalRowHeight += row.clientHeight;
+    });
+
+    const availableHeight = containerHeight - headerHeight;
+
+    if (totalRowHeight < availableHeight) {
+      // 内容未填满容器，计算均匀间距
+      this.uniformSpacing = Math.max(0, (availableHeight - totalRowHeight) / (rows.length + 1));
+    } else {
+      // 内容已填满或超出，不添加间距
+      this.uniformSpacing = 0;
+    }
+
+    // 更新CSS变量
+    container.style.setProperty('--uniform-spacing', `${this.uniformSpacing}px`);
+  }
+
+  /**
+   * 初始化 ResizeObserver 监听容器尺寸变化
+   */
+  initResizeObserver() {
+    const container = this.elementRef.nativeElement.querySelector('.flex-1.w-full.overflow-auto');
+    if (!container) return;
+
+    this.resizeObserver = new ResizeObserver(() => {
+      this.updateUniformSpacing();
+    });
+    this.resizeObserver.observe(container);
+  }
+
+  /**
+   * 清理 ResizeObserver，避免内存泄漏
+   */
+  destroyResizeObserver() {
+    if (this.resizeObserver) {
+      this.resizeObserver.disconnect();
+      this.resizeObserver = null;
+    }
+  }
+
+  ngOnInit() {
+    super.ngOnInit();
+  }
+
+  ngAfterViewInit() {
+    // 视图渲染完成后初始化 ResizeObserver
+    setTimeout(() => {
+      this.initResizeObserver();
+      this.updateUniformSpacing();
+    }, 0);
+  }
+
+  ngOnDestroy() {
+    this.destroyResizeObserver();
+    this.clearSubscriptions();
+  }
+
   widthConfig = [
     '8rem',
     '10rem',
@@ -391,6 +518,7 @@ handleMonthChanged(month: Date) {
         this.todayData.reloadData();
         this.monthData.reloadData();
         this.stateData.reloadData();
+        setTimeout(() => this.updateUniformSpacing(), 100);
       },
     },
     {
@@ -484,6 +612,7 @@ handleMonthChanged(month: Date) {
           (item, index) =>
             (this.linesData.dataset.result.summaryData[index + 1] = item),
         );
+        this.updateUniformSpacing();
       },
     },
     {
@@ -639,6 +768,7 @@ handleMonthChanged(month: Date) {
           (item, index) =>
             (this.linesData.dataset.result.summaryData[index + 13] = item),
         );
+        this.updateUniformSpacing();
       },
     },
     {

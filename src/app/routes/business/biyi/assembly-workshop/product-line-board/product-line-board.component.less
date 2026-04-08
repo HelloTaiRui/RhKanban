@@ -228,3 +228,31 @@
   cursor: pointer;
   font-size: var(--rhv-size);
 }
+
+// 均匀间距容器样式 - 让表格内容均匀分布填满容器
+.uniform-spacing-container {
+  // 让表格撑满容器高度
+  nz-table,
+  .ant-table,
+  .ant-table-content {
+    height: 100% !important;
+  }
+
+  .ant-table-wrapper,
+  .ant-spin-nested-loading,
+  .ant-spin-container {
+    height: 100%;
+  }
+
+  // 表格使用 border-spacing 实现行间距
+  table {
+    height: 100%;
+    border-spacing: 0 var(--uniform-spacing, 0px);
+    border-collapse: separate;
+  }
+
+  // 确保 tbody 占满空间
+  .ant-table-tbody {
+    height: 100%;
+  }
+}
