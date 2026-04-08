@@ -88,22 +88,27 @@
 }
 
 .full-height-table {
-  // 移除 height: 100%，让 nzScroll 控制滚动区域高度
+  // 让表格根据内容自适应高度，最大不超过视口高度减去预留空间
 
   & > nz-spin {
-    height: 100%;
+    height: auto;
+    max-height: calc(100vh - 14rem);
 
     & > .ant-spin-container {
-      height: 100%;
+      height: auto;
+      max-height: calc(100vh - 14rem);
 
       & > .ant-table {
-        height: 100%;
+        height: auto;
+        max-height: calc(100vh - 14rem);
 
         & > nz-table-inner-default {
-          height: 100%;
+          height: auto;
+          max-height: calc(100vh - 14rem);
 
           & > .ant-table-content {
-            // 移除 height: 100%，让滚动容器正常工作
+            height: auto;
+            max-height: calc(100vh - 14rem);
           }
         }
       }
