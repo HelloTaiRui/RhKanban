@@ -88,7 +88,7 @@
 }
 
 .full-height-table {
-  height: 100%;
+  // 移除 height: 100%，让 nzScroll 控制滚动区域高度
 
   & > nz-spin {
     height: 100%;
@@ -103,10 +103,7 @@
           height: 100%;
 
           & > .ant-table-content {
-            height: 100%;
-            & > table {
-              height: 100%;
-            }
+            // 移除 height: 100%，让滚动容器正常工作
           }
         }
       }
