@@ -116,16 +116,26 @@
   }
 }
 
-// 自适应滚动表格：内容少时自适应，内容多时滚动
-.adaptive-scroll-table {
+// 自适应高度表格：内容少时自适应，内容多时外层容器滚动
+.auto-height-table {
+  // 让表格根据内容自然高度
+  height: auto !important;
+
   & > nz-spin {
+    height: auto !important;
+
     & > .ant-spin-container {
+      height: auto !important;
+
       & > .ant-table {
+        height: auto !important;
+
         & > nz-table-inner-default {
+          height: auto !important;
+
           & > .ant-table-content {
-            // 让表格内容区域自适应高度并支持滚动
-            max-height: calc(100vh - 14rem);
-            overflow-y: auto;
+            height: auto !important;
+            // 不设置max-height，让表格完全自适应内容
           }
         }
       }
