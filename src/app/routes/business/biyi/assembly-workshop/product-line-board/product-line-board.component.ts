@@ -625,28 +625,26 @@ handleMonthChanged(month: Date) {
     null,
     {
       data$: () => {
-        if (this.workshopInfo.dataset.category !== '城东空炸') {
-          return of(
-            new RhBoardData(
-              '',
-              null,
-              this.linesData.dataset.result.linesData.map((line) => {
-                return new RhBoardData(
-                  line.name,//.replace('-', '').replace('线', ''),
-                  null,
-                  [new RhBoardData('', null), new RhBoardData('', 0, [], 0, 0)],
-                );
-              }),
-            ),
+        // 所有车间都调用接口获取产线实时状态
+        if (this.workshopInfo.dataset.category === '城东空炸') {
+          // 城东空炸：传递产线参数
+          return this.apiSer.postOuter(
+            'ZhiZao',
+            'ZhizaoGraph9',
+            this.linesData.dataset.linesList,
+            'assets/mock/biyi/ZhiZao/ZhizaoGraph9.json',
+            this.enableMock,
+          );
+        } else {
+          // 其他车间：不传递产线参数
+          return this.apiSer.postOuter(
+            'ZhiZao',
+            'ZhizaoGraph9',
+            {},
+            'assets/mock/biyi/ZhiZao/ZhizaoGraph9.json',
+            this.enableMock,
           );
         }
-        return this.apiSer.postOuter(
-          'ZhiZao',
-          'ZhizaoGraph9',
-          this.linesData.dataset.linesList,
-          'assets/mock/biyi/ZhiZao/ZhizaoGraph9.json',
-          this.enableMock,
-        );
       },
       convertor: (data: RhBoardData) => {
         const lines = data?.children || [];
