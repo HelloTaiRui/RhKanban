@@ -116,6 +116,23 @@
   }
 }
 
+// 自适应滚动表格：内容少时自适应，内容多时滚动
+.adaptive-scroll-table {
+  & > nz-spin {
+    & > .ant-spin-container {
+      & > .ant-table {
+        & > nz-table-inner-default {
+          & > .ant-table-content {
+            // 让表格内容区域自适应高度并支持滚动
+            max-height: calc(100vh - 14rem);
+            overflow-y: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
 .ant-spin-text {
   color: #fff !important;
 }
