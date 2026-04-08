@@ -275,7 +275,7 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     const lineCount = this.linesData?.dataset?.result?.linesData?.length || 0;
     // 每行大约 3rem 高度，表头约 6rem
     const estimatedHeight = lineCount * 3 + 6;
-    const maxHeight = 70; // vh 单位
+    const maxHeight = 50; // vh 单位，阈值改为50vh
     // 如果估算高度小于最大高度，返回 null 让表格自适应
     // 否则返回固定高度启用滚动
     if (estimatedHeight < maxHeight) {
