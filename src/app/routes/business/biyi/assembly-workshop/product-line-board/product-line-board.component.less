@@ -118,28 +118,31 @@
 
 // 自适应高度表格：内容少时自适应，内容多时外层容器滚动
 .auto-height-table {
-  // 让表格根据内容自然高度
+  display: block !important;
   height: auto !important;
 
-  & > nz-spin {
+  .ant-table {
     height: auto !important;
+  }
 
-    & > .ant-spin-container {
-      height: auto !important;
+  .ant-table-content {
+    height: auto !important;
+  }
 
-      & > .ant-table {
-        height: auto !important;
+  table {
+    height: auto !important;
+  }
 
-        & > nz-table-inner-default {
-          height: auto !important;
+  tbody {
+    height: auto !important;
+  }
 
-          & > .ant-table-content {
-            height: auto !important;
-            // 不设置max-height，让表格完全自适应内容
-          }
-        }
-      }
-    }
+  tr {
+    height: auto !important;
+  }
+
+  td {
+    height: auto !important;
   }
 }
 

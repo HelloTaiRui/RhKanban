@@ -4,7 +4,7 @@
   rhHeaderImg="assets/img/biyi/车间看板_BG_顶部.png"
   [rhCenterTitleClicked]="openWorkshopSelectModal"
 >
-  <div class="flex flex-col w-full h-full overflow-hidden rhv-padding-h">
+  <div class="flex flex-col w-full h-full overflow-auto rhv-padding-h">
     <div class="flex w-full justify-start">
       <!-- <div class="rhv-margin-8-right">设备总数：{{ sumQty }}</div> -->
       <div class="flex items-center rhv-margin-8-right gap-1">
@@ -28,11 +28,11 @@
         空闲<!-- ：{{ summaryData[0] }} -->
       </div>
     </div>
-    <div class="flex-1 w-full h-full overflow-auto rhv-padding-bottom">
+    <div class="flex-1 w-full overflow-auto rhv-padding-bottom">
       <nz-table
         nzTemplateMode
         [nzWidthConfig]="widthConfig"
-        class="full-height-table auto-height-table"
+        class="auto-height-table"
         [style.opacity]="linesData.dataset.dataLoading ? 0.7 : 1"
       >
         <thead>
