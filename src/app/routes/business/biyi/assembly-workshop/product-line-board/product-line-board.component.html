@@ -33,6 +33,7 @@
         nzTemplateMode
         [nzWidthConfig]="widthConfig"
         class="full-height-table"
+        [nzScroll]="{ y: 'calc(100vh - 12rem)' }"
         [style.opacity]="linesData.dataset.dataLoading ? 0.7 : 1"
       >
         <thead>
