@@ -270,6 +270,20 @@ export class ProductLineBoardComponent extends RhvBoardBase {
     [RhEquipmentStatus.Error]: RhColor.Warning,
   };
 
+  /** 表格滚动配置：根据数据量动态计算高度 */
+  get tableScrollConfig(): { y: string } | null {
+    const lineCount = this.linesData?.dataset?.result?.linesData?.length || 0;
+    // 每行大约 3rem 高度，表头约 6rem
+    const estimatedHeight = lineCount * 3 + 6;
+    const maxHeight = 70; // vh 单位
+    // 如果估算高度小于最大高度，返回 null 让表格自适应
+    // 否则返回固定高度启用滚动
+    if (estimatedHeight < maxHeight) {
+      return null;
+    }
+    return { y: `${maxHeight}vh` };
+  }
+
   /** 记住选择的车间 */
   workshopStorageKey: string = '_biyi_product_line_board_workshop';
   /** 车间信息 */

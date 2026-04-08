@@ -32,7 +32,8 @@
       <nz-table
         nzTemplateMode
         [nzWidthConfig]="widthConfig"
-        class="full-height-table adaptive-scroll-table"
+        class="full-height-table"
+        [nzScroll]="tableScrollConfig"
         [style.opacity]="linesData.dataset.dataLoading ? 0.7 : 1"
       >
         <thead>
