@@ -428,6 +428,20 @@ export const tables: Record<string, DetailTableConfig> = {
       new ExportFileHeaderInfo('upph', 'UPPH值'),
     ],
   },
+  DailyEnergy: {
+    title: '月度能耗统计',
+    api: 'GetZhusuGraphLineDashboard_DailyEnergy',
+    columns: [
+      new ColumnItem('lineName', '产线名称', '8rem'),
+      new ColumnItem('workDate', '日期', '14rem'),
+      new ColumnItem('energy', '能耗值', '8rem'),
+    ],
+    exportColumns: [
+      new ExportFileHeaderInfo('lineName', '产线名称'),
+      new ExportFileHeaderInfo('workDate', '日期'),
+      new ExportFileHeaderInfo('energy', '能耗值'),
+    ],
+  },
 };
 
 export const monthTable: DetailTableConfig = {
