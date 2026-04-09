@@ -250,7 +250,13 @@
                       >{{ monthlyData[9] }}</span
                     >
                   </td>
-                  <td [attr.rowspan]="num">{{ monthlyData[10] }}</td>
+                  <td [attr.rowspan]="num">
+                    <span
+                      class="link"
+                      (click)="handleShowDetail(line.name, 'DailyEnergy')"
+                      >{{ monthlyData[10] }}</span
+                    >
+                  </td>
                 </ng-container>
               </ng-container>
             </tr>
