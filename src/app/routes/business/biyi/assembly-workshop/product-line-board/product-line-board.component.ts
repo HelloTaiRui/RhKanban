@@ -630,14 +630,14 @@ handleMonthChanged(month: Date) {
           // 城东空炸：传递产线参数
           return this.apiSer.postOuter(
             'ZhiZao',
-            'ZhizaoGraph9',
+            'ZhizaoGraph9_ChengDong',
             this.linesData.dataset.linesList,
             'assets/mock/biyi/ZhiZao/ZhizaoGraph9.json',
             this.enableMock,
           );
         } else {
           // 其他车间：不传递产线参数
-          return this.apiSer.postOuter(
+          return this.apiSer.getOuter(
             'ZhiZao',
             'ZhizaoGraph9',
             {},
@@ -655,8 +655,12 @@ handleMonthChanged(month: Date) {
       onData: (data) => {
         this.stateData.dataset.dataLoading = false;
         this.linesData.dataset.result.linesData.forEach((line) => {
-          const lineKey = line.name;//.replace('-', '').replace('线', '');
-          const item = data.find((el) => el.item == lineKey);
+          const lineKey = line.name;
+          // 城东空炸：截取后端返回的item后三位进行匹配
+          // 其他车间：直接匹配
+          const item = this.workshopInfo.dataset.category === '城东空炸'
+            ? data.find((el) => el.item.slice(-3) == lineKey)
+            : data.find((el) => el.item == lineKey);
           if (item) {
             line.stateData = item;
           } else {
