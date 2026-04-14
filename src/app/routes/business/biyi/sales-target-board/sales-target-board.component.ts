@@ -107,6 +107,68 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
     return Math.min(rate, 100) + '%';
   }
 
+  /** 根据当前月份计算默认季度索引 */
+  getCurrentQuarterByMonth(): number {
+    const month = new Date().getMonth() + 1; // 1-12
+    if (month >= 1 && month <= 3) return 0;   // Q1
+    if (month >= 4 && month <= 6) return 1;   // Q2
+    if (month >= 7 && month <= 9) return 2;   // Q3
+    return 3;                                  // Q4
+  }
+
+  /** 从月度趋势数据计算四个季度的数据 */
+  calculateQuarterData(monthlyTrend: MonthlySalesItem[]): QuarterData[] {
+    if (!monthlyTrend || monthlyTrend.length === 0) {
+      return this.quarterNames.map(name => ({
+        quarter: name,
+        target: 0,
+        actual: 0,
+        rate: 0
+      }));
+    }
+
+    const quarters: QuarterData[] = [];
+    const quarterMonths = [
+      [0, 1, 2],   // Q1: 1月、2月、3月
+      [3, 4, 5],   // Q2: 4月、5月、6月
+      [6, 7, 8],   // Q3: 7月、8月、9月
+      [9, 10, 11]  // Q4: 10月、11月、12月
+    ];
+
+    quarterMonths.forEach((months, index) => {
+      let target = 0;
+      let actual = 0;
+
+      months.forEach(m => {
+        if (monthlyTrend[m]) {
+          target += monthlyTrend[m].target || 0;
+          actual += monthlyTrend[m].actual || 0;
+        }
+      });
+
+      const rate = target > 0 ? (actual / target) * 100 : 0;
+
+      quarters.push({
+        quarter: this.quarterNames[index],
+        target,
+        actual,
+        rate
+      });
+    });
+
+    return quarters;
+  }
+
+  /** 获取当前显示的季度数据 */
+  get currentQuarterData(): QuarterData {
+    return this.quarterDataList[this.currentQuarterIndex] || {
+      quarter: 'Q1',
+      target: 0,
+      actual: 0,
+      rate: 0
+    };
+  }
+
   /** 销售目标看板数据 */
   salesData = new RhvDisplayInstance<SalesTargetData, SalesTargetData, SalesTargetData>(
     this,
