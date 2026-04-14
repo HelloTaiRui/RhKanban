@@ -23,25 +23,41 @@
 
     <!-- 周期计划达成率 (季/月/日) -->
     <div class="period-cards">
-      <!-- 季度 -->
-      <div class="period-card">
-        <div class="period-title">Q4 季度计划达成</div>
-        <div class="period-values">
-          <span>实际：{{ formatMoney(salesData.data?.quarterActual) }}</span>
-          <span class="period-rate" [ngClass]="getRateClass(salesData.data?.quarterRate)">
-            {{ salesData.data?.quarterRate }}%
-          </span>
+      <!-- 季度 - 支持滑动切换 -->
+      <div class="period-card quarter-card"
+           (touchstart)="handleSwipeStart($event)"
+           (touchmove)="handleSwipeMove($event)"
+           (touchend)="handleSwipeEnd()"
+           (mousedown)="handleSwipeStart($event)"
+           (mousemove)="handleSwipeMove($event)"
+           (mouseup)="handleSwipeEnd()"
+           (mouseleave)="handleSwipeEnd()">
+        <div class="period-header">
+          <div class="period-title">{{ currentQuarterData.quarter }} 季度计划达成</div>
+          <div class="quarter-indicator">
+            <span class="indicator-dot"
+                  *ngFor="let q of quarterNames; let i = index"
+                  [class.active]="i === currentQuarterIndex"></span>
+          </div>
         </div>
-        <div class="progress-bar">
-          <div
-            class="progress-fill"
-            [ngStyle]="{
-              width: getProgressWidth(salesData.data?.quarterRate),
-              backgroundColor: getProgressColor(salesData.data?.quarterRate)
-            }"
-          ></div>
+        <div class="quarter-content" [class.animating]="isAnimating">
+          <div class="period-values">
+            <span>实际：{{ formatMoney(currentQuarterData.actual) }}</span>
+            <span class="period-rate" [ngClass]="getRateClass(currentQuarterData.rate)">
+              {{ currentQuarterData.rate.toFixed(1) }}%
+            </span>
+          </div>
+          <div class="progress-bar">
+            <div
+              class="progress-fill"
+              [ngStyle]="{
+                width: getProgressWidth(currentQuarterData.rate),
+                backgroundColor: getProgressColor(currentQuarterData.rate)
+              }"
+            ></div>
+          </div>
+          <div class="period-target">季度目标：{{ formatMoney(currentQuarterData.target) }}</div>
         </div>
-        <div class="period-target">季度目标：{{ formatMoney(salesData.data?.quarterTarget) }}</div>
       </div>
 
       <!-- 月度 -->
