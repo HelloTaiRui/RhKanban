@@ -273,6 +273,10 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
         updateTime: '',
       }),
       convertor: (data: RhSafeAny) => {
+        // 计算季度数据
+        this.quarterDataList = this.calculateQuarterData(data?.monthlyTrend || []);
+        // 设置默认显示当前季度
+        this.currentQuarterIndex = this.getCurrentQuarterByMonth();
         return data as SalesTargetData;
       },
     }
