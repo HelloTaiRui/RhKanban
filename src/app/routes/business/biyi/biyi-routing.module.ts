@@ -43,6 +43,13 @@ const routes: Routes = [
       import('./assembly-workshop/assembly-workshop.module').then(
         (m) => m.AssemblyWorkshopModule
       ),
+  },
+  {
+    path: 'SalesTargetBoard',
+    loadChildren: () =>
+      import('./sales-target-board/sales-target-board.module').then(
+        (m) => m.SalesTargetBoardModule
+      ),
   }
 ];
 

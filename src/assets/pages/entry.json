@@ -100,6 +100,15 @@
       "isOpenInCurPage": false,
       "direction": "row",
       "children": []
+    },
+    {
+      "route": "${root}business/biyi/SalesTargetBoard",
+      "title": "销售目标达成看板",
+      "showTitle": true,
+      "src": "assets/overviews/biyi/销售目标达成看板.png",
+      "isOpenInCurPage": false,
+      "direction": "row",
+      "children": []
     }
   ],
   "displayInterval": 5000,

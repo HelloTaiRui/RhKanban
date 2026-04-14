@@ -1,0 +1,39 @@
+{
+  "yearTarget": 10000000,
+  "yearActual": 8452300,
+  "yearRate": 84.5,
+  "yearRemaining": 1547700,
+  "quarterTarget": 2000000,
+  "quarterActual": 2100000,
+  "quarterRate": 105,
+  "monthTarget": 800000,
+  "monthActual": 650000,
+  "monthRate": 81.2,
+  "dayTarget": 60000,
+  "dayActual": 45200,
+  "dayRate": 75.3,
+  "monthlyTrend": [
+    { "month": 1, "actual": 650000, "target": 700000 },
+    { "month": 2, "actual": 590000, "target": 700000 },
+    { "month": 3, "actual": 800000, "target": 750000 },
+    { "month": 4, "actual": 810000, "target": 750000 },
+    { "month": 5, "actual": 560000, "target": 750000 },
+    { "month": 6, "actual": 950000, "target": 800000 },
+    { "month": 7, "actual": 1000000, "target": 800000 },
+    { "month": 8, "actual": 880000, "target": 800000 },
+    { "month": 9, "actual": 920000, "target": 800000 },
+    { "month": 10, "actual": 650000, "target": 800000 },
+    { "month": 11, "actual": 0, "target": 800000 },
+    { "month": 12, "actual": 0, "target": 800000 }
+  ],
+  "dailyList": [
+    { "date": "04-09", "target": 60000, "actual": 45200, "rate": 75.3 },
+    { "date": "04-08", "target": 60000, "actual": 62900, "rate": 104.8 },
+    { "date": "04-07", "target": 60000, "actual": 58000, "rate": 96.6 },
+    { "date": "04-06", "target": 60000, "actual": 65000, "rate": 108.3 },
+    { "date": "04-05", "target": 60000, "actual": 55000, "rate": 91.6 },
+    { "date": "04-04", "target": 60000, "actual": 72000, "rate": 120.0 },
+    { "date": "04-03", "target": 60000, "actual": 48000, "rate": 80.0 }
+  ],
+  "updateTime": "2026-04-09 14:00"
+}

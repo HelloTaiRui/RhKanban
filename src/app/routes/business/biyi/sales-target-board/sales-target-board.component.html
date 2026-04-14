@@ -1,0 +1,126 @@
+<rh-page-frame rhTitle="销售目标达成监控看板" class="h-full w-full">
+  <div class="sales-target-board">
+    <!-- 数据更新时间 -->
+    <div class="update-time">
+      数据截止：{{ salesData.data?.updateTime }}
+    </div>
+
+    <!-- 年度核心指标 -->
+    <div class="year-summary">
+      <div class="year-left">
+        <div class="year-title">2026 年度累计销售额</div>
+        <div class="year-value">{{ formatLargeMoney(salesData.data?.yearActual) }}</div>
+        <div class="year-target">年度目标：{{ formatLargeMoney(salesData.data?.yearTarget) }}</div>
+      </div>
+      <div class="year-right">
+        <div class="year-title">年度目标达成率</div>
+        <div class="year-rate" [ngClass]="getRateClass(salesData.data?.yearRate)">
+          {{ salesData.data?.yearRate }}%
+        </div>
+        <div class="year-remaining">剩余目标：{{ formatLargeMoney(salesData.data?.yearRemaining) }}</div>
+      </div>
+    </div>
+
+    <!-- 周期计划达成率 (季/月/日) -->
+    <div class="period-cards">
+      <!-- 季度 -->
+      <div class="period-card">
+        <div class="period-title">Q4 季度计划达成</div>
+        <div class="period-values">
+          <span>实际：{{ formatMoney(salesData.data?.quarterActual) }}</span>
+          <span class="period-rate" [ngClass]="getRateClass(salesData.data?.quarterRate)">
+            {{ salesData.data?.quarterRate }}%
+          </span>
+        </div>
+        <div class="progress-bar">
+          <div
+            class="progress-fill"
+            [ngStyle]="{
+              width: getProgressWidth(salesData.data?.quarterRate),
+              backgroundColor: getProgressColor(salesData.data?.quarterRate)
+            }"
+          ></div>
+        </div>
+        <div class="period-target">季度目标：{{ formatMoney(salesData.data?.quarterTarget) }}</div>
+      </div>
+
+      <!-- 月度 -->
+      <div class="period-card">
+        <div class="period-title">本月月度计划达成</div>
+        <div class="period-values">
+          <span>实际：{{ formatMoney(salesData.data?.monthActual) }}</span>
+          <span class="period-rate" [ngClass]="getRateClass(salesData.data?.monthRate)">
+            {{ salesData.data?.monthRate }}%
+          </span>
+        </div>
+        <div class="progress-bar">
+          <div
+            class="progress-fill"
+            [ngStyle]="{
+              width: getProgressWidth(salesData.data?.monthRate),
+              backgroundColor: getProgressColor(salesData.data?.monthRate)
+            }"
+          ></div>
+        </div>
+        <div class="period-target">月度目标：{{ formatMoney(salesData.data?.monthTarget) }}</div>
+      </div>
+
+      <!-- 日度 -->
+      <div class="period-card">
+        <div class="period-title">今日计划达成</div>
+        <div class="period-values">
+          <span>实际：{{ formatMoney(salesData.data?.dayActual) }}</span>
+          <span class="period-rate" [ngClass]="getRateClass(salesData.data?.dayRate)">
+            {{ salesData.data?.dayRate }}%
+          </span>
+        </div>
+        <div class="progress-bar">
+          <div
+            class="progress-fill"
+            [ngStyle]="{
+              width: getProgressWidth(salesData.data?.dayRate),
+              backgroundColor: getProgressColor(salesData.data?.dayRate)
+            }"
+          ></div>
+        </div>
+        <div class="period-target">日度目标：{{ formatMoney(salesData.data?.dayTarget) }}</div>
+      </div>
+    </div>
+
+    <!-- 图表区域 -->
+    <div class="chart-section">
+      <!-- 月度销售趋势图 -->
+      <div class="chart-container">
+        <rh-item-container rhTitle="月度销售趋势 vs 目标" class="h-full">
+          <div class="chart-wrapper" echarts [options]="monthlyChartOption"></div>
+        </rh-item-container>
+      </div>
+
+      <!-- 近7日销售明细 -->
+      <div class="table-container">
+        <rh-item-container rhTitle="近7日销售明细" class="h-full">
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>目标</th>
+                  <th>实际</th>
+                  <th>达成率</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of salesData.data?.dailyList; trackBy: trackByIndex">
+                  <td>{{ item.date }}</td>
+                  <td>{{ item.target | number }}</td>
+                  <td>{{ item.actual | number }}</td>
+                  <td [ngClass]="getRateClass(item.rate)">{{ item.rate }}%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </rh-item-container>
+      </div>
+    </div>
+  </div>
+</rh-page-frame>
