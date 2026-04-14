@@ -35,6 +35,14 @@ interface DailySalesItem {
   rate: number;
 }
 
+/** 季度数据接口 */
+interface QuarterData {
+  quarter: string;       // Q1, Q2, Q3, Q4
+  target: number;        // 季度目标
+  actual: number;        // 季度实际
+  rate: number;          // 季度达成率（百分比）
+}
+
 @Component({
   selector: 'rh-sales-target-board',
   templateUrl: './sales-target-board.component.html',
@@ -43,6 +51,24 @@ interface DailySalesItem {
 })
 export class SalesTargetBoardComponent extends RhvBoardBase {
   public enableMock: boolean = true;
+
+  /** 当前季度索引 (0=Q1, 1=Q2, 2=Q3, 3=Q4) */
+  currentQuarterIndex: number = 0;
+
+  /** 四个季度的数据列表 */
+  quarterDataList: QuarterData[] = [];
+
+  /** 动画状态 */
+  isAnimating: boolean = false;
+
+  /** 季度名称列表 */
+  quarterNames: string[] = ['Q1', 'Q2', 'Q3', 'Q4'];
+
+  /** 滑动检测相关变量 */
+  private touchStartY: number = 0;
+  private touchCurrentY: number = 0;
+  private isDragging: boolean = false;
+  private readonly SWIPE_THRESHOLD: number = 50; // 滑动触发阈值
 
   /** 格式化金额 */
   formatMoney(value: number): string {
