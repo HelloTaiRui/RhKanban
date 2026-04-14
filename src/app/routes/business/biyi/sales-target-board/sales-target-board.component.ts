@@ -169,6 +169,78 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
     };
   }
 
+  /** 触摸/鼠标开始事件 */
+  handleSwipeStart(event: TouchEvent | MouseEvent): void {
+    if (this.isAnimating) return;
+
+    this.isDragging = true;
+    if (event instanceof TouchEvent) {
+      this.touchStartY = event.touches[0].clientY;
+    } else {
+      this.touchStartY = event.clientY;
+    }
+  }
+
+  /** 触摸/鼠标移动事件 */
+  handleSwipeMove(event: TouchEvent | MouseEvent): void {
+    if (!this.isDragging) return;
+
+    if (event instanceof TouchEvent) {
+      this.touchCurrentY = event.touches[0].clientY;
+    } else {
+      this.touchCurrentY = event.clientY;
+    }
+  }
+
+  /** 触摸/鼠标结束事件 */
+  handleSwipeEnd(): void {
+    if (!this.isDragging) return;
+
+    this.isDragging = false;
+    const deltaY = this.touchStartY - this.touchCurrentY;
+
+    if (Math.abs(deltaY) >= this.SWIPE_THRESHOLD) {
+      if (deltaY > 0) {
+        // 向上滑动 -> 下一个季度
+        this.switchToNextQuarter();
+      } else {
+        // 向下滑动 -> 上一个季度
+        this.switchToPrevQuarter();
+      }
+    }
+
+    this.touchStartY = 0;
+    this.touchCurrentY = 0;
+  }
+
+  /** 切换到下一季度 */
+  switchToNextQuarter(): void {
+    if (this.isAnimating) return;
+
+    this.isAnimating = true;
+    // Q4 -> Q1 循环
+    this.currentQuarterIndex = (this.currentQuarterIndex + 1) % 4;
+
+    // 动画结束后重置状态
+    setTimeout(() => {
+      this.isAnimating = false;
+    }, 350);
+  }
+
+  /** 切换到上一季度 */
+  switchToPrevQuarter(): void {
+    if (this.isAnimating) return;
+
+    this.isAnimating = true;
+    // Q1 -> Q4 循环
+    this.currentQuarterIndex = (this.currentQuarterIndex - 1 + 4) % 4;
+
+    // 动画结束后重置状态
+    setTimeout(() => {
+      this.isAnimating = false;
+    }, 350);
+  }
+
   /** 销售目标看板数据 */
   salesData = new RhvDisplayInstance<SalesTargetData, SalesTargetData, SalesTargetData>(
     this,
