@@ -50,7 +50,7 @@ interface QuarterData {
   encapsulation: ViewEncapsulation.None,
 })
 export class SalesTargetBoardComponent extends RhvBoardBase {
-  public enableMock: boolean = true;
+  public enableMock: boolean = false;
 
   /** 当前季度索引 (0=Q1, 1=Q2, 2=Q3, 3=Q4) */
   currentQuarterIndex: number = 0;
@@ -273,11 +273,41 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
         updateTime: '',
       }),
       convertor: (data: RhSafeAny) => {
-        // 计算季度数据
-        this.quarterDataList = this.calculateQuarterData(data?.monthlyTrend || []);
-        // 设置默认显示当前季度
+        // 1. 转换 monthlyTrend 格式
+        const monthlyTrend = data?.monthTargets?.map((m: RhSafeAny) => ({
+          month: m.month,
+          target: m.monthTarget,
+          actual: m.monthActual
+        })) || [];
+
+        // 2. 提取当前月数据
+        const currentMonth = new Date().getMonth() + 1;
+        const currentMonthData = data?.monthTargets?.find((m: RhSafeAny) => m.month === currentMonth);
+
+        // 3. 提取今日数据
+        const currentDay = new Date().getDate();
+        const todayData = currentMonthData?.dayTargets?.find((d: RhSafeAny) => d.day === currentDay);
+
+        // 4. 计算季度数据
+        this.quarterDataList = this.calculateQuarterData(monthlyTrend);
         this.currentQuarterIndex = this.getCurrentQuarterByMonth();
-        return data as SalesTargetData;
+
+        // 5. 返回转换后的数据
+        return {
+          yearTarget: data?.yearTarget || 0,
+          yearActual: data?.yearActual || 0,
+          yearRate: data?.yearRate || 0,
+          yearRemaining: data?.yearRemaining || 0,
+          monthTarget: currentMonthData?.monthTarget || 0,
+          monthActual: currentMonthData?.monthActual || 0,
+          monthRate: currentMonthData?.monthRate || 0,
+          dayTarget: todayData?.dayTarget || 0,
+          dayActual: todayData?.dayActual || 0,
+          dayRate: todayData?.dayRate || 0,
+          monthlyTrend,
+          dailyList: data?.dailyList || [],
+          updateTime: data?.updateTime || '',
+        } as SalesTargetData;
       },
     }
   );

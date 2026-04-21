@@ -15,7 +15,7 @@
       <div class="year-right">
         <div class="year-title">年度目标达成率</div>
         <div class="year-rate" [ngClass]="getRateClass(salesData.data?.yearRate)">
-          {{ salesData.data?.yearRate }}%
+          {{ salesData.data?.yearRate?.toFixed(1) }}%
         </div>
         <div class="year-remaining">剩余目标：{{ formatLargeMoney(salesData.data?.yearRemaining) }}</div>
       </div>
@@ -66,7 +66,7 @@
         <div class="period-values">
           <span>实际：{{ formatMoney(salesData.data?.monthActual) }}</span>
           <span class="period-rate" [ngClass]="getRateClass(salesData.data?.monthRate)">
-            {{ salesData.data?.monthRate }}%
+            {{ salesData.data?.monthRate?.toFixed(1) }}%
           </span>
         </div>
         <div class="progress-bar">
@@ -87,7 +87,7 @@
         <div class="period-values">
           <span>实际：{{ formatMoney(salesData.data?.dayActual) }}</span>
           <span class="period-rate" [ngClass]="getRateClass(salesData.data?.dayRate)">
-            {{ salesData.data?.dayRate }}%
+            {{ salesData.data?.dayRate?.toFixed(1) }}%
           </span>
         </div>
         <div class="progress-bar">
@@ -130,7 +130,7 @@
                   <td>{{ item.date }}</td>
                   <td>{{ item.target | number }}</td>
                   <td>{{ item.actual | number }}</td>
-                  <td [ngClass]="getRateClass(item.rate)">{{ item.rate }}%</td>
+                  <td [ngClass]="getRateClass(item.rate)">{{ item.rate?.toFixed(1) }}%</td>
                 </tr>
               </tbody>
             </table>
