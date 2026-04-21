@@ -370,7 +370,7 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
         left: '3%',
         right: '4%',
         bottom: '3%',
-        top: '15%',
+        top: '20%',
         containLabel: true,
       },
       xAxis: {
@@ -424,6 +424,16 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
             },
             borderRadius: [4, 4, 0, 0],
           },
+          label: {
+            show: true,
+            position: 'top',
+            formatter: (params: RhSafeAny) => {
+              const originalValue = originalActual[params.dataIndex] || 0;
+              return '¥' + originalValue.toLocaleString();
+            },
+            color: '#A0AEC0',
+            fontSize: 10,
+          },
         },
         {
           name: '目标',
@@ -434,6 +444,16 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
             color: '#FFD15C',
             width: 2,
             type: 'dashed',
+          },
+          label: {
+            show: true,
+            position: 'top',
+            formatter: (params: RhSafeAny) => {
+              const originalValue = originalTarget[params.dataIndex] || 0;
+              return '¥' + originalValue.toLocaleString();
+            },
+            color: '#FFD15C',
+            fontSize: 10,
           },
         },
       ],
