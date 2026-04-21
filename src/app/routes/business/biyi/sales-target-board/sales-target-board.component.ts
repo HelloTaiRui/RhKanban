@@ -292,7 +292,25 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
         this.quarterDataList = this.calculateQuarterData(monthlyTrend);
         this.currentQuarterIndex = this.getCurrentQuarterByMonth();
 
-        // 5. 返回转换后的数据
+        // 5. 提取近7日数据（从今天往前推7天）
+        const dailyList: DailySalesItem[] = [];
+        const today = new Date();
+        for (let i = 0; i < 7; i++) {
+          const date = new Date(today);
+          date.setDate(today.getDate() - i);
+          const month = date.getMonth() + 1;
+          const day = date.getDate();
+          const monthData = data?.monthTargets?.find((m: RhSafeAny) => m.month === month);
+          const dayData = monthData?.dayTargets?.find((d: RhSafeAny) => d.day === day);
+          dailyList.push({
+            date: `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`,
+            target: dayData?.dayTarget || 0,
+            actual: dayData?.dayActual || 0,
+            rate: dayData?.dayRate || 0,
+          });
+        }
+
+        // 6. 返回转换后的数据
         return {
           yearTarget: data?.yearTarget || 0,
           yearActual: data?.yearActual || 0,
@@ -305,7 +323,7 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
           dayActual: todayData?.dayActual || 0,
           dayRate: todayData?.dayRate || 0,
           monthlyTrend,
-          dailyList: data?.dailyList || [],
+          dailyList,
           updateTime: data?.updateTime || '',
         } as SalesTargetData;
       },
@@ -318,6 +336,9 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
     const months = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
     const actualData = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.actual / 10000) || [];
     const targetData = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.target / 10000) || [];
+    // 保存原始数据用于tooltip显示
+    const originalActual = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.actual) || [];
+    const originalTarget = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.target) || [];
 
     return {
       tooltip: {
@@ -326,9 +347,14 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
           type: 'shadow',
         },
         formatter: (params: RhSafeAny[]) => {
+          const monthIndex = params[0].dataIndex;
           let result = params[0].name + '<br/>';
           params.forEach((item: RhSafeAny) => {
-            result += `${item.marker} ${item.seriesName}: ¥${item.value}万<br/>`;
+            // 使用原始数据显示具体值
+            const originalValue = item.seriesName === '实际销售额'
+              ? originalActual[monthIndex]
+              : originalTarget[monthIndex];
+            result += `${item.marker} ${item.seriesName}: ¥${(originalValue || 0).toLocaleString()}<br/>`;
           });
           return result;
         },
