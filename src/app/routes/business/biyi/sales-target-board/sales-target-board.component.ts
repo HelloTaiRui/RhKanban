@@ -391,6 +391,8 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
         nameTextStyle: {
           color: '#A0AEC0',
         },
+        scale: true,
+        min: 0,
         axisLine: {
           lineStyle: {
             color: '#4A5568',
@@ -439,11 +441,15 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
           name: '目标',
           type: 'line',
           data: targetData,
-          symbol: 'none',
+          symbol: 'circle',
+          symbolSize: 6,
           lineStyle: {
             color: '#FFD15C',
             width: 2,
             type: 'dashed',
+          },
+          itemStyle: {
+            color: '#FFD15C',
           },
           label: {
             show: true,
