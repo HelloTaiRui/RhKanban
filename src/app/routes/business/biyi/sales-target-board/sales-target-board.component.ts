@@ -334,13 +334,12 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
   get monthlyChartOption(): RhSafeAny {
     const data = this.salesData.data;
     const months = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
-    const actualData = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.actual / 10000) || [];
-    const targetData = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.target / 10000) || [];
-    // 保存原始数据用于tooltip显示
-    const originalActual = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.actual) || [];
-    const originalTarget = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.target) || [];
+    // 使用原始数据（不除以10000），保持单位一致
+    const actualData = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.actual) || [];
+    const targetData = data?.monthlyTrend?.map((item: MonthlySalesItem) => item.target) || [];
 
     return {
+      animation: false,
       tooltip: {
         trigger: 'axis',
         axisPointer: {
@@ -350,11 +349,10 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
           const monthIndex = params[0].dataIndex;
           let result = params[0].name + '<br/>';
           params.forEach((item: RhSafeAny) => {
-            // 使用原始数据显示具体值
-            const originalValue = item.seriesName === '实际销售额'
-              ? originalActual[monthIndex]
-              : originalTarget[monthIndex];
-            result += `${item.marker} ${item.seriesName}: ¥${(originalValue || 0).toLocaleString()}<br/>`;
+            const value = item.seriesName === '实际销售额'
+              ? actualData[monthIndex]
+              : targetData[monthIndex];
+            result += `${item.marker} ${item.seriesName}: ¥${(value || 0).toLocaleString()}<br/>`;
           });
           return result;
         },
@@ -387,7 +385,7 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
       },
       yAxis: {
         type: 'value',
-        name: '金额(万)',
+        name: '金额',
         nameTextStyle: {
           color: '#A0AEC0',
         },
@@ -400,6 +398,12 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
         },
         axisLabel: {
           color: '#A0AEC0',
+          formatter: (value: number) => {
+            if (value >= 10000) {
+              return (value / 10000).toFixed(0) + '万';
+            }
+            return value.toString();
+          },
         },
         splitLine: {
           lineStyle: {
@@ -430,8 +434,7 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
             show: true,
             position: 'top',
             formatter: (params: RhSafeAny) => {
-              const originalValue = originalActual[params.dataIndex] || 0;
-              return '¥' + originalValue.toLocaleString();
+              return '¥' + (params.value || 0).toLocaleString();
             },
             color: '#A0AEC0',
             fontSize: 10,
@@ -455,8 +458,7 @@ export class SalesTargetBoardComponent extends RhvBoardBase {
             show: true,
             position: 'top',
             formatter: (params: RhSafeAny) => {
-              const originalValue = originalTarget[params.dataIndex] || 0;
-              return '¥' + originalValue.toLocaleString();
+              return '¥' + (params.value || 0).toLocaleString();
             },
             color: '#FFD15C',
             fontSize: 10,
