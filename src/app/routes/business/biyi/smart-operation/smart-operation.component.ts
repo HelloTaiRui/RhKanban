@@ -38,7 +38,8 @@ import {
   RhvDisplayInstance,
 } from '@model';
 import { flatten, last, sum, sumBy } from 'lodash';
-import { of } from 'rxjs';
+import { BehaviorSubject, of } from 'rxjs';
+import { map, take } from 'rxjs/operators';
 
 @Component({
   selector: 'rh-smart-operation',
@@ -83,18 +84,36 @@ export class SmartOperationComponent extends RhvBoardBase {
         ),
     }
   );
-  /** 年度运营指标达成情况数据 */
+
+  /** 各车间计划数量 Subject - 用于年度运营指标汇总 */
+  workshopPlanDataSubject = new BehaviorSubject<{ name: string; value: number }[]>(
+    []
+  );
+
+  /** 年度运营指标达成情况数据 - 从各车间计划数量汇总 */
   yearlyRateData = new RhvDisplayInstance(
     this,
     useStandardDisplayConfig(null, null, null, null),
     {
       interval: 60000,
-      data$: this.apiSer.getOuter(
-        'YunYing',
-        'YunyingGraph2',
-        {},
-        'assets/mock/biyi/YunYing/YunyingGraph2.json',
-        this.enableMock
+      data$: this.workshopPlanDataSubject.asObservable().pipe(
+        map((rawValues) => {
+          // 汇总所有车间的原始数值
+          const totalValue = rawValues.reduce(
+            (sum: number, item: RhSafeAny) => sum + (item.value || 0),
+            0
+          );
+          return {
+            title: '产品销售总量',
+            sumValue: totalValue,
+            rate: 0,
+            sumData: {
+              result: '',
+              segments: 0,
+              unit: '',
+            },
+          };
+        })
       ),
       emptyData: () => ({
         title: '',
@@ -106,26 +125,19 @@ export class SmartOperationComponent extends RhvBoardBase {
           unit: '',
         },
       }),
-      convertor: (data: RhBoardData) => {
-        const sumData = this.convertNumber(
-          data.children[0].value1 || 0,
-          4,
-          '件',
-          false
-        );
+      convertor: (data: { title: string; sumValue: number; rate: number }) => {
+        const sumData = this.convertNumber(data.sumValue, 4, '件', false);
         const resultValue = Math.round(sumData.result as RhSafeAny)
           .toString()
           .padStart(6, '0')
           .split('');
         sumData.result = resultValue;
-        const result = {
-          title: data.item,
-          sumValue: data.children[0]?.value1 || 0,
-          rate: data.children[1]?.value1,
+        return {
+          title: data.title,
+          sumValue: data.sumValue,
+          rate: data.rate,
           sumData: sumData,
         };
-        //console.log(result);
-        return result;
       },
     }
   );
@@ -424,7 +436,7 @@ export class SmartOperationComponent extends RhvBoardBase {
         ['---', 0],
       ],
       convertor: (data: RhBoardData) => {
-        return data.children.map((item) => {
+        const result = data.children.map((item) => {
           const toLarge = item.children[0].value1 > 1000000;
           return toLarge
             ? [
@@ -437,6 +449,13 @@ export class SmartOperationComponent extends RhvBoardBase {
               ]
             : [item.item, item.children[0].value1, ''];
         });
+        // 提取原始数值并存储到 Subject
+        const rawValues = data.children.map((item) => ({
+          name: item.item,
+          value: item.children[0].value1,
+        }));
+        this.workshopPlanDataSubject.next(rawValues as RhSafeAny[]);
+        return result;
       },
     }
   );
