@@ -14,54 +14,6 @@
     padding-right: var(--rhv-size-4);
   }
 
-  // 年度核心指标
-  .year-summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(135deg, rgba(7, 131, 250, 0.15) 0%, rgba(7, 209, 250, 0.1) 100%);
-    border: 1px solid rgba(7, 131, 250, 0.3);
-    border-radius: var(--rhv-size-2);
-    padding: var(--rhv-size-6) var(--rhv-size-8);
-
-    .year-left,
-    .year-right {
-      flex: 1;
-    }
-
-    .year-right {
-      text-align: right;
-    }
-
-    .year-title {
-      font-size: var(--rhv-font-size-base);
-      color: #a0aec0;
-      margin-bottom: var(--rhv-size-2);
-    }
-
-    .year-value {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #fff;
-      line-height: 1.2;
-    }
-
-    .year-target,
-    .year-remaining {
-      font-size: var(--rhv-font-size-sm);
-      color: #718096;
-      margin-top: var(--rhv-size-2);
-    }
-
-    .year-rate {
-      display: inline-block;
-      font-size: 1.8rem;
-      font-weight: 700;
-      padding: var(--rhv-size-2) var(--rhv-size-4);
-      border-radius: var(--rhv-size-1);
-      margin-top: var(--rhv-size-2);
-    }
-  }
 
   // 达成率颜色
   .rate-success {
@@ -81,6 +33,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--rhv-size-6);
+
+    // 4列布局
+    &.period-cards-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     .period-card {
       background: rgba(26, 32, 44, 0.6);
@@ -203,7 +160,7 @@
       table {
         width: 100%;
         border-collapse: collapse;
-        font-size: var(--rhv-font-size-base);
+        font-size: var(--rhv-font-size-lg);
 
         th,
         td {
@@ -215,11 +172,13 @@
         th {
           color: #718096;
           font-weight: 500;
+          font-size: var(--rhv-font-size-base);
           border-bottom: 2px solid rgba(74, 85, 104, 0.5);
         }
 
         td {
           color: #e2e8f0;
+          font-size: 18px;
         }
 
         tbody tr:hover {

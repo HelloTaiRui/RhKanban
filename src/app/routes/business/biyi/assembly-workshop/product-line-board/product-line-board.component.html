@@ -81,7 +81,7 @@
             <th>安灯<br />停线</th>
             <th>异常费用</th>
             <th>验货<br />合格率</th>
-            <th>月度<br />离职率</th>
+            <!-- <th>月度<br />离职率</th> -->
             <th>月度<br />UPPH值</th>
             <th>产线<br />退料金额<br />（料费）</th>
             <th>产线<br />退料金额<br />（工费）</th>
@@ -215,13 +215,14 @@
                       >{{ monthlyData[5] }}%</span
                     >
                   </td>
-                  <td [attr.rowspan]="num">
+                  <!-- 月度离职率暂时注释 -->
+                  <!-- <td [attr.rowspan]="num">
                     <span
                       class="link"
                       (click)="handleShowDetail(line.name, 'EmployeeInfos')"
                       >{{ monthlyData[6] }}%</span
                     >
-                  </td>
+                  </td> -->
                   <td [attr.rowspan]="num">
                     <!-- /ZhuSuCheJian/GetZhusuGraphLineDashboard_DailyUpph -->
                     <span
@@ -281,7 +282,8 @@
             </td>
             <td>{{ summary[17] }}</td>
             <td>{{ summary[18] }}%</td>
-            <td>{{ summary[19] }}%</td>
+            <!-- 月度离职率暂时注释 -->
+            <!-- <td>{{ summary[19] }}%</td> -->
             <td>{{ summary[20] }}</td>
             <td>{{ summary[21] }}</td>
             <td>{{ summary[22] }}</td>
